@@ -67,6 +67,8 @@ This should open the app in your default browser at http://localhost:3000
 ## Creating a production build
 
 The client side needs to be built using webpack and babel, as it uses ES6 and jsx.
+
+At build time, Google analytics ID and Google Maps API key are expected to be provided via the following environment variable `REACT_APP_GOOGLE_ANALYTICS_ACCOUNT_ID` and `REACT_APP_GOOGLE_MAPS_API_KEY`.
 ```
 cd client
 npm run build

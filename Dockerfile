@@ -28,7 +28,7 @@ USER waam
 RUN npm i -g corepack 
     
 # Install server dependencies.
-COPY --chown=waam package*.json ./
+COPY --chown=waam package.json ./
 COPY --chown=waam yarn.lock ./
 RUN yarn install
 

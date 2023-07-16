@@ -254,34 +254,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"amms-v2-API@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "amms-v2-API@workspace:."
-  dependencies:
-    bcrypt-nodejs: 0.0.3
-    bluebird: ^3.4.7
-    body-parser: ^1.18.3
-    concurrently: ^3.3.0
-    cookie-parser: ^1.4.3
-    dotenv: ^16.3.1
-    express: ^4.16.3
-    express-session: ^1.15.6
-    foreman: ^3.0.0
-    helmet: ^3.12.1
-    js-cookie: ^2.1.3
-    morgan: ^1.9.1
-    mysql: ^2.15.0
-    mysql2: ^1.5.1
-    nodemon: ^1.11.0
-    passport: ^0.3.2
-    passport-local: ^1.0.0
-    passport-remember-me: ^0.0.1
-    pm2: ^3.0.0
-    prettier: 1.10.2
-    sequelize: ^4.28.6
-  languageName: unknown
-  linkType: soft
-
 "amp-message@npm:~0.1.1":
   version: 0.1.2
   resolution: "amp-message@npm:0.1.2"
@@ -5237,6 +5209,34 @@ __metadata:
   checksum: 7f9cbdf877e573df704ba9c183addcd101b43d17f677bc44ef5c5f1f887561c079be925461cc92df450b8838758307fde89232c33f773a5163b7bfbda122243b
   languageName: node
   linkType: hard
+
+"waam_api@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "waam_api@workspace:."
+  dependencies:
+    bcrypt-nodejs: 0.0.3
+    bluebird: ^3.4.7
+    body-parser: ^1.18.3
+    concurrently: ^3.3.0
+    cookie-parser: ^1.4.3
+    dotenv: ^16.3.1
+    express: ^4.16.3
+    express-session: ^1.15.6
+    foreman: ^3.0.0
+    helmet: ^3.12.1
+    js-cookie: ^2.1.3
+    morgan: ^1.9.1
+    mysql: ^2.15.0
+    mysql2: ^1.5.1
+    nodemon: ^1.11.0
+    passport: ^0.3.2
+    passport-local: ^1.0.0
+    passport-remember-me: ^0.0.1
+    pm2: ^3.0.0
+    prettier: 1.10.2
+    sequelize: ^4.28.6
+  languageName: unknown
+  linkType: soft
 
 "which@npm:^1.2.9":
   version: 1.3.1
