@@ -1,0 +1,44 @@
+{
+  "name": "waam_api",
+  "version": "0.1.1",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^3.3.0",
+    "foreman": "^3.0.0",
+    "nodemon": "^1.11.0",
+    "prettier": "1.10.2"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "helmet": "^3.12.1",
+    "js-cookie": "^2.1.3",
+    "morgan": "^1.9.1",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-remember-me": "^0.0.1",
+    "pm2": "^3.0.0",
+    "sequelize": "^4.28.6"
+  },
+  "scripts": {
+    "clean": "rm -fr node_modules ./client/node_modules",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "pm2:prod": "pm2 start --name amms-v2 --update-env server.js",
+    "pm2:reload": "pm2 reload --update-env amms-v2",
+    "pm2:list": "pm2 list",
+    "server": "node server.js",
+    "client": "node start-client.js",
+    "search-index": "npm run search:authors && npm run search:manuscripts",
+    "search:authors": "node ./bin/generate-authors-search-indexes.js",
+    "search:manuscripts": "node ./bin/generate-manuscripts-search-indexes.js",
+    "format": "prettier --single-quote --trailing-comma es5 --tab-width 4 --write \"{client/src,server,__{tests,mocks}__}/**/*.js\""
+  },
+  "packageManager": "yarn@3.6.1"
+}

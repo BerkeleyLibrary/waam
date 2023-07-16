@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+export DOCKER_TAG="${1:-$(git rev-parse HEAD)}"
+
+docker-compose build --pull

@@ -1,0 +1,205 @@
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin: 0;
+  font-family: Tahoma, Verdana, Arial, "Times New Roman", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  background: url(/img/bg-1.jpg) 50% 0 no-repeat, url(/img/bg-1-2.jpg) 50% 0 #965517;
+  padding-bottom: 50px; }
+
+body a {
+  color: #773e07; }
+
+body a:hover, body a:focus {
+  color: #482503; }
+
+body hr {
+  margin: 5px 0;
+  border-top: 1px solid #ffd6c4; }
+
+body .btn-primary {
+  background: linear-gradient(to bottom, #773e07 0%, #965517 100%) #965517;
+  border-color: #965517;
+  background-repeat: repeat-x; }
+
+body .btn-primary:hover, body .btn-primary:focus {
+  background-color: #965517;
+  background-position: 0 -15px;
+  border-color: #965517;
+  outline: 0; }
+
+body .btn-primary:active {
+  background-color: #773e07;
+  border-color: #773e07; }
+
+body .btn-primary:active:focus {
+  background-color: #773e07;
+  border-color: #773e07; }
+
+body .btn-primary[disabled], body .btn-primary[disabled]:hover, body .btn-primary[disabled]:active {
+  background-color: #773e07;
+  border-color: #773e07; }
+
+body .btn-info {
+  background: #d07733;
+  border-color: #ffd6c4;
+  background-repeat: repeat-x; }
+
+body .btn-info:hover, body .btn-info:focus {
+  background-color: #d07733;
+  background-position: 0 -15px;
+  border-color: #d07733;
+  outline: 0; }
+
+body .btn-info:active {
+  background-color: #d07733;
+  border-color: #d07733; }
+
+body .btn-info:active:focus {
+  background-color: #d07733;
+  border-color: #d07733; }
+
+body .dropdown-menu > .active > a, body .dropdown-menu > .active > a:hover, body .dropdown-menu > .active > a:focus {
+  background-color: #773e07;
+  background-image: linear-gradient(to bottom, #d07733 0%, #773e07 100%); }
+
+body .header {
+  line-height: 1.42857143;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100; }
+
+body .navbar-default {
+  background: #965517;
+  border: none;
+  border-radius: 0; }
+
+body .navbar-default .navbar-nav > .active > a,
+body .navbar-default .navbar-nav > .open > a,
+body .navbar-default .navbar-nav > .open > a:focus,
+body .navbar-default .navbar-nav > .active > a:hover,
+body .navbar-default .navbar-nav > .active > a:focus {
+  background: #773e07;
+  color: #fff; }
+
+body .navbar-default .navbar-nav > li > a:hover,
+body .navbar-default .navbar-nav > li > a:focus {
+  color: #d8d2d2; }
+
+body .navbar-default .navbar-nav > li > a {
+  color: #fff;
+  text-shadow: none; }
+
+body .nav > li.language > a {
+  color: #fff;
+  background-color: #773e07;
+  border-color: #6a390d;
+  outline: none;
+  border-radius: 2px; }
+
+body .nav > li.language > a:hover, body .nav > li.language > a:focus {
+  color: #fff;
+  background-color: #9e6229;
+  border-color: #6a390d;
+  outline: none; }
+
+body .breadcrumb {
+  background-color: #f5dfcf; }
+
+body .breadcrumb > li + li:before {
+  color: #773e07; }
+
+body h1, body h2, body h3, body h4 {
+  margin-top: 0; }
+
+body .navbar-brand {
+  padding: 0 15px; }
+
+body .navbar-brand > img {
+  max-height: 100%; }
+
+body .kb-letter {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  border: solid 1px #965517;
+  margin: 2px;
+  padding: 4px;
+  line-height: 26px; }
+
+body .kb-letter:hover {
+  background-color: #773e07;
+  color: #fff; }
+
+body .field-name {
+  font-weight: 600; }
+
+body .panel-title > a {
+  color: #337ab7; }
+
+body .panel-title > a:hover {
+  color: #23527c; }
+
+body .content-container {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  background: #FFF3EA; }
+
+body .content-container .main-content {
+  padding: 20px;
+  min-height: 500px; }
+
+body .content-container .main-content.home {
+  position: relative;
+  z-index: 1; }
+
+body .content-container .main-content.home:after {
+  content: "";
+  background: url(/img/bg-5.jpg) 50% 0;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+body .content-container .main-content .manuscripts .panel table tr th {
+  width: 80px; }
+
+body .content-container .jumbotron {
+  background-color: transparent;
+  margin: 0;
+  padding: 0; }
+
+body .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: #965517;
+  color: #fff; }
+
+body .footer .text-muted {
+  margin: 10px 0 0 10px;
+  color: #fff; }
+
+.ltr {
+  direction: ltr;
+  text-align: left; }
+
+.rtl {
+  direction: rtl;
+  text-align: right; }
+
+.nav > li > a {
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 12px; }

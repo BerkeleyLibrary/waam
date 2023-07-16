@@ -1,0 +1,313 @@
+/**
+For now, complie first using https://www.cssportal.com/scss-to-css/
+*/
+
+$light-brown-color: #965517;
+$lighter-brown-color: #d07733;
+$brown-color: #773e07;
+$white-color: #fff;
+$link-color: #773e07;
+$link-hover-color: #482503;
+
+$border-hover-color: #ffd6c4;
+$lighter-brown-color-p-p: #f9d6bc;
+$lighter-brown-color-p: #e6b483;
+
+@keyframes lds-ripple {
+  0% {
+    top: 28px;
+    left: 28px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -1px;
+    left: -1px;
+    width: 58px;
+    height: 58px;
+    opacity: 0;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, Verdana, Arial, 'Times New Roman', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  background: url(/img/bg-1.jpg) 50% 0 no-repeat,
+    url(/img/bg-1-2.jpg) 50% 0 $light-brown-color;
+  padding-bottom: 50px;
+
+  a,
+  a.page-link {
+    color: $link-color;
+
+    &:hover,
+    &:focus {
+      color: $link-hover-color;
+    }
+  }
+
+  .card {
+    margin-bottom: 10px;
+    .card-body {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .loader-ripple {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    div {
+      position: absolute;
+      border: 4px solid $lighter-brown-color-p;
+      opacity: 1;
+      border-radius: 50%;
+      animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+    div:nth-child(2) {
+      animation-delay: -0.5s;
+    }
+  }
+
+  hr {
+    margin: 5px 0;
+    border-top: 1px solid $border-hover-color;
+  }
+
+  .dropdown.nav-item {
+    .dropdown-menu {
+      a.dropdown-item {
+        &.active,
+        &:hover,
+        &:focus {
+          background-color: $brown-color;
+          background-image: linear-gradient(
+            to bottom,
+            $lighter-brown-color-p-p 0%,
+            $lighter-brown-color-p 100%
+          );
+        }
+      }
+    }
+  }
+
+  .navbar.navbar-light {
+    background: $light-brown-color;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    .navbar-brand {
+      img {
+        max-height: 50px;
+      }
+    }
+    .navbar-nav {
+      & >  {
+        .dropdown > .dropdown-toggle.nav-link {
+          color: $white-color;
+          text-shadow: none;
+          padding: 14px 0.5rem;
+        }
+        a.active,
+        a.open,
+        a.open:focus,
+        a.active:hover,
+        a.active:focus {
+          background: $brown-color;
+          color: $white-color;
+        }
+        a:hover,
+        a:focus {
+          color: #d8d2d2;
+        }
+
+        a {
+          color: $white-color;
+          text-shadow: none;
+          padding: 14px 0.5rem;
+        }
+
+        a.language {
+          color: $white-color;
+          background-color: $brown-color;
+          border-color: #6a390d;
+          outline: none;
+          border-radius: 2px;
+          &:hover,
+          &:focus {
+            color: $white-color;
+            background-color: #9e6229;
+            border-color: #6a390d;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+
+  .breadcrumb {
+    background-color: #f5dfcf;
+    & > li + li:before {
+      color: $brown-color;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-top: 0;
+  }
+
+  .navbar-brand {
+    padding: 0 15px;
+  }
+  .navbar-brand > img {
+    max-height: 100%;
+  }
+
+  .kb-letter {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    border: solid 1px $light-brown-color;
+    margin: 2px;
+    padding: 4px;
+    line-height: 26px;
+    &:hover {
+      background-color: $brown-color;
+      color: $white-color;
+    }
+  }
+  .field-name {
+    font-weight: 600;
+  }
+
+  .panel-title {
+    & > a {
+      color: #337ab7;
+      &:hover {
+        color: #23527c;
+      }
+    }
+  }
+
+  .content-container {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    background: #fff3ea;
+
+    .main-content {
+      padding: 20px;
+      min-height: 500px;
+      &.home {
+        position: relative;
+        z-index: 1;
+        &:after {
+          content: '';
+          background: url(/img/bg-5.jpg) 50% 0;
+          opacity: 0.2;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          position: absolute;
+          z-index: -1;
+        }
+      }
+
+      .manuscripts {
+        .panel {
+          table {
+            tr {
+              th {
+                width: 80px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .jumbotron {
+      background-color: transparent;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: $light-brown-color;
+    color: $white-color;
+
+    .copy-right {
+      margin: 10px 0 0 10px;
+      color: $white-color;
+    }
+  }
+}
+
+.custom-paper {
+  border-radius: 2px;
+  border: 1px solid #ffd6c4;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+*[dir='rtl'] {
+  text-align: right;
+  [dir='ltr'] {
+    text-align: left;
+  }
+  body {
+    text-align: right;
+    .text-right {
+      text-align: left !important;
+    }
+    .input-group > .input-group-append > .input-group-text {
+      border-top-left-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .input-group > .form-control:not(:last-child) {
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+      padding-left: 0.5rem;
+    }
+    .modal-header .close {
+      margin: -1rem auto -1rem -1rem;
+    }
+  }
+}

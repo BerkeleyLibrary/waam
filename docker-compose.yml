@@ -1,0 +1,42 @@
+---
+
+networks:
+  default:
+    driver: bridge
+
+services:
+  adminer:
+    image: adminer:4-standalone
+    ports:
+      - 8080:8080
+
+  db:
+    build: data
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: amms2
+      MYSQL_PASSWORD: amms2
+      MYSQL_DATABASE: amms2
+    image: containers.lib.berkeley.edu/lap/waam/waam-db:${DOCKER_TAG:-latest}
+    ports:
+      - 3306:3306
+    volumes:
+      - ./data/test-data.sql:/docker-entrypoint-initdb.d/test-data.sql:ro
+      - mysql:/var/lib/mysql:delegated
+
+  node:
+    build: .
+    image: containers.lib.berkeley.edu/lap/waam/waam-node:${DOCKER_TAG:-latest}
+    ports:
+      - "3002:3002"
+    secrets:
+      - DATABASE_URL
+
+secrets:
+  DATABASE_URL:
+    file: secrets/DATABASE_URL
+
+version: "3.4"
+
+volumes:
+  mysql: {}
