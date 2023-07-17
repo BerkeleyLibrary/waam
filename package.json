@@ -25,7 +25,7 @@
     "passport-local": "^1.0.0",
     "passport-remember-me": "^0.0.1",
     "pm2": "^3.0.0",
-    "sequelize": "^4.28.6"
+    "sequelize": "^6.32.1"
   },
   "scripts": {
     "clean": "rm -fr node_modules ./client/node_modules",
