@@ -7,13 +7,13 @@ import { GOOGLE_ANALYTICS_ACCOUNT_ID } from '../config/config';
 
 import { Route, withRouter } from 'react-router-dom';
 
-import ReactGA from "react-ga4";
+import ReactGA from 'react-ga4';
 
 ReactGA.initialize(GOOGLE_ANALYTICS_ACCOUNT_ID);
 
 const logPageView = () => {
     ReactGA.set({ page: window.location.pathname });
-    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+    ReactGA.send({ hitType: 'pageview', page: window.location.pathname });
     window.scrollTo(0, 0);
     return null;
 };

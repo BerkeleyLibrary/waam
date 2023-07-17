@@ -3619,7 +3619,7 @@ __metadata:
   version: 0.0.1
   resolution: "passport-remember-me@npm:0.0.1"
   dependencies:
-    passport: ~0.1.1
+    passport: ~0.6.0
     pkginfo: 0.2.x
   checksum: a87fd2186d9f33522d7bfe969b0bbbd229dd27eca1734b166aa1c8065da4f1bf825a12e1b724e74d6c7e05e515d3ae8bc3946b99eb7ba24a4aa5354b47241c0a
   languageName: node
@@ -3632,23 +3632,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"passport@npm:^0.3.2":
-  version: 0.3.2
-  resolution: "passport@npm:0.3.2"
+"passport@npm:^0.6.0, passport@npm:~0.6.0":
+  version: 0.6.0
+  resolution: "passport@npm:0.6.0"
   dependencies:
     passport-strategy: 1.x.x
     pause: 0.0.1
-  checksum: ba1d9eddef9d3615529cd82d7037fd83f96f5d09cf9a7a2126ceb6870aac7c8ca056102d80b2e2bc0c0b157bd8d6122e30938aab5d43dcf295994e38a7cd8422
-  languageName: node
-  linkType: hard
-
-"passport@npm:~0.1.1":
-  version: 0.1.18
-  resolution: "passport@npm:0.1.18"
-  dependencies:
-    pause: 0.0.1
-    pkginfo: 0.2.x
-  checksum: 96bcc5397176898c42699fe85863140abf9d6b78ca74ae0f20978018e5e8804885dc44e18bdcdc29c20ec4f29d6818d0230b99e1cb3819a7b6189e3b5ad6ba6d
+    utils-merge: ^1.0.1
+  checksum: ef932ad671d50de34765c7a53cd1e058d8331a82a6df09265a9c6c1168911aee4a7b5215803d0101110ab7f317e096b4954ca7e18fb2c33b9929f0bd17dbe159
   languageName: node
   linkType: hard
 
@@ -5147,7 +5138,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"utils-merge@npm:1.0.1":
+"utils-merge@npm:1.0.1, utils-merge@npm:^1.0.1":
   version: 1.0.1
   resolution: "utils-merge@npm:1.0.1"
   checksum: c81095493225ecfc28add49c106ca4f09cdf56bc66731aa8dabc2edbbccb1e1bfe2de6a115e5c6a380d3ea166d1636410b62ef216bb07b3feb1cfde1d95d5080
@@ -5229,7 +5220,7 @@ __metadata:
     mysql: ^2.15.0
     mysql2: ^1.5.1
     nodemon: ^1.11.0
-    passport: ^0.3.2
+    passport: ^0.6.0
     passport-local: ^1.0.0
     passport-remember-me: ^0.0.1
     pm2: ^3.0.0

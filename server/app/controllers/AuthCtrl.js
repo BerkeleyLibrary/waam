@@ -93,11 +93,15 @@ module.exports = {
         })(req, res);
     },
 
-    logout: (req, res) => {
+    logout: (req, res, next) => {
         res.clearCookie('remember_me');
-        req.logout();
-        res.json({
-            msg: 'User logged out.',
+        req.logout(function(err) {
+            if (err) {
+                return next(err);
+            }
+            res.json({
+                msg: 'User logged out.',
+            });
         });
     },
 
