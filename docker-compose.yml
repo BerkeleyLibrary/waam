@@ -1,7 +1,7 @@
 version: '3.7'
 services:
-  app:
-    container_name: app
+  node:
+    container_name: node
     build:
       context: .
       dockerfile: Dockerfile
@@ -24,7 +24,7 @@ services:
       - db-volume:/var/lib/mysql
       - ./data/test-data.sql:/docker-entrypoint-initdb.d/test-data.sql
     depends_on:
-      - app
+      - node
 
 networks:
   default:

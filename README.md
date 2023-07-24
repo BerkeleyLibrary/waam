@@ -48,6 +48,8 @@ The node container uses `npm` as its entrypoint, so you can run commands like th
 docker-compose run --rm node run search-index
 ```
 
+Note: Running the indexer commands is not needed on the live site, since the data there is readonly.
+
 MySQL database test data is stored in a Docker volume. By default, the database container will load the `data/test-data.sql` file to initialize the amms2 database.
 
 To stop the containers and start from scratch (removing volumes), run:
