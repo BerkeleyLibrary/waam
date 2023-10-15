@@ -33,7 +33,7 @@ module.exports = function(passport) {
 
     // used to deserialize the user
     passport.deserializeUser(function(id, done) {
-        User.findById(id)
+        User.findByPk(id)
             .then(user => {
                 done(null, user);
             })
@@ -52,7 +52,7 @@ module.exports = function(passport) {
                     return done(null, false);
                 }
 
-                User.findById(uid)
+                User.findByPk(uid)
                     .then(user => {
                         if (!user) {
                             return done(null, false);

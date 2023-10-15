@@ -16,10 +16,7 @@ const {
 } = require('../utils/db-query');
 
 const searchValue = (...values) =>
-    values
-        .filter(Boolean)
-        .map(removeArabicDiacritics)
-        .join('\n');
+    values.filter(Boolean).map(removeArabicDiacritics).join('\n');
 
 module.exports = {
     index: (req, res) => {
@@ -72,9 +69,9 @@ module.exports = {
         const where = [];
         const groupWhere = [];
 
-        queries.forEach(queryObject => {
+        queries.forEach((queryObject) => {
             const queryParts = getQueryParts(queryObject.query);
-            const whereOr = queryParts.map(part => {
+            const whereOr = queryParts.map((part) => {
                 return { [Op.like]: `%${part}%` };
             });
 
@@ -133,6 +130,30 @@ module.exports = {
                 case 'collectionNumber':
                     where.push({ collection: { [Op.and]: whereOr } });
                     break;
+                case 'copyist':
+                    where.push({
+                        [Op.or]: {
+                            copyist: { [Op.and]: whereOr },
+                            aCopyist: { [Op.and]: whereOr },
+                        },
+                    });
+                    break;
+                case 'copiedAt':
+                    where.push({
+                        [Op.or]: {
+                            copiedAt: { [Op.and]: whereOr },
+                            aCopiedAt: { [Op.and]: whereOr },
+                        },
+                    });
+                    break;
+                case 'copiedDate':
+                    where.push({
+                        [Op.or]: {
+                            copiedDate: { [Op.and]: whereOr },
+                            aCopiedDate: { [Op.and]: whereOr },
+                        },
+                    });
+                    break;
                 default:
                     if (queryObject.query.trim()) {
                         let whereAnyField = [];
@@ -169,6 +190,18 @@ module.exports = {
                         });*/
                         whereAnyField.push({
                             collection: { [Op.and]: whereOr },
+                        });
+                        whereAnyField.push({
+                            copyist: { [Op.and]: whereOr },
+                        });
+                        whereAnyField.push({
+                            aCopyist: { [Op.and]: whereOr },
+                        });
+                        whereAnyField.push({
+                            copiedAt: { [Op.and]: whereOr },
+                        });
+                        whereAnyField.push({
+                            aCopiedAt: { [Op.and]: whereOr },
                         });
                         where.push({ [Op.or]: whereAnyField });
                     }
@@ -208,10 +241,10 @@ module.exports = {
         ];
 
         Manuscript.findOne({ where: { id: req.params.id }, include })
-            .then(item => {
+            .then((item) => {
                 res.json(item);
             })
-            .catch(err => {
+            .catch((err) => {
                 res.json({ error: err });
             });
     },
@@ -226,11 +259,11 @@ module.exports = {
         const authors =
             record.authors &&
             record.authors
-                .map(_author => parseInt(_author.id, 10))
+                .map((_author) => parseInt(_author.id, 10))
                 .filter(Boolean);
 
         if (authors) {
-            record.search_author_id = authors.map(id => `[${id}]`).join('');
+            record.search_author_id = authors.map((id) => `[${id}]`).join('');
         }
 
         record.search_title = searchValue(
@@ -247,26 +280,26 @@ module.exports = {
                 'deletedAt',
             ];
             const fields = Object.keys(record).filter(
-                item =>
+                (item) =>
                     !preservedFields.includes(item) && record[item] !== 'null'
             );
 
             Manuscript.update(record, { where: { id: record.id }, fields })
                 .then(() => {
                     Manuscript.findOne({ where: { id: record.id } })
-                        .then(updatedRecord =>
+                        .then((updatedRecord) =>
                             updateAuthors(updatedRecord, req, res)
                         )
-                        .catch(err => res.json({ error: err }));
+                        .catch((err) => res.json({ error: err }));
                 })
-                .catch(err => res.json({ error: err }));
+                .catch((err) => res.json({ error: err }));
         } else {
             record.added_by = me.id;
             Manuscript.create(record)
-                .then(_record => {
+                .then((_record) => {
                     updateAuthors(_record, req, res);
                 })
-                .catch(err => {
+                .catch((err) => {
                     res.json({ error: err });
                 });
         }
@@ -279,10 +312,10 @@ module.exports = {
                 id,
             },
         })
-            .then(result => {
+            .then((result) => {
                 res.json(result);
             })
-            .catch(err => {
+            .catch((err) => {
                 res.json({ error: err.message });
             });
     },
@@ -291,26 +324,26 @@ module.exports = {
 function updateAuthors(manuscriptModel, req, res) {
     const record = req.body;
     const authors = record.authors
-        .map(_author => parseInt(_author.id, 10))
+        .map((_author) => parseInt(_author.id, 10))
         .filter(Boolean);
     const primaryAuthor = record.authors.find(
-        item => item.status === 'primary'
+        (item) => item.status === 'primary'
     );
     const primaryAuthorId = primaryAuthor && parseInt(primaryAuthor.id, 10);
     if (!authors.length) {
         return manuscriptModel
             .setAuthors([])
             .then(() => res.json(manuscriptModel))
-            .catch(err => res.json({ error: err }));
+            .catch((err) => res.json({ error: err }));
     }
 
     Author.findAll({ where: { id: { [Op.in]: authors } } })
-        .then(authorList => {
+        .then((authorList) => {
             const secondaryAuthorList = authorList.filter(
-                _author => _author.id !== primaryAuthorId
+                (_author) => _author.id !== primaryAuthorId
             );
             const primaryAuthorModel = authorList.find(
-                _author => _author.id === primaryAuthorId
+                (_author) => _author.id === primaryAuthorId
             );
 
             if (secondaryAuthorList.length) {
@@ -323,12 +356,12 @@ function updateAuthors(manuscriptModel, req, res) {
                                     through: { status: 'primary' },
                                 })
                                 .then(() => res.json(manuscriptModel))
-                                .catch(err => res.json({ error: err }));
+                                .catch((err) => res.json({ error: err }));
                         } else {
                             return res.json(manuscriptModel);
                         }
                     })
-                    .catch(err => res.json({ error: err }));
+                    .catch((err) => res.json({ error: err }));
             } else {
                 if (primaryAuthorModel) {
                     manuscriptModel
@@ -336,11 +369,11 @@ function updateAuthors(manuscriptModel, req, res) {
                             through: { status: 'primary' },
                         })
                         .then(() => res.json(manuscriptModel))
-                        .catch(err => res.json({ error: err }));
+                        .catch((err) => res.json({ error: err }));
                 } else {
                     return res.json(manuscriptModel);
                 }
             }
         })
-        .catch(err => res.json({ error: err }));
+        .catch((err) => res.json({ error: err }));
 }
