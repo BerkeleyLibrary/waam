@@ -80,6 +80,18 @@ const messages = defineMessages({
         id: 'app.search.label.collectionNumber',
         defaultMessage: 'enter collection number',
     },
+    copyist: {
+        id: 'app.search.label.copyist',
+        defaultMessage: 'enter copyist',
+    },
+    copiedAt: {
+        id: 'app.search.label.copied',
+        defaultMessage: 'enter place of copy',
+    },
+    copiedDate: {
+        id: 'app.search.label.copied.date',
+        defaultMessage: 'enter date of copy',
+    },
     waamdIdField: {
         id: 'app.search.field.waamd.id',
         defaultMessage: 'WAAMD Id',
@@ -127,6 +139,18 @@ const messages = defineMessages({
     collectionNumberField: {
         id: 'app.search.field.collectionNumber',
         defaultMessage: 'collection #',
+    },
+    copyistField: {
+        id: 'app.search.field.copyist',
+        defaultMessage: 'Copyist',
+    },
+    copyiedField: {
+        id: 'app.search.field.copied',
+        defaultMessage: 'Copied at',
+    },
+    copiedDateField: {
+        id: 'app.search.field.copied.date',
+        defaultMessage: 'Date of copy',
     },
     anyField: {
         id: 'app.search.field.any',
@@ -231,6 +255,15 @@ class SearchFormRow extends React.Component {
                             <option value={'collectionNumber'}>
                                 {formatMessage(messages.collectionNumberField)}
                             </option>
+                            <option value={'copyist'}>
+                                {formatMessage(messages.copyistField)}
+                            </option>
+                            <option value={'copiedAt'}>
+                                {formatMessage(messages.copyiedField)}
+                            </option>
+                            <option value={'copiedDate'}>
+                                {formatMessage(messages.copiedDateField)}
+                            </option>
                         </Field>
                     </div>
                 </div>
@@ -253,7 +286,7 @@ class SearchFormRow extends React.Component {
                                         <option value={''}>
                                             {formatMessage(messages.choose)}
                                         </option>
-                                        {groupList.map(group => (
+                                        {groupList.map((group) => (
                                             <option
                                                 key={group.id}
                                                 value={group.name}
@@ -293,7 +326,7 @@ class SearchFormRow extends React.Component {
                                             'collectionNumber' && (
                                             <div className="input-group-append">
                                                 <ArabicKeyboard
-                                                    change={value =>
+                                                    change={(value) =>
                                                         value &&
                                                         change(
                                                             `query${suffix}`,
