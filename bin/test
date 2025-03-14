@@ -1,3 +1,4 @@
 #!/bin/sh -e
 
+echo 'Check if the app is running on localhost:3002'
 wget localhost:3002 -O - 2> /dev/null | grep -q 'West African'

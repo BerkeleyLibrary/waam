@@ -49,4 +49,7 @@ ENTRYPOINT ["npm"]
 # The default command runs the server.
 CMD ["run", "server"]
 
+# Necessary for the GitHub Actions workflow
 ENV PATH=/usr/src/app/bin:$PATH
+RUN mkdir -p /opt/app/artifacts && \
+    chown -R waam:waam /opt/app
