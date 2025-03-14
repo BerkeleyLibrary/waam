@@ -1,0 +1,14 @@
+name: Docker CI
+
+on:
+  push:
+  release:
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: BerkeleyLibrary/.github/.github/workflows/docker-build.yml@main
+
+  test:
+    needs: build
+    uses: BerkeleyLibrary/.github/.github/workflows/docker-test.yml@main
