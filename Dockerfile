@@ -14,7 +14,9 @@ ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 # Setup the application user and group
 RUN addgroup -Sg 40023 waam && \
     adduser -Su 40023 -G waam waam && \
-    install -d -o waam -g waam /usr/src/app
+    install -d -o waam -g waam /usr/src/app && \
+    mkdir -p /opt/app/artifacts && \
+    chown -R waam:waam /opt/app
 
 # Subsequent commands run relative to this directory.
 WORKDIR /usr/src/app
@@ -49,7 +51,4 @@ ENTRYPOINT ["npm"]
 # The default command runs the server.
 CMD ["run", "server"]
 
-# Necessary for the GitHub Actions workflow
 ENV PATH=/usr/src/app/bin:$PATH
-RUN mkdir -p /opt/app/artifacts && \
-    chown -R waam:waam /opt/app
