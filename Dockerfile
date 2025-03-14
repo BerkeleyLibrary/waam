@@ -52,3 +52,4 @@ ENTRYPOINT ["npm"]
 CMD ["run", "server"]
 
 ENV PATH=/usr/src/app/bin:$PATH
+RUN ln -s /opt/app/artifacts artifacts
