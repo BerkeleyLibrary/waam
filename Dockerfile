@@ -16,7 +16,6 @@ RUN addgroup -Sg 40023 waam && \
     adduser -Su 40023 -G waam waam && \
     install -d -o waam -g waam /usr/src/app
 
-
 # Subsequent commands run relative to this directory.
 WORKDIR /usr/src/app
 
@@ -25,8 +24,8 @@ RUN chown -Rh waam:waam /home/node
 USER waam
 
 # Install Yarn
-RUN npm i -g corepack 
-    
+RUN npm i -g corepack
+
 # Install server dependencies.
 COPY --chown=waam package.json ./
 COPY --chown=waam yarn.lock ./
@@ -49,3 +48,5 @@ ENTRYPOINT ["npm"]
 
 # The default command runs the server.
 CMD ["run", "server"]
+
+ENV PATH=/usr/src/app/bin:$PATH

@@ -1,10 +1,8 @@
-version: '3.7'
+---
+
 services:
-  node:
-    container_name: node
-    build:
-      context: .
-      dockerfile: Dockerfile
+  app:
+    build: .
     restart: always
     ports:
       - 3002:3002
@@ -12,23 +10,23 @@ services:
       - DATABASE_URL
 
   db:
-    image: mariadb:10.5.8
-    container_name: db
+    image: mariadb:10
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: amms2
-      MYSQL_PASSWORD: amms2
-      MYSQL_DATABASE: amms2
+      - MYSQL_DATABASE=amms2
+      - MYSQL_PASSWORD=amms2
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=amms2
     volumes:
       - db-volume:/var/lib/mysql
       - ./data/test-data.sql:/docker-entrypoint-initdb.d/test-data.sql
     depends_on:
-      - node
+      - app
 
 networks:
   default:
     driver: bridge
+
 secrets:
   DATABASE_URL:
     file: secrets/DATABASE_URL
