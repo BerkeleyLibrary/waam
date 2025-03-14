@@ -4,3 +4,8 @@ services:
   app:
     build: !reset
     image: "${DOCKER_APP_IMAGE}"
+    volumes:
+      - artifacts:/opt/app/artifacts
+
+volumes:
+  artifacts:
