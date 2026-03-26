@@ -81,6 +81,16 @@ node server.js
 Now you should be able to access the app on http://localhost:3002
 Port can be changed by setting API_PORT environment variable.
 
+## Running Cypress e2e Tests
+
+Base URL is expected via the environment variable `CYPRESS_BASE_URL`.
+
+The following commnad runs the tests against prod:
+
+```
+CYPRESS_BASE_URL=https://waamd.lib.berkeley.edu yarn run cy:run
+```
+
 ## Running search index scripts
 Search indexing scripts will need to run after content is updated, i.e. a record was added or updated.
 Only two tables need indexing, `manuscripts` and `authors`.

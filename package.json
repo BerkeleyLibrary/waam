@@ -13,6 +13,7 @@
     "bluebird": "^3.4.7",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
+    "cypress": "^12.17.2",
     "dotenv": "^16.3.1",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
@@ -38,7 +39,9 @@
     "search-index": "npm run search:authors && npm run search:manuscripts",
     "search:authors": "node ./bin/generate-authors-search-indexes.js",
     "search:manuscripts": "node ./bin/generate-manuscripts-search-indexes.js",
-    "format": "prettier --single-quote --trailing-comma es5 --tab-width 4 --write \"{client/src,server,__{tests,mocks}__}/**/*.js\""
+    "format": "prettier --single-quote --trailing-comma es5 --tab-width 4 --write \"{client/src,server,cypress,__{tests,mocks}__}/**/*.js\"",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "packageManager": "yarn@3.6.1"
 }
