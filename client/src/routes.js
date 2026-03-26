@@ -1,77 +1,21 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom';
-import Loadable from 'react-loadable';
-import MyLoadingComponent from './components/MyLoadingComponent';
+import Loadable from './Loadable';
 
-const Home = Loadable({
-    loader: () => import('./components/pages/Home'),
-    loading: MyLoadingComponent,
-});
-
-const About = Loadable({
-    loader: () => import('./components/pages/About'),
-    loading: MyLoadingComponent,
-});
-
-const Help = Loadable({
-    loader: () => import('./components/pages/Help'),
-    loading: MyLoadingComponent,
-});
-
-const FieldHelp = Loadable({
-    loader: () => import('./components/pages/FieldSearchHelp'),
-    loading: MyLoadingComponent,
-});
-
-const Subjects = Loadable({
-    loader: () => import('./containers/Subjects'),
-    loading: MyLoadingComponent,
-});
-
-const Authors = Loadable({
-    loader: () => import('./containers/Authors'),
-    loading: MyLoadingComponent,
-});
-
-const LoginPage = Loadable({
-    loader: () => import('./components/pages/LoginPage'),
-    loading: MyLoadingComponent,
-});
-
-const SignUpPage = Loadable({
-    loader: () => import('./components/pages/SignUpPage'),
-    loading: MyLoadingComponent,
-});
-
-const LogoutPage = Loadable({
-    loader: () => import('./containers/Logout'),
-    loading: MyLoadingComponent,
-});
-
-const AccountPage = Loadable({
-    loader: () => import('./components/pages/AccountPage'),
-    loading: MyLoadingComponent,
-});
-
-const Manuscripts = Loadable({
-    loader: () => import('./containers/Manuscripts'),
-    loading: MyLoadingComponent,
-});
-
-const NormalizedSubjects = Loadable({
-    loader: () => import('./containers/NormalizedSubjects'),
-    loading: MyLoadingComponent,
-});
-
-const Nisbas = Loadable({
-    loader: () => import('./containers/Nisbas'),
-    loading: MyLoadingComponent,
-});
-
-const NotFound = Loadable({
-    loader: () => import('./components/pages/NotFound'),
-    loading: MyLoadingComponent,
-});
+const Home = Loadable(lazy(() => import('./components/pages/Home')));
+const About = Loadable(lazy(() => import('./components/pages/About')));
+const Help = Loadable(lazy(() => import('./components/pages/Help')));
+const FieldHelp = Loadable(lazy(() => import('./components/pages/FieldSearchHelp')));
+const Subjects = Loadable(lazy(() => import('./containers/Subjects')));
+const Authors = Loadable(lazy(() => import('./containers/Authors')));
+const LoginPage = Loadable(lazy(() => import('./components/pages/LoginPage')));
+const SignUpPage = Loadable(lazy(() => import('./components/pages/SignUpPage')));
+const LogoutPage = Loadable(lazy(() => import('./containers/Logout')));
+const AccountPage = Loadable(lazy(() => import('./components/pages/AccountPage')));
+const Manuscripts = Loadable(lazy(() => import('./containers/Manuscripts')));
+const NormalizedSubjects = Loadable(lazy(() => import('./containers/NormalizedSubjects')));
+const Nisbas = Loadable(lazy(() => import('./containers/Nisbas')));
+const NotFound = Loadable(lazy(() => import('./components/pages/NotFound')));
 
 export default (
     <Switch>

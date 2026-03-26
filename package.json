@@ -6,7 +6,7 @@
     "concurrently": "^3.3.0",
     "foreman": "^3.0.0",
     "nodemon": "^1.11.0",
-    "prettier": "1.10.2"
+    "prettier": "latest"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
@@ -21,7 +21,7 @@
     "morgan": "^1.9.1",
     "mysql": "^2.15.0",
     "mysql2": "^1.5.1",
-    "passport": "^0.6.0",
+    "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "passport-remember-me": "^0.0.1",
     "pm2": "^3.0.0",
