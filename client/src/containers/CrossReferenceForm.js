@@ -12,10 +12,10 @@ import Loader from '../components/shared/Loader';
 
 import ArabicKeyboard from '../components/ArabicKeyboard';
 
-const validate = values => {
+const validate = (values) => {
     const errors = {};
     const requiredFields = ['keyword', 'target', 'type'];
-    requiredFields.forEach(field => {
+    requiredFields.forEach((field) => {
         if (!values[field]) {
             errors[field] = 'required';
         }
@@ -24,7 +24,7 @@ const validate = values => {
     return errors;
 };
 
-const CrossReferenceForm = props => {
+const CrossReferenceForm = (props) => {
     const {
         dispatch,
         handleSubmit,
@@ -41,7 +41,7 @@ const CrossReferenceForm = props => {
             {successMessage && (
                 <div className="alert alert-info">{successMessage}</div>
             )}
-            <form onSubmit={handleSubmit(values => dispatch(create(values)))}>
+            <form onSubmit={handleSubmit((values) => dispatch(create(values)))}>
                 <div>
                     <div className="form-group">
                         <label htmlFor={`keyword`}>{'Enter a keyword'}</label>
@@ -55,7 +55,7 @@ const CrossReferenceForm = props => {
                             />
                             <div className="input-group-append">
                                 <ArabicKeyboard
-                                    change={value =>
+                                    change={(value) =>
                                         value && change('keyword', value)
                                     }
                                 />
@@ -77,7 +77,7 @@ const CrossReferenceForm = props => {
                             />
                             <div className="input-group-append">
                                 <ArabicKeyboard
-                                    change={value =>
+                                    change={(value) =>
                                         value && change('target', value)
                                     }
                                 />

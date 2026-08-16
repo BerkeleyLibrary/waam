@@ -2,7 +2,7 @@ import React from 'react';
 import dateFormat from 'dateformat';
 import { Link } from 'react-router-dom';
 
-const LoginList = props => {
+const LoginList = (props) => {
     return (
         <div dir="ltr">
             <table className="table table-striped">
@@ -16,7 +16,7 @@ const LoginList = props => {
                     </tr>
                 </thead>
                 <tbody>
-                    {props.list.map(item => {
+                    {props.list.map((item) => {
                         return (
                             <tr key={item.id}>
                                 <td>

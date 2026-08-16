@@ -16,7 +16,7 @@ const groupRoutes = require('./groupRoutes');
 
 const crossreferencesRoutes = require('./crossReferencesRoutes');
 
-module.exports = function(app, passport) {
+module.exports = function (app, passport) {
     authRoutes(app, passport);
     manuscriptsRoutes(app);
     authorRoutes(app);

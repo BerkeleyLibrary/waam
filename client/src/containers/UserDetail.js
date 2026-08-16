@@ -20,7 +20,12 @@ class UserDetail extends React.Component {
     };
 
     componentWillMount() {
-        const { match: { params: { id } }, dispatch } = this.props;
+        const {
+            match: {
+                params: { id },
+            },
+            dispatch,
+        } = this.props;
         dispatch(fetchSingleUserIfNeeded(parseInt(id, 10)));
     }
 
@@ -33,7 +38,13 @@ class UserDetail extends React.Component {
     };
 
     deleteUser = () => {
-        const { match: { params: { id } }, dispatch, history } = this.props;
+        const {
+            match: {
+                params: { id },
+            },
+            dispatch,
+            history,
+        } = this.props;
         dispatch(deleteUser(parseInt(id, 10), history));
     };
 
@@ -41,7 +52,9 @@ class UserDetail extends React.Component {
         const {
             selectedUser,
             isFetching,
-            match: { params: { id } },
+            match: {
+                params: { id },
+            },
         } = this.props;
 
         return (

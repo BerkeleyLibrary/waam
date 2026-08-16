@@ -55,7 +55,7 @@ const getCrossReferenceQuery = (
 ) => {
     const searchKeyword = query.query || '';
 
-    return crossReferences.map(ref => {
+    return crossReferences.map((ref) => {
         switch (ref.type) {
             case 'see-also':
             case 'includes':

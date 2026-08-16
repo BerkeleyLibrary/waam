@@ -52,10 +52,10 @@ const messages = defineMessages({
     },
 });
 
-const validate = values => {
+const validate = (values) => {
     const errors = {};
     const requiredFields = ['email', 'password'];
-    requiredFields.forEach(field => {
+    requiredFields.forEach((field) => {
         if (!values[field]) {
             errors[field] = 'required';
         }
@@ -69,7 +69,7 @@ const validate = values => {
     return errors;
 };
 
-const SignIn = props => {
+const SignIn = (props) => {
     const {
         dispatch,
         handleSubmit,
@@ -83,7 +83,7 @@ const SignIn = props => {
 
     return (
         <form
-            onSubmit={handleSubmit(values =>
+            onSubmit={handleSubmit((values) =>
                 dispatch(loginAction(values, history))
             )}
         >

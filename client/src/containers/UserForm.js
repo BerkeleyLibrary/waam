@@ -9,7 +9,7 @@ import { renderCheckbox } from '../components/shared/ReduxFormComponents';
 
 import Loader from '../components/shared/Loader';
 
-const UserForm = props => {
+const UserForm = (props) => {
     const {
         dispatch,
         handleSubmit,
@@ -20,7 +20,9 @@ const UserForm = props => {
     } = props;
     return (
         <form
-            onSubmit={handleSubmit(values => dispatch(update(values, history)))}
+            onSubmit={handleSubmit((values) =>
+                dispatch(update(values, history))
+            )}
         >
             <div>
                 <h4>Name:</h4>
@@ -54,7 +56,9 @@ const UserForm = props => {
 };
 
 function marStateToProps(state) {
-    const { users: { selectedUser } } = state;
+    const {
+        users: { selectedUser },
+    } = state;
 
     return {
         initialValues: selectedUser, // pull initial values from account reducer

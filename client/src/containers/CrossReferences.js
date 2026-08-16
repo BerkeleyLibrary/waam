@@ -53,7 +53,7 @@ class CrossReferences extends React.Component {
         selected: {},
     };
 
-    handleOpen = selected => {
+    handleOpen = (selected) => {
         this.setState({ open: true, selected });
     };
 
@@ -87,7 +87,10 @@ class CrossReferences extends React.Component {
 
     render() {
         const {
-            crossReferences: { isFetching, response: { results, pagination } },
+            crossReferences: {
+                isFetching,
+                response: { results, pagination },
+            },
             location,
             match,
             history,
@@ -135,7 +138,7 @@ class CrossReferences extends React.Component {
                             </div>
 
                             <SimpleSearchForm
-                                onSearch={values =>
+                                onSearch={(values) =>
                                     submitSearch(
                                         values,
                                         history,
@@ -165,7 +168,7 @@ class CrossReferences extends React.Component {
                                                 query={query}
                                                 pathname="/dashboard/x-references"
                                             />
-                                            {results.map(ref => {
+                                            {results.map((ref) => {
                                                 return (
                                                     <CustomPaper
                                                         key={

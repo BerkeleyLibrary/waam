@@ -10,9 +10,14 @@ class SAVAMA extends React.Component {
         dispatch(fetchGroupsIfNeeded());
     }
     render() {
-        const { groups: { isFetching, response: { results } } } = this.props;
+        const {
+            groups: {
+                isFetching,
+                response: { results },
+            },
+        } = this.props;
         const groupsToShow = results
-            .filter(group => !!group.parentId)
+            .filter((group) => !!group.parentId)
             .sort(({ name: a }, { name: b }) => (a > b ? 1 : -1));
 
         return (
@@ -37,7 +42,7 @@ class SAVAMA extends React.Component {
                 {isFetching && <Loader />}
                 <ol>
                     {(() =>
-                        groupsToShow.map(place => (
+                        groupsToShow.map((place) => (
                             <li key={place.name}>
                                 <Link
                                     to={`/about/collections/${place.path}`}

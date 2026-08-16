@@ -25,10 +25,10 @@ const messages = defineMessages({
     },
 });
 
-const validate = values => {
+const validate = (values) => {
     const errors = {};
     const requiredFields = ['subject', 'aSubject'];
-    requiredFields.forEach(field => {
+    requiredFields.forEach((field) => {
         if (!values[field]) {
             errors[field] = 'required';
         }
@@ -48,7 +48,7 @@ const Form = ({
 }) => {
     return (
         <form
-            onSubmit={handleSubmit(values => dispatch(addSubject(values)))}
+            onSubmit={handleSubmit((values) => dispatch(addSubject(values)))}
             dir="ltr"
         >
             <DiacriticsWithArabicKeyBoard />
@@ -136,7 +136,7 @@ const Form = ({
                 );
             })}
             {hiddenFields &&
-                hiddenFormFields.map(item => (
+                hiddenFormFields.map((item) => (
                     <Field
                         key={item}
                         name={item}

@@ -9,7 +9,7 @@ function consumeRememberMeToken(token, fn) {
         where: {
             token,
         },
-    }).then(tokenObject => {
+    }).then((tokenObject) => {
         if (!tokenObject) {
             return fn();
         }
@@ -19,7 +19,7 @@ function consumeRememberMeToken(token, fn) {
                 console.log(arguments);
                 fn(null, tokenObject.uid);
             })
-            .catch(err => {
+            .catch((err) => {
                 return fn(err);
             });
     });
@@ -30,7 +30,7 @@ function saveRememberMeToken(token, uid, fn) {
         .then(() => {
             fn();
         })
-        .catch(err => {
+        .catch((err) => {
             return fn(err);
         });
 }
@@ -38,7 +38,7 @@ function saveRememberMeToken(token, uid, fn) {
 function issueToken(user, done) {
     const token = randomString(64);
 
-    saveRememberMeToken(token, user.id, function(err) {
+    saveRememberMeToken(token, user.id, function (err) {
         if (err) {
             return done(err);
         }
@@ -46,7 +46,7 @@ function issueToken(user, done) {
     });
 }
 
-const userJson = user => {
+const userJson = (user) => {
     const json = Object.assign({}, user.toJSON());
     delete json.password;
     return json;

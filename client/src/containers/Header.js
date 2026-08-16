@@ -226,22 +226,20 @@ const HeaderMenu = ({
                                 </LinkContainer>
                             </NavDropdown>
                         )}
-                        {!user &&
-                            !isUCB && (
-                                <LinkContainer to="/login">
-                                    <Nav.Link>
-                                        {formatMessage(messages.login)}
-                                    </Nav.Link>
-                                </LinkContainer>
-                            )}
-                        {!user &&
-                            !isUCB && (
-                                <LinkContainer to="/sign-up">
-                                    <Nav.Link>
-                                        {formatMessage(messages.signUp)}
-                                    </Nav.Link>
-                                </LinkContainer>
-                            )}
+                        {!user && !isUCB && (
+                            <LinkContainer to="/login">
+                                <Nav.Link>
+                                    {formatMessage(messages.login)}
+                                </Nav.Link>
+                            </LinkContainer>
+                        )}
+                        {!user && !isUCB && (
+                            <LinkContainer to="/sign-up">
+                                <Nav.Link>
+                                    {formatMessage(messages.signUp)}
+                                </Nav.Link>
+                            </LinkContainer>
+                        )}
                         <Nav.Link
                             onClick={() =>
                                 onLocaleChange(locale === 'ar' ? 'en' : 'ar')
@@ -257,9 +255,8 @@ const HeaderMenu = ({
             </Navbar>
             {user &&
                 user.admin &&
-                (isUCB &&
-                    document.location.pathname.search(/\/edit|\/add/g) >
-                        -1) && (
+                isUCB &&
+                document.location.pathname.search(/\/edit|\/add/g) > -1 && (
                     <Alert bsStyle="warning">
                         <strong>Hey, {user.name}</strong>! please avoid making
                         edits on this domain. click{' '}
@@ -275,16 +272,19 @@ const HeaderMenu = ({
 HeaderMenu.propTypes = propTypes;
 
 function mapStateToProps(state) {
-    const { auth: { user }, locale } = state;
+    const {
+        auth: { user },
+        locale,
+    } = state;
     return {
         user,
         locale,
     };
 }
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
     return {
-        onLocaleChange: locale => {
+        onLocaleChange: (locale) => {
             dispatch(changeLocale(locale));
         },
     };

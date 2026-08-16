@@ -63,7 +63,10 @@ class Nisbas extends React.Component {
 
     render() {
         const {
-            nisbas: { isFetching, response: { results, pagination } },
+            nisbas: {
+                isFetching,
+                response: { results, pagination },
+            },
             user,
             match,
             location,
@@ -126,7 +129,7 @@ class Nisbas extends React.Component {
                                 </div>
 
                                 <SimpleSearchForm
-                                    onSearch={values =>
+                                    onSearch={(values) =>
                                         submitSearch(values, history, '/nisbas')
                                     }
                                     enableReinitialize={true}
@@ -176,7 +179,10 @@ class Nisbas extends React.Component {
 }
 
 function mapStateToProps(state) {
-    const { nisbas, auth: { user } } = state;
+    const {
+        nisbas,
+        auth: { user },
+    } = state;
 
     return {
         nisbas,

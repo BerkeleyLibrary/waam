@@ -1,8 +1,8 @@
 ## Prerequisites
 
-- Install NodeJS 16 or greater [https://nodejs.org/en/download/]
+- Install NodeJS 18 or greater [https://nodejs.org/en/download/]
 - MySQL 5.7
-- yarn [https://yarnpkg.com/], for dependency management and build and run scripts.
+- npm for dependency management, build, and run scripts
 - [Optional] pm2 [https://github.com/Unitech/pm2] Production Process Manager for Node.js apps or similar package.
 - [Optional] nginx [https://nginx.org/en/] for reverse proxy in production
 
@@ -13,13 +13,15 @@ First we need to set our database connection string an an env variable `DATABASE
 
 ## Installing dependencies
 
-There are two parts, server and client, both has dependencies that will need to be installed.
-in the root:
-```
-// in the application root
-yarn install // to install deps for server side.
-cd client // cd to the client directory
-yarn install // to install deps for client side.
+There are two parts, server and client, both have dependencies that will need to be installed.
+In the root:
+```bash
+# In the application root (server dependencies)
+npm install
+
+# In the client directory (client dependencies)
+cd client
+npm install
 ```
 
 ## Running in Docker
@@ -60,22 +62,22 @@ docker compose down -v
 
 ## Starting development server
 
-```
-// in the application root
+```sh
+# in the application root
 npm run start
 ```
 This should open the app in your default browser at http://localhost:3000
 
 ## Creating a production build
 
-The client side needs to be built using webpack and babel, as it uses ES6 and jsx.
+The client side is built using Vite.
 
 At build time, the default Google analytics ID and Google Maps API key can be overridden by setting the following environment variables `REACT_APP_GOOGLE_ANALYTICS_ACCOUNT_ID` and `REACT_APP_GOOGLE_MAPS_API_KEY`.
-```
+```sh
 cd client
 npm run build
-// to run the app
-cd .. // to go back to root
+# to run the app
+cd .. # to go back to root
 node server.js
 ```
 Now you should be able to access the app on http://localhost:3002

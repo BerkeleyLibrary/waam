@@ -2,7 +2,7 @@ const isLoggedIn = require('../shared/isLoggedIn');
 
 const AuthCtrl = require('../controllers/AuthCtrl');
 
-module.exports = function(app) {
+module.exports = function (app) {
     // logged in user
     app.get('/api/me', isLoggedIn, AuthCtrl.me);
 

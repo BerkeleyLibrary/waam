@@ -18,13 +18,13 @@ export function fetchGroups() {
         dispatch(requestGroups());
         const admin = !!(getState().auth.user && getState().auth.user.admin);
         return get('/api/groups', { admin, npp: 100 })
-            .then(json => {
+            .then((json) => {
                 if (json.error) {
                     return dispatch(genericError(json.error));
                 }
                 return dispatch(receiveGroups(json));
             })
-            .catch(err => {
+            .catch((err) => {
                 dispatch(genericError(err.message));
             });
     };
@@ -71,22 +71,22 @@ export function receiveSingleGroup(group) {
 }
 
 function fetchSingleGroup(id, groups) {
-    const found = groups.response.results.find(item => item.id === id);
+    const found = groups.response.results.find((item) => item.id === id);
     if (found) {
-        return dispatch => {
+        return (dispatch) => {
             dispatch(receiveSingleGroup(found));
         };
     } else {
-        return dispatch => {
+        return (dispatch) => {
             dispatch(requestSingleGroup());
             return get(`/api/groups/view/${id}`)
-                .then(json => {
+                .then((json) => {
                     if (json.error) {
                         return dispatch(genericError(json.error));
                     }
                     return dispatch(receiveSingleGroup(json));
                 })
-                .catch(err => {
+                .catch((err) => {
                     dispatch(genericError(err.message));
                 });
         };

@@ -16,7 +16,7 @@ export const post = (url, values, includeCredentials) => {
         },
         credentials: includeCredentials ? 'include' : 'omit',
         body: bodyValue,
-    }).then(response => response.json());
+    }).then((response) => response.json());
 };
 
 export const get = (url, values, includeCredentials) => {
@@ -28,5 +28,5 @@ export const get = (url, values, includeCredentials) => {
         url = url + '?' + getFormDataFromJson(values);
     }
 
-    return fetch(url, options).then(response => response.json());
+    return fetch(url, options).then((response) => response.json());
 };

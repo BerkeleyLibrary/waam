@@ -159,18 +159,19 @@ const Help = ({ intl: { formatMessage }, history }) => {
                 reviewed{' '}
                 <strong>
                     <Link to={'/subject-headings'}>here</Link>
-                </strong>. They have been developed from the manuscripts
-                themselves rather than borrowed from a standard bibliographic
-                system, and therefore they reflect the categories of knowledge
-                as practiced in much of Islamic West Africa. A number of
-                overlapping subject areas reflect the multiple ways individual
-                catalogers understood their manuscripts and their tasks. For
-                instance, the same devotional literature might appear under the
-                Prophet as well as ‘Belief: prayer” or a work in jurisprudence
-                on correct conduct might appear under “Ethics”, or “Conduct” or
-                “Jurisprudence.” For this reason, the subject classifications
-                are not rigid and cross-references (‘see …’, ‘see also …’, and
-                ‘includes…’) will prompt the user to related subject searches.
+                </strong>
+                . They have been developed from the manuscripts themselves
+                rather than borrowed from a standard bibliographic system, and
+                therefore they reflect the categories of knowledge as practiced
+                in much of Islamic West Africa. A number of overlapping subject
+                areas reflect the multiple ways individual catalogers understood
+                their manuscripts and their tasks. For instance, the same
+                devotional literature might appear under the Prophet as well as
+                ‘Belief: prayer” or a work in jurisprudence on correct conduct
+                might appear under “Ethics”, or “Conduct” or “Jurisprudence.”
+                For this reason, the subject classifications are not rigid and
+                cross-references (‘see …’, ‘see also …’, and ‘includes…’) will
+                prompt the user to related subject searches.
             </p>
 
             <h3>{formatMessage(messages.searchingNisbas)}</h3>
@@ -222,9 +223,8 @@ const Help = ({ intl: { formatMessage }, history }) => {
             <p>
                 Dates can be searched in AH or CE form; information about the
                 date of a manuscript copy or other chronological data has been
-                entered in a record can be found through an “<strong>
-                    any field
-                </strong>” search.{' '}
+                entered in a record can be found through an “
+                <strong>any field</strong>” search.{' '}
             </p>
 
             <h3>{formatMessage(messages.searchingAka)}</h3>

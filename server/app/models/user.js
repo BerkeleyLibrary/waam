@@ -18,7 +18,7 @@ const User = sequelize.define(
     },
     {
         instanceMethods: {
-            toJSON: function() {
+            toJSON: function () {
                 const values = Object.assign({}, this.get());
                 delete values.password;
                 return values;

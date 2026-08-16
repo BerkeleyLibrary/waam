@@ -124,7 +124,12 @@ class AuthorDetail extends React.Component {
     };
 
     componentDidMount() {
-        const { match: { params: { id } }, dispatch } = this.props;
+        const {
+            match: {
+                params: { id },
+            },
+            dispatch,
+        } = this.props;
 
         dispatch(cleanUpSingleAuthor());
 
@@ -140,7 +145,12 @@ class AuthorDetail extends React.Component {
     };
 
     deleteAuthor = () => {
-        const { match: { params: { id } }, dispatch } = this.props;
+        const {
+            match: {
+                params: { id },
+            },
+            dispatch,
+        } = this.props;
         dispatch(deleteAuthor(parseInt(id, 10)));
         this.handleClose();
     };
@@ -223,28 +233,25 @@ class AuthorDetail extends React.Component {
                                 </Link>
                             </div>
                             <div className="col-sm-6">
-                                {!deleted &&
-                                    user &&
-                                    user.admin && (
-                                        <div className="text-right">
-                                            <button
-                                                className="btn btn-outline-danger btn-sm"
-                                                onClick={this.handleOpen}
-                                            >
-                                                <i className="fas fa-times" />{' '}
-                                                Delete
-                                            </button>{' '}
-                                            <Link
-                                                to={`/authors/edit/${
-                                                    selectedAuthor.id
-                                                }`}
-                                                className="btn btn-outline-info btn-sm"
-                                            >
-                                                <i className="fas fa-pen" />{' '}
-                                                Edit
-                                            </Link>
-                                        </div>
-                                    )}
+                                {!deleted && user && user.admin && (
+                                    <div className="text-right">
+                                        <button
+                                            className="btn btn-outline-danger btn-sm"
+                                            onClick={this.handleOpen}
+                                        >
+                                            <i className="fas fa-times" />{' '}
+                                            Delete
+                                        </button>{' '}
+                                        <Link
+                                            to={`/authors/edit/${
+                                                selectedAuthor.id
+                                            }`}
+                                            className="btn btn-outline-info btn-sm"
+                                        >
+                                            <i className="fas fa-pen" /> Edit
+                                        </Link>
+                                    </div>
+                                )}
                             </div>
                         </div>
 
@@ -335,62 +342,55 @@ class AuthorDetail extends React.Component {
                                         })}
                                     </CustomPaper>
                                 )}
-                                {manuscripts &&
-                                    manuscripts.length > 0 && (
-                                        <CustomPaper>
-                                            <div className="row">
-                                                <div
-                                                    className="col-sm-6 mixed-text"
-                                                    dir="ltr"
-                                                >
-                                                    <h4>
-                                                        Records by this author:
-                                                    </h4>
-                                                </div>
-                                                <div
-                                                    className="col-sm-6 mixed-text"
-                                                    dir="rtl"
-                                                >
-                                                    <h4>أعمال المؤلف:</h4>
-                                                </div>
+                                {manuscripts && manuscripts.length > 0 && (
+                                    <CustomPaper>
+                                        <div className="row">
+                                            <div
+                                                className="col-sm-6 mixed-text"
+                                                dir="ltr"
+                                            >
+                                                <h4>Records by this author:</h4>
                                             </div>
-                                            {manuscripts.map(
-                                                ({ id, title, aTitle }) => (
-                                                    <span key={id}>
-                                                        <div className="row">
-                                                            <div className="ltr col-xs-6 mixed-text">
-                                                                {title && (
-                                                                    <div>
-                                                                        <Link
-                                                                            to={`/titles/${id}`}
-                                                                        >
-                                                                            {
-                                                                                title
-                                                                            }
-                                                                        </Link>
-                                                                    </div>
-                                                                )}
-                                                            </div>
-                                                            <div className="rtl col-xs-6 mixed-text">
-                                                                {aTitle && (
-                                                                    <div>
-                                                                        <Link
-                                                                            to={`/titles/${id}`}
-                                                                        >
-                                                                            {
-                                                                                aTitle
-                                                                            }
-                                                                        </Link>
-                                                                    </div>
-                                                                )}
-                                                            </div>
+                                            <div
+                                                className="col-sm-6 mixed-text"
+                                                dir="rtl"
+                                            >
+                                                <h4>أعمال المؤلف:</h4>
+                                            </div>
+                                        </div>
+                                        {manuscripts.map(
+                                            ({ id, title, aTitle }) => (
+                                                <span key={id}>
+                                                    <div className="row">
+                                                        <div className="ltr col-xs-6 mixed-text">
+                                                            {title && (
+                                                                <div>
+                                                                    <Link
+                                                                        to={`/titles/${id}`}
+                                                                    >
+                                                                        {title}
+                                                                    </Link>
+                                                                </div>
+                                                            )}
                                                         </div>
-                                                        <hr />
-                                                    </span>
-                                                )
-                                            )}
-                                        </CustomPaper>
-                                    )}
+                                                        <div className="rtl col-xs-6 mixed-text">
+                                                            {aTitle && (
+                                                                <div>
+                                                                    <Link
+                                                                        to={`/titles/${id}`}
+                                                                    >
+                                                                        {aTitle}
+                                                                    </Link>
+                                                                </div>
+                                                            )}
+                                                        </div>
+                                                    </div>
+                                                    <hr />
+                                                </span>
+                                            )
+                                        )}
+                                    </CustomPaper>
+                                )}
                             </div>
                         )}
                     </div>

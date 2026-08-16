@@ -4,7 +4,7 @@ import GenericResultPaper from './shared/GenericResultPaper';
 
 const SubjectList = ({ list, location: { search } }) => (
     <div dir="ltr">
-        {list.map(item => (
+        {list.map((item) => (
             <GenericResultPaper
                 key={item.id}
                 path={{ pathname: `/subjects/${item.id}`, search }}

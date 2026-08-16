@@ -19,7 +19,7 @@ const consumeRememberMeToken = authUtils.consumeRememberMeToken;
 const issueToken = authUtils.issueToken;
 
 // expose this function to our app using module.exports
-module.exports = function(passport) {
+module.exports = function (passport) {
     // =========================================================================
     // passport session setup ==================================================
     // =========================================================================
@@ -27,24 +27,24 @@ module.exports = function(passport) {
     // passport needs ability to serialize and unserialize users out of session
 
     // used to serialize the user for the session
-    passport.serializeUser(function(user, done) {
+    passport.serializeUser(function (user, done) {
         done(null, user.id);
     });
 
     // used to deserialize the user
-    passport.deserializeUser(function(id, done) {
-        User.findById(id)
-            .then(user => {
+    passport.deserializeUser(function (id, done) {
+        User.findByPk(id)
+            .then((user) => {
                 done(null, user);
             })
-            .catch(err => {
+            .catch((err) => {
                 done(err);
             });
     });
 
     passport.use(
-        new RememberMeStrategy(function(token, done) {
-            consumeRememberMeToken(token, function(err, uid) {
+        new RememberMeStrategy(function (token, done) {
+            consumeRememberMeToken(token, function (err, uid) {
                 if (err) {
                     return done(err);
                 }
@@ -52,14 +52,14 @@ module.exports = function(passport) {
                     return done(null, false);
                 }
 
-                User.findById(uid)
-                    .then(user => {
+                User.findByPk(uid)
+                    .then((user) => {
                         if (!user) {
                             return done(null, false);
                         }
                         console.info('logging using remember me');
                         Login.create({ userId: user.id, loginType: 1 })
-                            .then(entry => {
+                            .then((entry) => {
                                 return done(null, user);
                             })
                             .catch(() => {
@@ -82,7 +82,7 @@ module.exports = function(passport) {
                 passwordField: 'password',
                 passReqToCallback: true, // allows us to pass back the entire request to the callback
             },
-            function(req, email, password, done) {
+            function (req, email, password, done) {
                 // callback with email and password from our form
 
                 User.findOne({
@@ -90,7 +90,7 @@ module.exports = function(passport) {
                         email,
                     },
                 })
-                    .then(user => {
+                    .then((user) => {
                         if (!user) {
                             return done(null, false, {
                                 message: 'No user found.',
@@ -123,7 +123,7 @@ module.exports = function(passport) {
                                 return done(null, user);
                             });
                     })
-                    .catch(err => {
+                    .catch((err) => {
                         return done(err);
                     });
             }
@@ -141,7 +141,7 @@ module.exports = function(passport) {
                 passwordField: 'password',
                 passReqToCallback: true, // allows us to pass back the entire request to the callback
             },
-            function(req, email, password, done) {
+            function (req, email, password, done) {
                 // find a user whose email is the same as the forms email
                 // we are checking to see if the user trying to login already exists
 
@@ -150,7 +150,7 @@ module.exports = function(passport) {
                         email,
                     },
                 })
-                    .then(user => {
+                    .then((user) => {
                         if (user) {
                             done(null, false, {
                                 message: 'That username is already taken.',
@@ -163,15 +163,15 @@ module.exports = function(passport) {
                                 active: false,
                                 name: req.body.fullName,
                             })
-                                .then(user => {
+                                .then((user) => {
                                     return done(null, user);
                                 })
-                                .catch(err => {
+                                .catch((err) => {
                                     done(err);
                                 });
                         }
                     })
-                    .catch(err => {
+                    .catch((err) => {
                         done(err);
                     });
             }

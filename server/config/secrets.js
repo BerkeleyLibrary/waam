@@ -8,7 +8,7 @@ const fs = require('fs');
 var secrets = {};
 
 try {
-    fs.readdirSync('/run/secrets').forEach(function(name) {
+    fs.readdirSync('/run/secrets').forEach(function (name) {
         console.log('Found secret "' + name + '"');
         secrets[name] = fs.readFileSync('/run/secrets/' + name, 'utf8').trim();
     });

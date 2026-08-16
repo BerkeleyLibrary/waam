@@ -147,7 +147,7 @@ class Manuscripts extends React.Component {
                                 </div>
 
                                 <SearchForm
-                                    onSearch={values =>
+                                    onSearch={(values) =>
                                         submitSearch(values, history, pageUrl)
                                     }
                                     enableReinitialize={true}
@@ -206,7 +206,10 @@ class Manuscripts extends React.Component {
 }
 
 function mapStateToProps(state) {
-    const { manuscripts, auth: { user } } = state;
+    const {
+        manuscripts,
+        auth: { user },
+    } = state;
 
     return {
         manuscripts,

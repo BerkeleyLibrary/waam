@@ -9,7 +9,7 @@ import translations from '../i18n';
 
 addLocaleData([...ar, ...en]);
 
-export default ({ children, locale }) => {
+const IntlCreator = ({ children, locale }) => {
     let messages = translations[locale];
 
     return (
@@ -18,3 +18,5 @@ export default ({ children, locale }) => {
         </IntlProvider>
     );
 };
+
+export default IntlCreator;

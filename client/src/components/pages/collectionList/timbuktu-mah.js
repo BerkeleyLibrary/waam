@@ -75,8 +75,9 @@ export default () => {
                 entries) at the link noted{' '}
                 <a href="/files/timbuktu-mah/Timbuktu-MAH-one-and-two-folio-items.xlsx">
                     HERE <i className="fas fa-download" />{' '}
-                </a>. As additional, searchable information is gleaned from
-                these entries we will be adding them to the WAAMD database.
+                </a>
+                . As additional, searchable information is gleaned from these
+                entries we will be adding them to the WAAMD database.
             </p>
 
             <h3>Contents</h3>

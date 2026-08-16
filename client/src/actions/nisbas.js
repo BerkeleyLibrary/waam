@@ -46,9 +46,9 @@ function deleteNisbaSuccess() {
     };
 }
 export function deleteNisba(id) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(deleting());
-        return post('/api/nisbas/delete', { id }, true).then(json => {
+        return post('/api/nisbas/delete', { id }, true).then((json) => {
             if (json.error) {
                 dispatch(genericError(json.error));
             } else {
@@ -59,16 +59,16 @@ export function deleteNisba(id) {
 }
 
 export function addNisba(data) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(addingNisba());
         return post('/api/nisbas/add', data, true)
-            .then(json => {
+            .then((json) => {
                 if (json.error) {
                     return dispatch(nisbaAddedError(json.error));
                 }
                 return dispatch(nisbaAddedSuccess(json));
             })
-            .catch(err => {
+            .catch((err) => {
                 dispatch(genericError(err.message));
             });
     };
@@ -95,17 +95,17 @@ function nisbaAddedError(serverError) {
 }
 
 export function fetchNisbas(query) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(requestNisbas(query));
         dispatch(fetchSeeAlso(query));
         return get('/api/nisbas', query)
-            .then(json => {
+            .then((json) => {
                 if (json.error) {
                     return dispatch(genericError(json.error));
                 }
                 return dispatch(receiveNisbas(json, query));
             })
-            .catch(err => {
+            .catch((err) => {
                 dispatch(genericError(err.message));
             });
     };
@@ -157,22 +157,22 @@ export function receiveSingleNisba(nisba) {
 }
 
 function fetchSingleNisba(id, nisbas) {
-    const found = nisbas.response.results.find(item => item.id === id);
+    const found = nisbas.response.results.find((item) => item.id === id);
     if (found) {
-        return dispatch => {
+        return (dispatch) => {
             dispatch(receiveSingleNisba(found));
         };
     } else {
-        return dispatch => {
+        return (dispatch) => {
             dispatch(requestSingleNisba());
             return get(`/api/nisbas/view/${id}`)
-                .then(json => {
+                .then((json) => {
                     if (json.error) {
                         return dispatch(genericError(json.error));
                     }
                     return dispatch(receiveSingleNisba(json));
                 })
-                .catch(err => {
+                .catch((err) => {
                     dispatch(genericError(err.message));
                 });
         };

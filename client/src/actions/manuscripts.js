@@ -23,16 +23,16 @@ import { fetchSeeAlso } from './crossReferences';
  */
 
 export function addManuscript(data) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(addingManuscript());
         return post('/api/manuscripts/add', data, true)
-            .then(json => {
+            .then((json) => {
                 if (json.error) {
                     return dispatch(manuscriptAddedError(json.error));
                 }
                 return dispatch(manuscriptAddedSuccess(json));
             })
-            .catch(err => {
+            .catch((err) => {
                 dispatch(genericError(err.message));
             });
     };
@@ -64,13 +64,13 @@ export function fetchManuscripts(query) {
         dispatch(fetchSeeAlso(query));
         const admin = !!(getState().auth.user && getState().auth.user.admin);
         return get('/api/manuscripts', { admin, ...query })
-            .then(json => {
+            .then((json) => {
                 if (json.error) {
                     return dispatch(genericError(json.error));
                 }
                 return dispatch(receiveManuscripts(json, query));
             })
-            .catch(err => {
+            .catch((err) => {
                 dispatch(genericError(err.message));
             });
     };
@@ -122,22 +122,22 @@ export function receiveSingleManuscript(manuscript) {
 }
 
 function fetchSingleManuscript(id, manuscripts) {
-    const found = manuscripts.response.results.find(item => item.id === id);
+    const found = manuscripts.response.results.find((item) => item.id === id);
     if (found) {
-        return dispatch => {
+        return (dispatch) => {
             dispatch(receiveSingleManuscript(found));
         };
     } else {
-        return dispatch => {
+        return (dispatch) => {
             dispatch(requestSingleManuscript());
             return get(`/api/manuscripts/view/${id}`)
-                .then(json => {
+                .then((json) => {
                     if (json.error) {
                         return dispatch(genericError(json.error));
                     }
                     return dispatch(receiveSingleManuscript(json));
                 })
-                .catch(err => {
+                .catch((err) => {
                     dispatch(genericError(err.message));
                 });
         };
@@ -179,9 +179,9 @@ function deleteRecordSuccess() {
     };
 }
 export function deleteRecord(id) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(deleting());
-        return post('/api/manuscripts/delete', { id }, true).then(json => {
+        return post('/api/manuscripts/delete', { id }, true).then((json) => {
             if (json.error) {
                 dispatch(genericError(json.error));
             } else {

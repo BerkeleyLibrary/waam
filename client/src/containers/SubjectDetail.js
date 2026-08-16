@@ -81,7 +81,12 @@ class SubjectDetail extends React.Component {
     };
 
     componentDidMount() {
-        const { match: { params: { id } }, dispatch } = this.props;
+        const {
+            match: {
+                params: { id },
+            },
+            dispatch,
+        } = this.props;
 
         dispatch(cleanUpSingleSubject());
 
@@ -97,7 +102,12 @@ class SubjectDetail extends React.Component {
     };
 
     deleteSubject = () => {
-        const { match: { params: { id } }, dispatch } = this.props;
+        const {
+            match: {
+                params: { id },
+            },
+            dispatch,
+        } = this.props;
         dispatch(deleteSubject(parseInt(id, 10)));
         this.handleClose();
     };
@@ -173,28 +183,25 @@ class SubjectDetail extends React.Component {
                                 </Link>
                             </div>
                             <div className="col">
-                                {!deleted &&
-                                    user &&
-                                    user.admin && (
-                                        <div className="text-right">
-                                            <button
-                                                className="btn btn-outline-danger btn-sm"
-                                                onClick={this.handleOpen}
-                                            >
-                                                <i className="fas fa-times" />{' '}
-                                                Delete
-                                            </button>{' '}
-                                            <Link
-                                                to={`/subjects/edit/${
-                                                    selectedSubject.id
-                                                }`}
-                                                className="btn btn-outline-info btn-sm"
-                                            >
-                                                <i className="fas fa-pen" />{' '}
-                                                Edit
-                                            </Link>
-                                        </div>
-                                    )}
+                                {!deleted && user && user.admin && (
+                                    <div className="text-right">
+                                        <button
+                                            className="btn btn-outline-danger btn-sm"
+                                            onClick={this.handleOpen}
+                                        >
+                                            <i className="fas fa-times" />{' '}
+                                            Delete
+                                        </button>{' '}
+                                        <Link
+                                            to={`/subjects/edit/${
+                                                selectedSubject.id
+                                            }`}
+                                            className="btn btn-outline-info btn-sm"
+                                        >
+                                            <i className="fas fa-pen" /> Edit
+                                        </Link>
+                                    </div>
+                                )}
                             </div>
                         </div>
 

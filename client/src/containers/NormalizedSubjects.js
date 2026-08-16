@@ -28,7 +28,7 @@ const style = {
 
 const getParentSubjectFromName = (name, allSubjects) =>
     allSubjects.find(
-        sub => sub.english.toLowerCase() === name.toLowerCase() && !sub.parent
+        (sub) => sub.english.toLowerCase() === name.toLowerCase() && !sub.parent
     );
 
 const renderXRef = (xRef, allSubjects) => {
@@ -102,7 +102,7 @@ const RenderSubject = ({ subject, allSubjects, isNotLast = false }) => {
 
 const RenderMainSubject = ({ subject, allSubjects }) => {
     const children = allSubjects.filter(
-        innerSubject => innerSubject.parent === subject.english
+        (innerSubject) => innerSubject.parent === subject.english
     );
     return (
         <CustomPaper>
@@ -197,14 +197,18 @@ class NormalizedSubjects extends React.Component {
         } = this.props;
 
         const parentSubjects = normalizedSubjects.filter(
-            subject => !subject.parent
+            (subject) => !subject.parent
         );
 
         return (
             <div>
                 <Route
                     path={`${match.url}/:id`}
-                    render={({ match: { params: { id } } }) => (
+                    render={({
+                        match: {
+                            params: { id },
+                        },
+                    }) => (
                         <div>
                             <Breadcrumb
                                 items={[
@@ -218,7 +222,7 @@ class NormalizedSubjects extends React.Component {
                                         label:
                                             !!normalizedSubjects.length &&
                                             normalizedSubjects.find(
-                                                subject =>
+                                                (subject) =>
                                                     subject.id ===
                                                     parseInt(id, 10)
                                             ).english,
@@ -242,7 +246,7 @@ class NormalizedSubjects extends React.Component {
                                         <h1>
                                             {!!normalizedSubjects.length &&
                                                 normalizedSubjects.find(
-                                                    subject =>
+                                                    (subject) =>
                                                         subject.id ===
                                                         parseInt(id, 10)
                                                 ).english}
@@ -255,7 +259,7 @@ class NormalizedSubjects extends React.Component {
                                         <h1>
                                             {!!normalizedSubjects.length &&
                                                 normalizedSubjects.find(
-                                                    subject =>
+                                                    (subject) =>
                                                         subject.id ===
                                                         parseInt(id, 10)
                                                 ).arabic}
@@ -267,7 +271,7 @@ class NormalizedSubjects extends React.Component {
                                 {!!normalizedSubjects.length && (
                                     <RenderMainSubject
                                         subject={normalizedSubjects.find(
-                                            subject =>
+                                            (subject) =>
                                                 subject.id === parseInt(id, 10)
                                         )}
                                         allSubjects={normalizedSubjects}
@@ -310,14 +314,15 @@ class NormalizedSubjects extends React.Component {
                                                             2
                                                     )
                                                 )
-                                                .map(subject => (
+                                                .map((subject) => (
                                                     <div key={subject.id}>
                                                         <div>
                                                             {subject.see ? (
                                                                 <span>
                                                                     {
                                                                         subject.english
-                                                                    }:{' '}
+                                                                    }
+                                                                    :{' '}
                                                                     <span
                                                                         style={
                                                                             style.see
@@ -345,9 +350,11 @@ class NormalizedSubjects extends React.Component {
                                                                             subject.english
                                                                         }
                                                                     </Link>{' '}
-                                                                    ({
+                                                                    (
+                                                                    {
                                                                         subject.count
-                                                                    })
+                                                                    }
+                                                                    )
                                                                 </span>
                                                             )}
                                                         </div>
@@ -362,14 +369,15 @@ class NormalizedSubjects extends React.Component {
                                                             2
                                                     )
                                                 )
-                                                .map(subject => (
+                                                .map((subject) => (
                                                     <div key={subject.id}>
                                                         <div>
                                                             {subject.see ? (
                                                                 <span>
                                                                     {
                                                                         subject.english
-                                                                    }:{' '}
+                                                                    }
+                                                                    :{' '}
                                                                     <span
                                                                         style={
                                                                             style.see
@@ -397,9 +405,11 @@ class NormalizedSubjects extends React.Component {
                                                                             subject.english
                                                                         }
                                                                     </Link>{' '}
-                                                                    ({
+                                                                    (
+                                                                    {
                                                                         subject.count
-                                                                    })
+                                                                    }
+                                                                    )
                                                                 </span>
                                                             )}
                                                         </div>
@@ -414,10 +424,10 @@ class NormalizedSubjects extends React.Component {
 
                                     {normalizedSubjects
                                         .filter(
-                                            subject =>
+                                            (subject) =>
                                                 !subject.parent && !subject.see
                                         )
-                                        .map(subject => (
+                                        .map((subject) => (
                                             <RenderMainSubject
                                                 key={subject.id}
                                                 subject={subject}

@@ -8,7 +8,7 @@ export default () => (
             <label>Diacritics(copy and paste):</label>
             <div className="input-group">
                 <input
-                    value={'ā Ā ū ī ḥ Ḥ ḍ Ḍ ṭ Ṭ ṣ Ṣ ẓ Ẓ'}
+                    value={'ā Ā ū Ū ī Ī ḥ Ḥ ḍ Ḍ ṭ Ṭ ṣ Ṣ ẓ Ẓ'}
                     className="form-control"
                     readOnly
                 />

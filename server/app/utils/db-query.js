@@ -1,6 +1,6 @@
-const removeArabicDiacritics = str =>
+const removeArabicDiacritics = (str) =>
     str.replace(/^(ال)/, '').replace(/[ًٌٍَُِّْ]/g, '');
-const filterOutDefiniteArticleAndIbn = str =>
+const filterOutDefiniteArticleAndIbn = (str) =>
     str.replace(/^(ash)/g, '').length > 2 &&
     str.toLowerCase() !== 'bin' &&
     str.toLowerCase() !== 'ibn' &&
@@ -25,7 +25,7 @@ module.exports = {
                 order,
                 distinct: !!include,
             })
-            .then(results => {
+            .then((results) => {
                 numPages = Math.ceil(results.count / numPerPage);
                 const responsePayload = {
                     results: resultMap
@@ -52,13 +52,13 @@ module.exports = {
                 }
                 res.json(responsePayload);
             })
-            .catch(error => {
+            .catch((error) => {
                 error &&
                     res.json({ error: 'Sorry, there was a database error' });
             });
     },
 
-    getQueryParts: str => {
+    getQueryParts: (str) => {
         return str
             .replace(/[();,:?."\-\/]/g, ' ')
             .split(' ')

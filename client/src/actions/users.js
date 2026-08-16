@@ -14,16 +14,16 @@ import genericError from './genericError';
  */
 
 export function fetchUsers(query) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(requestUsers(query));
         return get('/api/users', query, true)
-            .then(json => {
+            .then((json) => {
                 if (json.error) {
                     return dispatch(genericError(json.error));
                 }
                 return dispatch(receiveUsers(json, query));
             })
-            .catch(err => {
+            .catch((err) => {
                 dispatch(genericError(err.message));
             });
     };
@@ -70,22 +70,22 @@ export function receiveSingleUser(user) {
 }
 
 function fetchSingleUser(id, users) {
-    const found = users.response.results.find(item => item.id === id);
+    const found = users.response.results.find((item) => item.id === id);
     if (found) {
-        return dispatch => {
+        return (dispatch) => {
             dispatch(receiveSingleUser(found));
         };
     } else {
-        return dispatch => {
+        return (dispatch) => {
             dispatch(requestSingleUser());
             return get(`/api/users/${id}`, {}, true)
-                .then(json => {
+                .then((json) => {
                     if (json.error) {
                         return dispatch(genericError(json.error));
                     }
                     return dispatch(receiveSingleUser(json));
                 })
-                .catch(err => {
+                .catch((err) => {
                     dispatch(genericError(err.message));
                 });
         };
@@ -116,9 +116,9 @@ function updatedUser() {
 }
 
 export function update(values, history) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(updating());
-        return post('/api/users/update', values, true).then(json => {
+        return post('/api/users/update', values, true).then((json) => {
             if (json.error) {
                 dispatch(genericError(json.error));
             } else {
@@ -131,9 +131,9 @@ export function update(values, history) {
 }
 
 export function deleteUser(id, history) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(updating());
-        return post('/api/users/delete', { id }, true).then(json => {
+        return post('/api/users/delete', { id }, true).then((json) => {
             if (json.error) {
                 dispatch(genericError(json.error));
             } else {

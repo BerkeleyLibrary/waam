@@ -14,7 +14,7 @@ module.exports = {
 
         if (queryString) {
             const queryParts = getQueryParts(queryString);
-            const whereLike = queryParts.map(part => {
+            const whereLike = queryParts.map((part) => {
                 return { [Op.like]: `%${part}%` };
             });
             where.push({ keyword: { [Op.and]: whereLike } });
@@ -31,31 +31,31 @@ module.exports = {
         }
 
         const queryParts = getQueryParts(queryString);
-        const whereLike = queryParts.map(part => {
+        const whereLike = queryParts.map((part) => {
             return { [Op.like]: `%${part}%` };
         });
 
         CrossReference.findAll({ where: { keyword: { [Op.or]: whereLike } } })
-            .then(items => {
+            .then((items) => {
                 const targets = {};
 
-                const itemsJson = items.map(item => item.toJSON());
+                const itemsJson = items.map((item) => item.toJSON());
 
-                itemsJson.forEach(item => {
+                itemsJson.forEach((item) => {
                     targets[item.target] = item.id;
                 });
 
                 const uniqueItems = [];
 
-                Object.keys(targets).forEach(key => {
+                Object.keys(targets).forEach((key) => {
                     uniqueItems.push(
-                        itemsJson.find(item => item.id === targets[key])
+                        itemsJson.find((item) => item.id === targets[key])
                     );
                 });
 
                 res.json(uniqueItems);
             })
-            .catch(err => {
+            .catch((err) => {
                 res.json({ error: err });
             });
     },
@@ -68,10 +68,10 @@ module.exports = {
             target,
             type,
         })
-            .then(newRecord => {
+            .then((newRecord) => {
                 res.json(newRecord);
             })
-            .catch(err => {
+            .catch((err) => {
                 res.json(err);
             });
     },
@@ -84,10 +84,10 @@ module.exports = {
                 id,
             },
         })
-            .then(result => {
+            .then((result) => {
                 res.json(result);
             })
-            .catch(err => {
+            .catch((err) => {
                 res.json({ error: err.message });
             });
     },

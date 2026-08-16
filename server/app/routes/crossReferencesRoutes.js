@@ -2,7 +2,7 @@ const isAdmin = require('../shared/isAdmin');
 
 const CrossReferencesCtrl = require('../controllers/CrossReferencesCtrl');
 
-module.exports = function(app) {
+module.exports = function (app) {
     // get
 
     app.get('/api/cross-references', CrossReferencesCtrl.index);

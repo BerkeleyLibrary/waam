@@ -35,16 +35,16 @@ function createdCrossReference() {
 }
 
 export function fetchCrossReferences(query) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(requestCrossReferences(query));
         return get('/api/cross-references', query)
-            .then(json => {
+            .then((json) => {
                 if (json.error) {
                     return dispatch(genericError(json.error));
                 }
                 return dispatch(receiveCrossReferences(json, query));
             })
-            .catch(err => {
+            .catch((err) => {
                 dispatch(crossReferenceError(err.message));
             });
     };
@@ -78,8 +78,8 @@ export function fetchCrossReferencesIfNeeded(query) {
 }
 
 export function create(values) {
-    return dispatch => {
-        return post('/api/cross-references/add', values, true).then(json => {
+    return (dispatch) => {
+        return post('/api/cross-references/add', values, true).then((json) => {
             if (json.error || json.errors) {
                 dispatch(
                     crossReferenceError(
@@ -97,14 +97,16 @@ export function create(values) {
 
 export function deleteCrossReference(id) {
     return (dispatch, getState) => {
-        return post('/api/cross-references/delete', { id }, true).then(json => {
-            if (json.error) {
-                dispatch(genericError(json.error));
-            } else {
-                const query = getState().crossReferences.query;
-                dispatch(fetchCrossReferencesIfNeeded(query));
+        return post('/api/cross-references/delete', { id }, true).then(
+            (json) => {
+                if (json.error) {
+                    dispatch(genericError(json.error));
+                } else {
+                    const query = getState().crossReferences.query;
+                    dispatch(fetchCrossReferencesIfNeeded(query));
+                }
             }
-        });
+        );
     };
 }
 
@@ -122,13 +124,13 @@ function requestSeeAlso() {
 }
 
 export function fetchSeeAlso(query) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(requestSeeAlso());
 
         if (query && query.query) {
             return get('/api/cross-references/view', { query: query.query })
-                .then(json => dispatch(receiveSeeAlso(json)))
-                .catch(err => dispatch(genericError(err.message)));
+                .then((json) => dispatch(receiveSeeAlso(json)))
+                .catch((err) => dispatch(genericError(err.message)));
         } else {
             return dispatch(receiveSeeAlso([]));
         }

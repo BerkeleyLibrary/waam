@@ -47,9 +47,9 @@ function deleteSubjectSuccess() {
     };
 }
 export function deleteSubject(id) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(deleting());
-        return post('/api/subjects/delete', { id }, true).then(json => {
+        return post('/api/subjects/delete', { id }, true).then((json) => {
             if (json.error) {
                 dispatch(genericError(json.error));
             } else {
@@ -60,16 +60,16 @@ export function deleteSubject(id) {
 }
 
 export function addSubject(data) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(addingSubject());
         return post('/api/subjects/add', data, true)
-            .then(json => {
+            .then((json) => {
                 if (json.error) {
                     return dispatch(subjectAddedError(json.error));
                 }
                 return dispatch(subjectAddedSuccess(json));
             })
-            .catch(err => {
+            .catch((err) => {
                 dispatch(genericError(err.message));
             });
     };
@@ -96,17 +96,17 @@ function subjectAddedError(serverError) {
 }
 
 export function fetchSubjects(query) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(requestSubjects(query));
         dispatch(fetchSeeAlso(query));
         return get('/api/subjects', query)
-            .then(json => {
+            .then((json) => {
                 if (json.error) {
                     return dispatch(genericError(json.error));
                 }
                 return dispatch(receiveSubjects(json, query));
             })
-            .catch(err => {
+            .catch((err) => {
                 dispatch(genericError(err.message));
             });
     };
@@ -132,7 +132,9 @@ function shouldFetch(state) {
 }
 
 function shouldFetchNormalizedSubject(state) {
-    const { subjects: { normalizedSubjects } } = state;
+    const {
+        subjects: { normalizedSubjects },
+    } = state;
     return !normalizedSubjects.length;
 }
 
@@ -157,16 +159,16 @@ function receiveNormalizedSubjects(normalizedSubjects) {
 }
 
 function fetchNormalizedSubjects() {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(requestSubjects());
         return get('/api/normalizedSubjects')
-            .then(json => {
+            .then((json) => {
                 if (json.error) {
                     return dispatch(genericError(json.error));
                 }
                 return dispatch(receiveNormalizedSubjects(json));
             })
-            .catch(err => {
+            .catch((err) => {
                 dispatch(genericError(err.message));
             });
     };
@@ -194,22 +196,22 @@ export function receiveSingleSubject(subject) {
 }
 
 function fetchSingleSubject(id, subjects) {
-    const found = subjects.response.results.find(item => item.id === id);
+    const found = subjects.response.results.find((item) => item.id === id);
     if (found) {
-        return dispatch => {
+        return (dispatch) => {
             dispatch(receiveSingleSubject(found));
         };
     } else {
-        return dispatch => {
+        return (dispatch) => {
             dispatch(requestSingleSubject());
             return get(`/api/subjects/view/${id}`)
-                .then(json => {
+                .then((json) => {
                     if (json.error) {
                         return dispatch(genericError(json.error));
                     }
                     return dispatch(receiveSingleSubject(json));
                 })
-                .catch(err => {
+                .catch((err) => {
                     dispatch(genericError(err.message));
                 });
         };

@@ -36,7 +36,12 @@ const messages = defineMessages({
 
 class EditAuthor extends React.Component {
     componentDidMount() {
-        const { match: { params: { id } }, dispatch } = this.props;
+        const {
+            match: {
+                params: { id },
+            },
+            dispatch,
+        } = this.props;
 
         dispatch(cleanUpSingleAuthor());
 

@@ -1,4 +1,4 @@
-module.exports = function(len) {
+module.exports = function (len) {
     var buf = [],
         chars =
             'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789',

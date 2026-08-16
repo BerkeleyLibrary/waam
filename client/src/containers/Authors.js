@@ -67,7 +67,10 @@ class Authors extends React.Component {
 
     render() {
         const {
-            authors: { isFetching, response: { results, pagination } },
+            authors: {
+                isFetching,
+                response: { results, pagination },
+            },
             user,
             match,
             location,
@@ -130,7 +133,7 @@ class Authors extends React.Component {
                                 </div>
 
                                 <SimpleSearchForm
-                                    onSearch={values =>
+                                    onSearch={(values) =>
                                         submitSearch(
                                             values,
                                             history,
@@ -184,7 +187,10 @@ class Authors extends React.Component {
 }
 
 function mapStateToProps(state) {
-    const { authors, auth: { user } } = state;
+    const {
+        authors,
+        auth: { user },
+    } = state;
 
     return {
         authors,

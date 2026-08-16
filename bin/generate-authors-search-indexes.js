@@ -1,44 +1,42 @@
-#! /usr/bin/env node
+#!/usr/bin/env node
 
 require('../initDockerSecrets')();
 
 const SearchIndexCtrl = require('../server/app/controllers/SearchIndexCtrl');
 const startupTime = +(new Date());
 console.info(`Indexing for authors started at ${new Date()}`);
-const _limit = 100;
-const SLEEP_TIME = 500;
+
+const LIMIT = 500;
 let page = 0;
-const _offset = page * _limit;
 let total = 0;
 
+async function run() {
+    try {
+        while (true) {
+            const offset = page * LIMIT;
+            const res = await SearchIndexCtrl.authors({
+                limit: LIMIT,
+                offset
+            });
 
-function index(limit = _limit, offset = _offset) {
-    SearchIndexCtrl.authors({
-        limit,
-        offset,
-        include: [{ all: true }]
-    })
-        .then(res => {
-            if(res && res.done) {
+            if (res && res.done) {
                 console.info(`Indexing authors ended with success after ${Math.floor((+(new Date()) - startupTime)/1000)} seconds, a total of ${total} were updated.`);
-                process.exit();
-            } else {
-                if(res.total) {
-                    total += res.total;
-                }
-                page++;
-                console.log('Now I\'m gonna sleep for half a second....');
-                setTimeout(() => {
-                    index(limit, page * _limit);
-                }, SLEEP_TIME);
+                process.exit(0);
             }
 
-        })
-        .catch(err => {
-            console.error(err);
-            console.error(`Indexing authors ended with an error, after ${Math.floor((+(new Date()) - startupTime)/1000)} seconds`);
-            process.exit(1);
-        });
+            if (res && res.total) {
+                total += res.total;
+            }
+            page++;
 
+            // Yield to the event loop to prevent OOM and allow garbage collection
+            await new Promise(resolve => setImmediate(resolve));
+        }
+    } catch (err) {
+        console.error(err);
+        console.error(`Indexing authors ended with an error, after ${Math.floor((+(new Date()) - startupTime)/1000)} seconds`);
+        process.exit(1);
+    }
 }
-index();
+
+run();

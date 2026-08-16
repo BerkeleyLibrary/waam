@@ -32,6 +32,8 @@ const Author = sequelize.define(
         aDateDied: Sequelize.STRING,
         dateBorn: Sequelize.STRING,
         aDateBorn: Sequelize.STRING,
+        ref_number: Sequelize.STRING,
+        hidden: Sequelize.STRING,
         // for search engine
         search_nisba: Sequelize.STRING,
         search_nisba_id: Sequelize.STRING,

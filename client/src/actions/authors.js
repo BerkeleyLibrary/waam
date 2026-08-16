@@ -46,9 +46,9 @@ function deleteAuthorSuccess() {
     };
 }
 export function deleteAuthor(id) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(deleting());
-        return post('/api/authors/delete', { id }, true).then(json => {
+        return post('/api/authors/delete', { id }, true).then((json) => {
             if (json.error) {
                 dispatch(genericError(json.error));
             } else {
@@ -59,16 +59,16 @@ export function deleteAuthor(id) {
 }
 
 export function addAuthor(data) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(addingAuthor());
         return post('/api/authors/add', data, true)
-            .then(json => {
+            .then((json) => {
                 if (json.error) {
                     return dispatch(authorAddedError(json.error));
                 }
                 return dispatch(authorAddedSuccess(json));
             })
-            .catch(err => {
+            .catch((err) => {
                 dispatch(genericError(err.message));
             });
     };
@@ -100,13 +100,13 @@ export function fetchAuthors(query) {
         dispatch(fetchSeeAlso(query));
         const admin = !!(getState().auth.user && getState().auth.user.admin);
         return get('/api/authors', { admin, ...query })
-            .then(json => {
+            .then((json) => {
                 if (json.error) {
                     return dispatch(genericError(json.error));
                 }
                 return dispatch(receiveAuthors(json, query));
             })
-            .catch(err => {
+            .catch((err) => {
                 dispatch(genericError(err.message));
             });
     };
@@ -158,16 +158,16 @@ export function receiveSingleAuthor(author) {
 }
 
 function fetchSingleAuthor(id) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(requestSingleAuthor());
         return get(`/api/authors/view/${id}`)
-            .then(json => {
+            .then((json) => {
                 if (json.error) {
                     return dispatch(genericError(json.error));
                 }
                 return dispatch(receiveSingleAuthor(json));
             })
-            .catch(err => {
+            .catch((err) => {
                 dispatch(genericError(err.message));
             });
     };

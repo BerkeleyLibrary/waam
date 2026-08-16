@@ -103,12 +103,15 @@ class Groups extends React.Component {
     render() {
         const {
             match,
-            groups: { isFetching, response: { results } },
+            groups: {
+                isFetching,
+                response: { results },
+            },
             intl: { formatMessage },
         } = this.props;
 
         const pageTitle = formatMessage(messages.title);
-        const groupsToShow = results.filter(group => !group.parentId);
+        const groupsToShow = results.filter((group) => !group.parentId);
 
         return (
             <div>
@@ -131,7 +134,7 @@ class Groups extends React.Component {
                             {isFetching && <Loader />}
                             <ol>
                                 {(() =>
-                                    groupsToShow.map(place => (
+                                    groupsToShow.map((place) => (
                                         <li key={place.name}>
                                             <Link
                                                 to={`/about/collections/${

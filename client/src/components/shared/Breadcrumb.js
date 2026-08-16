@@ -42,23 +42,20 @@ const labels = defineMessages({
 const Breadcrumb = ({ items, intl: { formatMessage } }) => {
     return (
         <ol className="breadcrumb">
-            {items.map(
-                ({ link, label }) =>
-                    link ? (
-                        <li className="breadcrumb-item" key={label}>
-                            <Link to={link}>
-                                {labels[label]
-                                    ? formatMessage(labels[label])
-                                    : label}
-                            </Link>
-                        </li>
-                    ) : (
-                        <li className="breadcrumb-item active" key={label}>
+            {items.map(({ link, label }) =>
+                link ? (
+                    <li className="breadcrumb-item" key={label}>
+                        <Link to={link}>
                             {labels[label]
                                 ? formatMessage(labels[label])
                                 : label}
-                        </li>
-                    )
+                        </Link>
+                    </li>
+                ) : (
+                    <li className="breadcrumb-item active" key={label}>
+                        {labels[label] ? formatMessage(labels[label]) : label}
+                    </li>
+                )
             )}
         </ol>
     );

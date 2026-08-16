@@ -36,9 +36,9 @@ function loginFailed(json) {
 }
 
 export function loginAction(values, history) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(requestLogin());
-        return post('/api/login', values, true).then(json => {
+        return post('/api/login', values, true).then((json) => {
             if (json.error) {
                 dispatch(loginFailed(json));
             } else {
@@ -64,9 +64,9 @@ function loggingOut() {
 }
 
 export function logoutAction(history) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(loggingOut());
-        return get('/api/logout', null, true).then(json => {
+        return get('/api/logout', null, true).then((json) => {
             dispatch(loggedOut());
             history.push('/');
         });
@@ -95,9 +95,9 @@ function signUpFailed(json) {
 }
 
 export function signUpAction(values) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(signingUp());
-        return post('/api/sign-up', values, true).then(json => {
+        return post('/api/sign-up', values, true).then((json) => {
             if (json.error) {
                 dispatch(signUpFailed(json));
             } else {
@@ -123,9 +123,9 @@ export function receiveUser(response) {
 }
 
 export function fetchUser() {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(requestUser());
-        return get('/api/me', null, true).then(json =>
+        return get('/api/me', null, true).then((json) =>
             dispatch(receiveUser(json))
         );
     };
@@ -157,9 +157,9 @@ function updated() {
 }
 
 export function update(values, history) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(updating());
-        return post('/api/me/update', values, true).then(json => {
+        return post('/api/me/update', values, true).then((json) => {
             if (json.error) {
                 dispatch(genericError(json.error));
             } else {

@@ -5,13 +5,13 @@ export function isEmpty(obj) {
     return true;
 }
 
-export const capitalize = str => str.replace(/\b\w/g, l => l.toUpperCase());
+export const capitalize = (str) => str.replace(/\b\w/g, (l) => l.toUpperCase());
 
 export function goToUrl(url, history) {
     history.push(url);
 }
 
-export const getQueryObject = search => {
+export const getQueryObject = (search) => {
     const query = {};
     const urlParam = new URLSearchParams(search);
     for (let item of urlParam) {
@@ -21,11 +21,11 @@ export const getQueryObject = search => {
     return query;
 };
 
-export const getQueryString = query => {
+export const getQueryString = (query) => {
     return (
         '?' +
         Object.keys(query)
-            .map(key => `${key}=${query[key]}`)
+            .map((key) => `${key}=${query[key]}`)
             .join('&')
     );
 };
@@ -63,7 +63,7 @@ export const dispatchFetchActionIfNeeded = (nextProps, props, action) => {
     }
 };
 
-export const getAuthorFlatJson = authorObject => {
+export const getAuthorFlatJson = (authorObject) => {
     if (!authorObject || !authorObject.nisbas) {
         return authorObject;
     }
@@ -85,15 +85,15 @@ export const getAuthorFlatJson = authorObject => {
     };
 };
 
-export const putPrimaryAuthorFirst = manuscriptObj => {
+export const putPrimaryAuthorFirst = (manuscriptObj) => {
     if (!manuscriptObj || !manuscriptObj.authors) {
         return manuscriptObj;
     }
     const primaryAuthor = manuscriptObj.authors.find(
-        _author => _author && _author.manuscriptAuthor.status === 'primary'
+        (_author) => _author && _author.manuscriptAuthor.status === 'primary'
     );
     const secondaryAuthors = manuscriptObj.authors.filter(
-        _author =>
+        (_author) =>
             _author.manuscriptAuthor &&
             _author.manuscriptAuthor.status !== 'primary'
     );

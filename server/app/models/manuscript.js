@@ -67,6 +67,9 @@ const Manuscript = sequelize.define(
         search_subject: Sequelize.TEXT,
         search_author_id: Sequelize.TEXT,
         search_author_nisba_id: Sequelize.TEXT,
+        ref_number: Sequelize.STRING,
+        hidden: Sequelize.STRING,
+        sponsorLogo: Sequelize.STRING,
     },
     { paranoid: true }
 );

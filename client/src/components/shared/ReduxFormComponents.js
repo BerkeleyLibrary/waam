@@ -39,14 +39,13 @@ const TextField = ({
                 className="form-control"
                 autoComplete="off"
             />
-            {touched &&
-                error && (
-                    <div className="text-danger">
-                        {(errorMessages[error] &&
-                            formatMessage(errorMessages[error])) ||
-                            error}
-                    </div>
-                )}
+            {touched && error && (
+                <div className="text-danger">
+                    {(errorMessages[error] &&
+                        formatMessage(errorMessages[error])) ||
+                        error}
+                </div>
+            )}
         </div>
     </div>
 );
@@ -62,14 +61,13 @@ const MultiLineTextField = ({
         <label className="control-label">{label}</label>
         <div>
             <textarea {...input} {...custom} className="form-control" />
-            {touched &&
-                error && (
-                    <div className="text-danger">
-                        {(errorMessages[error] &&
-                            formatMessage(errorMessages[error])) ||
-                            error}
-                    </div>
-                )}
+            {touched && error && (
+                <div className="text-danger">
+                    {(errorMessages[error] &&
+                        formatMessage(errorMessages[error])) ||
+                        error}
+                </div>
+            )}
         </div>
     </div>
 );
@@ -88,7 +86,7 @@ export const renderCheckbox = ({ input, label }) => (
     </div>
 );
 
-export const RenderFlatButton = props => {
+export const RenderFlatButton = (props) => {
     return (
         <button
             type={props.type}

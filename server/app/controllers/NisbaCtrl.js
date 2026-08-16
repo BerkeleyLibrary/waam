@@ -15,7 +15,7 @@ module.exports = {
                 where.push({ id: numberValue });
             } else {
                 const queryParts = getQueryParts(queryString);
-                const whereLike = queryParts.map(part => {
+                const whereLike = queryParts.map((part) => {
                     return { [Op.like]: `%${part}%` };
                 });
 
@@ -31,16 +31,18 @@ module.exports = {
         const orderBy =
             showLastUpdated === 'true'
                 ? [['updatedAt', 'DESC']]
-                : queryString ? [] : [['nisba', 'ASC']];
+                : queryString
+                  ? []
+                  : [['nisba', 'ASC']];
 
         search(req, res, Nisba, where, null, orderBy);
     },
     view: (req, res) => {
         Nisba.findOne({ where: { id: req.params.id } })
-            .then(item => {
+            .then((item) => {
                 res.json(item);
             })
-            .catch(err => {
+            .catch((err) => {
                 res.json({ error: err });
             });
     },
@@ -61,7 +63,7 @@ module.exports = {
                 'deletedAt',
             ];
             const fields = Object.keys(record).filter(
-                item =>
+                (item) =>
                     !preservedFields.includes(item) && record[item] !== 'null'
             );
 
@@ -69,16 +71,16 @@ module.exports = {
                 .then(() => {
                     res.json(record);
                 })
-                .catch(err => {
+                .catch((err) => {
                     res.json({ error: err });
                 });
         } else {
             // record.added_by = me.id;
             Nisba.create(record)
-                .then(item => {
+                .then((item) => {
                     res.json(item);
                 })
-                .catch(err => {
+                .catch((err) => {
                     res.json({ error: err });
                 });
         }
@@ -91,10 +93,10 @@ module.exports = {
                 id,
             },
         })
-            .then(result => {
+            .then((result) => {
                 res.json(result);
             })
-            .catch(err => {
+            .catch((err) => {
                 res.json({ error: err.message });
             });
     },

@@ -67,7 +67,10 @@ class Subjects extends React.Component {
 
     render() {
         const {
-            subjects: { isFetching, response: { results, pagination } },
+            subjects: {
+                isFetching,
+                response: { results, pagination },
+            },
             user,
             match,
             location,
@@ -133,7 +136,7 @@ class Subjects extends React.Component {
                                 </div>
 
                                 <SimpleSearchForm
-                                    onSearch={values =>
+                                    onSearch={(values) =>
                                         submitSearch(
                                             values,
                                             history,
@@ -187,7 +190,10 @@ class Subjects extends React.Component {
 }
 
 function mapStateToProps(state) {
-    const { subjects, auth: { user } } = state;
+    const {
+        subjects,
+        auth: { user },
+    } = state;
 
     return {
         subjects,

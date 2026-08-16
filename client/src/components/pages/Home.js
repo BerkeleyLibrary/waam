@@ -67,8 +67,10 @@ const homeSections = [
     { url: '/titles', name: 'searchTitles' },
 ];
 
-const Home = props => {
-    const { intl: { formatMessage } } = props;
+const Home = (props) => {
+    const {
+        intl: { formatMessage },
+    } = props;
 
     return (
         <div className="home-page">
@@ -83,7 +85,7 @@ const Home = props => {
                 <p className="lead">{formatMessage(messages.lead)}</p>
             </div>
             <ul className="list-group">
-                {homeSections.map(item => (
+                {homeSections.map((item) => (
                     <li key={item.name} className="list-group-item">
                         <Link to={item.url}>
                             {formatMessage(messages[item.name])} »

@@ -15,7 +15,7 @@ const messages = defineMessages({
     },
 });
 
-const LoginPage = props => {
+const LoginPage = (props) => {
     const { intl } = props;
     return (
         <div className="row">

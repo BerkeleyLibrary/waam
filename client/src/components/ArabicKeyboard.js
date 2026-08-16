@@ -59,18 +59,18 @@ class ArabicKeyboard extends React.Component {
         this.setState({ open: false });
     };
 
-    handleChange = event => {
+    handleChange = (event) => {
         this.setState({ value: event.target.value });
     };
 
-    handleClick = val => {
-        this.setState(prevState => {
+    handleClick = (val) => {
+        this.setState((prevState) => {
             return { value: prevState.value + val };
         });
     };
 
     handleBack = () => {
-        this.setState(prevState => {
+        this.setState((prevState) => {
             return {
                 value: prevState.value.slice(0, prevState.value.length - 1),
             };
@@ -78,7 +78,9 @@ class ArabicKeyboard extends React.Component {
     };
 
     render() {
-        const { intl: { formatMessage } } = this.props;
+        const {
+            intl: { formatMessage },
+        } = this.props;
         return (
             <span className="input-group-text">
                 <i
@@ -111,9 +113,9 @@ class ArabicKeyboard extends React.Component {
                                     onChange={this.handleChange}
                                 />
                             </div>
-                            {letters.map(line => (
+                            {letters.map((line) => (
                                 <div style={style.container} key={line}>
-                                    {line.map(letter => {
+                                    {line.map((letter) => {
                                         if (letter === 'back') {
                                             return (
                                                 <div

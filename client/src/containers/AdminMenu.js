@@ -24,7 +24,7 @@ const Menu = ({ user }) => {
     return (
         <CustomPaper>
             <div className="btn-group btn-group-sm">
-                {userItems.map(item => (
+                {userItems.map((item) => (
                     <Link
                         key={item.link}
                         to={item.link}
@@ -35,7 +35,7 @@ const Menu = ({ user }) => {
                 ))}
 
                 {user.admin &&
-                    adminItems.map(item => (
+                    adminItems.map((item) => (
                         <Link
                             key={item.link}
                             to={item.link}

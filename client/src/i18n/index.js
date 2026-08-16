@@ -1,8 +1,10 @@
-const ar = require('./ar.json');
+import ar from './ar.json';
 
-const en = require('./en.json');
+import en from './en.json';
 
-module.exports = {
+const translations = {
     ar,
     en,
 };
+
+export default translations;

@@ -3,7 +3,7 @@ import GenericResultPaper from './shared/GenericResultPaper';
 
 const NisbaList = ({ list, location: { search } }) => (
     <div dir="ltr">
-        {list.map(item => (
+        {list.map((item) => (
             <GenericResultPaper
                 key={item.id}
                 path={{ pathname: `/nisbas/${item.id}`, search }}

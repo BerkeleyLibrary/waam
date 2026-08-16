@@ -107,13 +107,18 @@ export default () => {
             </p>
             <p>
                 The Centre Ahmad Baba can be contacted directly at the following
-                address:<br />
+                address:
+                <br />
                 <address>
                     Le Directeur <br />
-                    Dr. Mohamed Diagayeté<br />
-                    IHERIAB<br />
-                    BP 14, Tombouctou, Mali<br />
-                    Tel: (223) 921081<br />
+                    Dr. Mohamed Diagayeté
+                    <br />
+                    IHERIAB
+                    <br />
+                    BP 14, Tombouctou, Mali
+                    <br />
+                    Tel: (223) 921081
+                    <br />
                     diagayete@gmail.com
                 </address>
             </p>

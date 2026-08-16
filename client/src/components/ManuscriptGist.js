@@ -18,34 +18,31 @@ const messages = defineMessages({
 });
 
 const ManuscriptGist = ({ manuscript, location, intl: { formatMessage } }) => {
-    const {
-        id,
-        aTitle,
-        title,
-        authors,
-        collection,
-        subject,
-        group,
-    } = manuscript;
+    const { id, aTitle, title, authors, collection, subject, group } =
+        manuscript;
 
-    const { name: collectionName, aName: collectionArabicName, desc, logo } =
-        group || {};
+    const {
+        name: collectionName,
+        aName: collectionArabicName,
+        desc,
+        logo,
+    } = group || {};
 
     const primaryAuthor = authors.find(
-        _author =>
+        (_author) =>
             _author.manuscriptAuthor &&
             _author.manuscriptAuthor.status === 'primary'
     );
     const secondaryAuthors = authors.filter(
-        _author =>
+        (_author) =>
             _author.manuscriptAuthor &&
             _author.manuscriptAuthor.status !== 'primary'
     );
     const secondaryAuthorEnNames = secondaryAuthors.length
-        ? secondaryAuthors.map(_author => _author.name).join(', ')
+        ? secondaryAuthors.map((_author) => _author.name).join(', ')
         : '';
     const secondaryAuthorArNames = secondaryAuthors.length
-        ? secondaryAuthors.map(_author => _author.aName).join(', ')
+        ? secondaryAuthors.map((_author) => _author.aName).join(', ')
         : '';
     return (
         <CustomPaper>
@@ -64,14 +61,13 @@ const ManuscriptGist = ({ manuscript, location, intl: { formatMessage } }) => {
                                     : formatMessage(messages.seeFull)}{' '}
                                 (WAAMD id # {id})
                             </Link>{' '}
-                            {title &&
-                                logo && (
-                                    <img
-                                        src={logos[logo]}
-                                        alt={desc}
-                                        style={{ maxHeight: 24 }}
-                                    />
-                                )}{' '}
+                            {title && logo && (
+                                <img
+                                    src={logos[logo]}
+                                    alt={desc}
+                                    style={{ maxHeight: 24 }}
+                                />
+                            )}{' '}
                         </h3>
                     </div>
                 </div>
@@ -88,14 +84,13 @@ const ManuscriptGist = ({ manuscript, location, intl: { formatMessage } }) => {
                                     ? aTitle
                                     : formatMessage(messages.seeFull)}
                             </Link>{' '}
-                            {aTitle &&
-                                logo && (
-                                    <img
-                                        src={logos[logo]}
-                                        alt={desc}
-                                        style={{ maxHeight: 24 }}
-                                    />
-                                )}{' '}
+                            {aTitle && logo && (
+                                <img
+                                    src={logos[logo]}
+                                    alt={desc}
+                                    style={{ maxHeight: 24 }}
+                                />
+                            )}{' '}
                         </h3>
                     </div>
                 </div>

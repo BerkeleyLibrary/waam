@@ -21,10 +21,10 @@ module.exports = {
 
     view: (req, res) => {
         User.findOne({ where: { id: req.params.id } })
-            .then(item => {
+            .then((item) => {
                 res.json(item);
             })
-            .catch(err => {
+            .catch((err) => {
                 res.json({ error: err });
             });
     },
@@ -37,7 +37,7 @@ module.exports = {
         User.update(data, {
             fields: ['admin', 'active'],
             where: { id: user.id },
-        }).then(result => {
+        }).then((result) => {
             res.json(result);
         });
     },
@@ -50,10 +50,10 @@ module.exports = {
                 id: userId,
             },
         })
-            .then(result => {
+            .then((result) => {
                 res.json(result);
             })
-            .catch(err => {
+            .catch((err) => {
                 res.json(err);
             });
     },

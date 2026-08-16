@@ -87,7 +87,7 @@ const renderCheckBox = ({ input }) => {
     );
 };
 
-const Search = props => {
+const Search = (props) => {
     const {
         handleSubmit,
         submitting,
@@ -174,7 +174,7 @@ const Search = props => {
                         />
                         <div className="input-group-append">
                             <ArabicKeyboard
-                                change={value =>
+                                change={(value) =>
                                     value && change('query', value)
                                 }
                             />

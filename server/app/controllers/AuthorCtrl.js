@@ -19,7 +19,7 @@ module.exports = {
         }
         if (queryString) {
             const queryParts = getQueryParts(queryString);
-            const whereLike = queryParts.map(part => {
+            const whereLike = queryParts.map((part) => {
                 return { [Op.like]: `%${part}%` };
             });
             switch (fieldName) {
@@ -79,7 +79,9 @@ module.exports = {
         const orderBy =
             showLastUpdated === 'true'
                 ? [['updatedAt', 'DESC']]
-                : queryString ? [] : [['name', 'ASC']];
+                : queryString
+                  ? []
+                  : [['name', 'ASC']];
 
         const include = [Nisba, Group];
 
@@ -92,10 +94,10 @@ module.exports = {
         ];
 
         Author.findOne({ where: { id: req.params.id }, include })
-            .then(item => {
+            .then((item) => {
                 res.json(item);
             })
-            .catch(err => {
+            .catch((err) => {
                 res.json({ error: err });
             });
     },
@@ -109,25 +111,25 @@ module.exports = {
                 'deletedAt',
             ];
             const fields = Object.keys(record).filter(
-                item =>
+                (item) =>
                     !preservedFields.includes(item) && record[item] !== 'null'
             );
 
             Author.update(record, { where: { id: record.id }, fields })
                 .then(() => {
                     Author.findOne({ where: { id: record.id } })
-                        .then(updatedRecord =>
+                        .then((updatedRecord) =>
                             updateNisbas(updatedRecord, req, res)
                         )
-                        .catch(err => res.json({ error: err }));
+                        .catch((err) => res.json({ error: err }));
                 })
-                .catch(err => res.json({ error: err }));
+                .catch((err) => res.json({ error: err }));
         } else {
             Author.create(record)
-                .then(item => {
+                .then((item) => {
                     updateNisbas(item, req, res);
                 })
-                .catch(err => {
+                .catch((err) => {
                     res.json({ error: err });
                 });
         }
@@ -140,10 +142,10 @@ module.exports = {
                 id,
             },
         })
-            .then(result => {
+            .then((result) => {
                 res.json(result);
             })
-            .catch(err => {
+            .catch((err) => {
                 res.json({ error: err.message });
             });
     },
@@ -152,31 +154,31 @@ module.exports = {
 function updateNisbas(authorModel, req, res) {
     const record = req.body;
     const nisbas = record.nisbas
-        .map(_nisba => parseInt(_nisba.id, 10))
+        .map((_nisba) => parseInt(_nisba.id, 10))
         .filter(Boolean);
 
     if (!nisbas.length) {
         return authorModel
             .setNisbas([])
             .then(() => res.json(authorModel))
-            .catch(err => res.json({ error: err }));
+            .catch((err) => res.json({ error: err }));
     }
 
     Nisba.findAll({ where: { id: { [Op.in]: nisbas } } })
-        .then(nisbaList => {
+        .then((nisbaList) => {
             const orderedNisbaList = nisbas
-                .map(nisbaId =>
-                    nisbaList.find(nisbaObject => nisbaObject.id === nisbaId)
+                .map((nisbaId) =>
+                    nisbaList.find((nisbaObject) => nisbaObject.id === nisbaId)
                 )
                 .filter(Boolean);
             if (orderedNisbaList.length) {
                 authorModel
                     .setNisbas(orderedNisbaList)
                     .then(() => res.json(authorModel))
-                    .catch(err => res.json({ error: err }));
+                    .catch((err) => res.json({ error: err }));
             } else {
                 return res.json(authorModel);
             }
         })
-        .catch(err => res.json({ error: err }));
+        .catch((err) => res.json({ error: err }));
 }

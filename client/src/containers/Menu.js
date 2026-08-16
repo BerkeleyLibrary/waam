@@ -30,7 +30,7 @@ const Menu = ({ user }) => {
 
     return (
         <div className="text-center" style={style.menu}>
-            {Object.keys(links).map(key => [
+            {Object.keys(links).map((key) => [
                 <Link to={key} style={style.link}>
                     {links[key]}
                 </Link>,

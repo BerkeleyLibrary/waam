@@ -63,7 +63,7 @@ const AccountPage = ({ match, intl: { formatMessage } }) => {
             <Route
                 exact
                 path={match.url}
-                render={props => (
+                render={(props) => (
                     <Redirect
                         to={{
                             pathname: `${match.url}/index`,

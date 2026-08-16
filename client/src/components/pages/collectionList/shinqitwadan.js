@@ -15,19 +15,32 @@ export default () => {
                 following private libraries in these cities:
                 <br />
                 In Shinqit: <br />
-                The Ahl Habt Library (630 records)<br />
-                The Ahl Ahmad Sharif Library (94 records)<br />
-                The Ahl Hamman Library (87 records)<br />
-                The Ahl `Abd al-Hamayid Library (69 records)<br />
-                The Ahl ‘Uda Library (68 records)<br />
-                The Ahl al-Sabt Library (15 records)<br />
-                In Wadan:<br />
-                The Ahl Muhammad b. al-Hajj Library (37 records)<br />
-                The Ahl al-Kitab Library (37 records)<br />
-                The Ahl Dahi Library (32 records)<br />
-                The Ahl `Ayydi Library (17 records)<br />
-                The Ahl Yayi Bawi Library (11 records)<br />
-                The Ahl Ahmad al-Sharif Library (10 records)<br />
+                The Ahl Habt Library (630 records)
+                <br />
+                The Ahl Ahmad Sharif Library (94 records)
+                <br />
+                The Ahl Hamman Library (87 records)
+                <br />
+                The Ahl `Abd al-Hamayid Library (69 records)
+                <br />
+                The Ahl ‘Uda Library (68 records)
+                <br />
+                The Ahl al-Sabt Library (15 records)
+                <br />
+                In Wadan:
+                <br />
+                The Ahl Muhammad b. al-Hajj Library (37 records)
+                <br />
+                The Ahl al-Kitab Library (37 records)
+                <br />
+                The Ahl Dahi Library (32 records)
+                <br />
+                The Ahl `Ayydi Library (17 records)
+                <br />
+                The Ahl Yayi Bawi Library (11 records)
+                <br />
+                The Ahl Ahmad al-Sharif Library (10 records)
+                <br />
             </p>
 
             <h3>Contents</h3>

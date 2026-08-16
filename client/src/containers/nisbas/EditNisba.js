@@ -36,7 +36,12 @@ const messages = defineMessages({
 
 class EditNisba extends React.Component {
     componentDidMount() {
-        const { match: { params: { id } }, dispatch } = this.props;
+        const {
+            match: {
+                params: { id },
+            },
+            dispatch,
+        } = this.props;
 
         dispatch(cleanUpSingleNisba());
 

@@ -75,8 +75,9 @@ export default () => {
                 descriptive part of their entries) at the site noted{' '}
                 <a href="/files/Timbuktu-CIA-one-folio-items-lacking-searchable-information-and-not-transferred-to-WAAMD-sorted-by-title.xlsx">
                     HERE <i className="fas fa-download" />{' '}
-                </a>. As additional, searchable information is gleaned from
-                these entries we will be adding them to the WAAMD database.
+                </a>
+                . As additional, searchable information is gleaned from these
+                entries we will be adding them to the WAAMD database.
             </p>
             <h3>Contents</h3>
             <p>

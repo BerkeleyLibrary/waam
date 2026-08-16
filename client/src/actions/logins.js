@@ -9,16 +9,16 @@ import genericError from './genericError';
  */
 
 export function fetchLogins(query) {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(requestLogins(query));
         return get('/api/logins', query, true)
-            .then(json => {
+            .then((json) => {
                 if (json.error) {
                     return dispatch(genericError(json.error));
                 }
                 return dispatch(receiveLogins(json, query));
             })
-            .catch(err => {
+            .catch((err) => {
                 dispatch(genericError(err.message));
             });
     };

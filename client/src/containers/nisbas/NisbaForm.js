@@ -25,10 +25,10 @@ const messages = defineMessages({
     },
 });
 
-const validate = values => {
+const validate = (values) => {
     const errors = {};
     const requiredFields = ['nisba', 'aNisba'];
-    requiredFields.forEach(field => {
+    requiredFields.forEach((field) => {
         if (!values[field]) {
             errors[field] = 'required';
         }
@@ -48,7 +48,10 @@ const Form = ({
 }) => {
     return (
         <div>
-            <form onSubmit={handleSubmit(values => dispatch(addNisba(values)))}>
+            <form
+                dir="ltr"
+                onSubmit={handleSubmit((values) => dispatch(addNisba(values)))}
+            >
                 <DiacriticsWithArabicKeyBoard />
                 {formFields.map((label, index) => {
                     const biLang = label.english && label.arabic && !label.dir;
@@ -142,7 +145,7 @@ const Form = ({
                     );
                 })}
                 {hiddenFields &&
-                    hiddenFormFields.map(item => (
+                    hiddenFormFields.map((item) => (
                         <Field
                             key={item}
                             name={item}

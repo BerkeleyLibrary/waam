@@ -17,7 +17,7 @@ import { formFields, hiddenFormFields } from './authorFields';
 const renderNisbas = ({ fields, meta: { error, submitFailed } }) => (
     <div>
         {fields.map((nisba, index) => (
-            <div className="row" key={index}>
+            <div className="row ltr" key={index}>
                 <div className="col-sm-6" style={{ position: 'relative' }}>
                     {index !== 0 && (
                         <button
@@ -47,7 +47,7 @@ const renderNisbas = ({ fields, meta: { error, submitFailed } }) => (
                 </div>
             </div>
         ))}
-        <div className="form-group">
+        <div className="form-group ltr">
             <button
                 type="button"
                 className="btn-info btn-xs"
@@ -71,10 +71,10 @@ const messages = defineMessages({
     },
 });
 
-const validate = values => {
+const validate = (values) => {
     const errors = {};
     const requiredFields = ['name', 'aName'];
-    requiredFields.forEach(field => {
+    requiredFields.forEach((field) => {
         if (!values[field]) {
             errors[field] = 'required';
         }
@@ -95,7 +95,7 @@ const Form = ({
     return (
         <div>
             <form
-                onSubmit={handleSubmit(values => dispatch(addAuthor(values)))}
+                onSubmit={handleSubmit((values) => dispatch(addAuthor(values)))}
             >
                 <DiacriticsWithArabicKeyBoard />
                 {formFields.map((label, index) => {
@@ -115,7 +115,7 @@ const Form = ({
                     return (
                         <div key={index}>
                             {biLang && (
-                                <div className="row">
+                                <div className="row ltr">
                                     <div className="col-sm-6">
                                         <Field
                                             name={Object.keys(label.english)[0]}
@@ -149,7 +149,7 @@ const Form = ({
                                 </div>
                             )}
                             {rtl && (
-                                <div className="row">
+                                <div className="row ltr">
                                     <div className="col-sm-6">
                                         <label>
                                             {Object.values(label.english)[0]}
@@ -173,7 +173,7 @@ const Form = ({
                                 </div>
                             )}
                             {ltr && (
-                                <div className="row">
+                                <div className="row ltr">
                                     <div className="col-sm-6">
                                         <Field
                                             name={Object.keys(label.english)[0]}
@@ -200,7 +200,7 @@ const Form = ({
                     );
                 })}
                 {hiddenFields &&
-                    hiddenFormFields.map(item => (
+                    hiddenFormFields.map((item) => (
                         <Field
                             key={item}
                             name={item}

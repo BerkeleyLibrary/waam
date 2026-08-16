@@ -1,20 +1,29 @@
-const { Author, Manuscript } = require('../models/index');
+const { Author, Manuscript, Nisba, Subject } = require('../models/index');
 const { removeArabicDiacritics } = require('../utils/db-query');
 
 const searchValue = (...values) =>
-    values
-        .filter(Boolean)
-        .map(removeArabicDiacritics)
-        .join('\n');
+    values.filter(Boolean).map(removeArabicDiacritics).join('\n');
 
 function authors(options) {
-    return Author.findAll(options)
-        .then(list => {
+    // Override options to only select columns needed for indexing to prevent OOM
+    const optimizedOptions = {
+        ...options,
+        attributes: ['id', 'search_nisba', 'search_nisba_id'],
+        include: [{
+            model: Nisba,
+            as: 'nisbas',
+            attributes: ['id', 'nisba', 'aNisba'],
+            through: { attributes: [] }
+        }]
+    };
+
+    return Author.findAll(optimizedOptions)
+        .then((list) => {
             if (!list.length) {
                 return { done: true };
             }
             const requests = [];
-            list.forEach(author => {
+            list.forEach((author) => {
                 const { nisbas: search_nisba, ids: search_nisba_id } = author
                     .nisbas.length
                     ? author.nisbas.reduce(
@@ -48,19 +57,43 @@ function authors(options) {
                     logResponse(`Done indexing ${requests.length} records.`);
                     return { total: requests.length };
                 })
-                .catch(err => logResponse(err));
+                .catch((err) => logResponse(err));
         })
-        .catch(err => logResponse(err));
+        .catch((err) => logResponse(err));
 }
 
 function manuscripts(options) {
-    return Manuscript.findAll(options)
-        .then(list => {
+    // Override options to only select columns needed for indexing to prevent OOM
+    const optimizedOptions = {
+        ...options,
+        attributes: [
+            'id', 'aTitle', 'aAltTitle', 'aAttrTitle',
+            'search_title', 'search_author', 'search_author_aka',
+            'search_author_date_died', 'search_author_nisba',
+            'search_author_id', 'search_author_nisba_id', 'search_subject'
+        ],
+        include: [
+            {
+                model: Author,
+                as: 'authors',
+                attributes: ['id', 'name', 'aName', 'altName', 'aAltName', 'aka', 'aAka', 'dateDied', 'search_nisba', 'search_nisba_id'],
+                through: { attributes: [] }
+            },
+            {
+                model: Subject,
+                as: 'subject',
+                attributes: ['id', 'subject', 'aSubject']
+            }
+        ]
+    };
+
+    return Manuscript.findAll(optimizedOptions)
+        .then((list) => {
             if (!list.length) {
                 return { done: true };
             }
             const requests = [];
-            list.forEach(record => {
+            list.forEach((record) => {
                 const search_title = searchValue(
                     record.aTitle,
                     record.aAltTitle,
@@ -73,7 +106,7 @@ function manuscripts(options) {
                 let search_author_id = '';
                 let search_author_nisba_id = '';
                 if (record.authors.length) {
-                    record.authors.forEach(author => {
+                    record.authors.forEach((author) => {
                         search_author = searchValue(
                             search_author,
                             author.name,
@@ -150,9 +183,9 @@ function manuscripts(options) {
                     logResponse(`Done indexing ${requests.length} records.`);
                     return { total: requests.length };
                 })
-                .catch(err => logResponse(err));
+                .catch((err) => logResponse(err));
         })
-        .catch(err => logResponse(err));
+        .catch((err) => logResponse(err));
 }
 
 function logResponse(data) {

@@ -15,7 +15,7 @@ const messages = defineMessages({
     },
 });
 
-const SignUpPage = props => {
+const SignUpPage = (props) => {
     return (
         <div className="row">
             <div className="col-lg-6 col-md-8 offset-lg-3 offset-md-2">

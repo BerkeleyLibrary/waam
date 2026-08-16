@@ -68,8 +68,8 @@ export default () => {
                 author name, author nisba, familiar names (“known as”),
                 recipients’ names (mainly in correspondence), secondary authors,
                 titles and subject matter, and all items that exceed two folios
-                in length. In the <strong>Almoustapha Abdoulahi Library</strong>,
-                682 records meet these criteria. For the 13,614 one and
+                in length. In the <strong>Almoustapha Abdoulahi Library</strong>
+                , 682 records meet these criteria. For the 13,614 one and
                 two-folio items that lack searchable information, researchers
                 are invited to consult the original inventory, sorted by
                 attributed titles (generally the most descriptive part of their

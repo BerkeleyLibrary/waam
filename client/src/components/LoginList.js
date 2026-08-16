@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LoginList = props => {
+const LoginList = (props) => {
     return (
         <div dir="ltr">
             <table className="table table-striped">
@@ -12,7 +12,7 @@ const LoginList = props => {
                     </tr>
                 </thead>
                 <tbody>
-                    {props.list.map(item => {
+                    {props.list.map((item) => {
                         return (
                             <tr key={item.id}>
                                 <td>{item.user.name}</td>

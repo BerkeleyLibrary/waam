@@ -61,7 +61,9 @@ class Search extends React.Component {
             change,
             advancedSearch,
             switchSearch,
-            groups: { response: { results: groupList } },
+            groups: {
+                response: { results: groupList },
+            },
             intl: { formatMessage },
             user,
         } = this.props;
@@ -117,8 +119,9 @@ class Search extends React.Component {
                     <Link
                         to={{
                             pathname: '/titles',
-                            search: `${(query.advanced && 'advanced=true') ||
-                                ''}`,
+                            search: `${
+                                (query.advanced && 'advanced=true') || ''
+                            }`,
                         }}
                         className="btn btn-outline-secondary"
                     >

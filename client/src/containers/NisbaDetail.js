@@ -81,7 +81,12 @@ class NisbaDetail extends React.Component {
     };
 
     componentDidMount() {
-        const { match: { params: { id } }, dispatch } = this.props;
+        const {
+            match: {
+                params: { id },
+            },
+            dispatch,
+        } = this.props;
 
         dispatch(cleanUpSingleNisba());
 
@@ -97,7 +102,12 @@ class NisbaDetail extends React.Component {
     };
 
     deleteNisba = () => {
-        const { match: { params: { id } }, dispatch } = this.props;
+        const {
+            match: {
+                params: { id },
+            },
+            dispatch,
+        } = this.props;
         dispatch(deleteNisba(parseInt(id, 10)));
         this.handleClose();
     };
@@ -173,28 +183,25 @@ class NisbaDetail extends React.Component {
                                 </Link>
                             </div>
                             <div className="col">
-                                {!deleted &&
-                                    user &&
-                                    user.admin && (
-                                        <div className="text-right">
-                                            <button
-                                                className="btn btn-outline-danger btn-sm"
-                                                onClick={this.handleOpen}
-                                            >
-                                                <i className="fas fa-times" />{' '}
-                                                Delete
-                                            </button>{' '}
-                                            <Link
-                                                to={`/nisbas/edit/${
-                                                    selectedNisba.id
-                                                }`}
-                                                className="btn btn-outline-info btn-sm"
-                                            >
-                                                <i className="fas fa-pen" />{' '}
-                                                Edit
-                                            </Link>
-                                        </div>
-                                    )}
+                                {!deleted && user && user.admin && (
+                                    <div className="text-right">
+                                        <button
+                                            className="btn btn-outline-danger btn-sm"
+                                            onClick={this.handleOpen}
+                                        >
+                                            <i className="fas fa-times" />{' '}
+                                            Delete
+                                        </button>{' '}
+                                        <Link
+                                            to={`/nisbas/edit/${
+                                                selectedNisba.id
+                                            }`}
+                                            className="btn btn-outline-info btn-sm"
+                                        >
+                                            <i className="fas fa-pen" /> Edit
+                                        </Link>
+                                    </div>
+                                )}
                             </div>
                         </div>
 

@@ -1,0 +1,3195 @@
+{
+  "missingNisbaReferences": [],
+  "missingSubjectReferences": [
+    {
+      "missingSubjectId": 114,
+      "referencedByManuscriptId": "16823",
+      "arabicTitle": "ورقة فيها قصيدة في شأن زيارة الشيخ سيد المختار الكنتي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 593,
+      "referencedByManuscriptId": "3038",
+      "arabicTitle": "رسالة الي عبايو",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "56318",
+      "arabicTitle": "تخميس القصيدة الجيلانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "72308",
+      "arabicTitle": "قصيدة في مدح الجيلاني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "77745",
+      "arabicTitle": "تخميس القصيدة الجيلانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "77774",
+      "arabicTitle": "تخميس القصيدة الجيلانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "77872",
+      "arabicTitle": "تخميس القصيدة الجيلانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "78031",
+      "arabicTitle": "قصيدة الجيلاني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "78041",
+      "arabicTitle": "دعاء اسم الجلالة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "78094",
+      "arabicTitle": "تخميس القصيدة الجيلانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "78172",
+      "arabicTitle": "بداية القصيدة الجيلانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "78174",
+      "arabicTitle": "تخميس القصيدة الجيلانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "78633",
+      "arabicTitle": "تخميس القصيدة الجيلانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "78646",
+      "arabicTitle": "تخميس القصيدة الجيلاني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "78868",
+      "arabicTitle": "قصيدة عبد القادر الجيلاني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "78869",
+      "arabicTitle": "تخميس القصيدة الجيلانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "78877",
+      "arabicTitle": "تخميس القصيدة الجيلانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "78885",
+      "arabicTitle": "تخميس القصيدة الجيلانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "78908",
+      "arabicTitle": "تخميس القصيدة الجيلانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "78911",
+      "arabicTitle": "قصيدة الجيلانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2142,
+      "referencedByManuscriptId": "21128",
+      "arabicTitle": "حجة التجانية على أن الطريقة مبنية على الكتاب والسنة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 63,
+      "referencedByManuscriptId": "124",
+      "arabicTitle": "كتاب أخبار أهل الرسوخ في الفقه والتحديث بمقدار المنسوخ من الحديث",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 247,
+      "referencedByManuscriptId": "79008",
+      "arabicTitle": "مختصر الأخضري في العبادات",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 619,
+      "referencedByManuscriptId": "8137",
+      "arabicTitle": "كشف الوجوه الغر لمعاني نظم الدر (1)",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2281,
+      "referencedByManuscriptId": "21541",
+      "arabicTitle": "",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1847,
+      "referencedByManuscriptId": "21058",
+      "arabicTitle": "الإنابة في مدح سيدنا وعمدتنا الشيخ إبراهيم الكولخي صاحب الفضيلة والإمامة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 3181,
+      "referencedByManuscriptId": "14104",
+      "arabicTitle": "نظم حول فضيلة الصبر",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2113,
+      "referencedByManuscriptId": "17717",
+      "arabicTitle": "قصيدة في رثاء الشيخ ابراهيم انياص الكولخي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2113,
+      "referencedByManuscriptId": "20972",
+      "arabicTitle": "قصيدة في رثاء ابراهيم انياس",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "72039",
+      "arabicTitle": "حزب الناقة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "77746",
+      "arabicTitle": "شرح وخواص على الحزب السيفي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2237,
+      "referencedByManuscriptId": "21423",
+      "arabicTitle": "",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "71787",
+      "arabicTitle": "حزب البر",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "71840",
+      "arabicTitle": "حزب المعنى",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "71841",
+      "arabicTitle": "حزب المغني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "71844",
+      "arabicTitle": "حرز الناقة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "72326",
+      "arabicTitle": "حرز البحر بالعجمية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1420,
+      "referencedByManuscriptId": "13260",
+      "arabicTitle": "قصيدة الشكر علي مدح الشيخ التيجاني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1417,
+      "referencedByManuscriptId": "13217",
+      "arabicTitle": "رسالة الي أحمد البكائي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "72518",
+      "arabicTitle": "شرح على حزب السيفي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1977,
+      "referencedByManuscriptId": "19969",
+      "arabicTitle": "مكتوب في لفظ الضاد",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "77949",
+      "arabicTitle": "دعاء السيفي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "78695",
+      "arabicTitle": "دعاء السيفي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1795,
+      "referencedByManuscriptId": "16504",
+      "arabicTitle": "كتاب التعبير",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 559,
+      "referencedByManuscriptId": "2541",
+      "arabicTitle": "مفيدة الخلان في اثبات وجوب المربين في كل زمان",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2237,
+      "referencedByManuscriptId": "21526",
+      "arabicTitle": "عيبة الفقراء في مدح خاتم الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2210,
+      "referencedByManuscriptId": "21542",
+      "arabicTitle": "",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2281,
+      "referencedByManuscriptId": "21539",
+      "arabicTitle": "كاشف الغمة في إغاثة أهل الفيضة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 224,
+      "referencedByManuscriptId": "9978",
+      "arabicTitle": "مزيل الاشكال عن حكم صلاة أهل الاحوال",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 950,
+      "referencedByManuscriptId": "6708",
+      "arabicTitle": "رسالة من الشيخ سيدي أحمد البكاي الي المصطفي بن عبدالله فودي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1572,
+      "referencedByManuscriptId": "14610",
+      "arabicTitle": "رسالتين الي اثنين من الأئمة في زمن ما",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1572,
+      "referencedByManuscriptId": "14613",
+      "arabicTitle": "رسالة الي ألفا ابراهيم",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1620,
+      "referencedByManuscriptId": "14854",
+      "arabicTitle": "رسالة الي السلطان كاجور",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2173,
+      "referencedByManuscriptId": "21253",
+      "arabicTitle": "مرواق العشاق في مدح سيدي أبي إسحاق",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "77853",
+      "arabicTitle": "بداية الحلل السندسية في المقامات الأحمدية القدسية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1506,
+      "referencedByManuscriptId": "14074",
+      "arabicTitle": "مجهول",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2372,
+      "referencedByManuscriptId": "22899",
+      "arabicTitle": "اللمعة النورانية في‏ ‬الأوراد الربانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1618,
+      "referencedByManuscriptId": "14829",
+      "arabicTitle": "رسالة الي أحمد الكبير المدني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2123,
+      "referencedByManuscriptId": "21073",
+      "arabicTitle": "الثمرات الدواني في مدح سيدي أحمد التجاني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1890,
+      "referencedByManuscriptId": "19485",
+      "arabicTitle": "وثيقتان: 1- صادرة من أمير المؤمنين أحمد بن أحمد بن محمد الماسني لمحمد بن صنب بن صوم أن يفتش الأسواق 0 2 - صادرة من أمير المؤمنين أحمد بن محمدالي جميع العمال ان يساعدوا محمد صنب المذكور في مهمته",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 4554,
+      "referencedByManuscriptId": "43738",
+      "arabicTitle": "مقامة أدبية",
+      "englishTitle": "Maqāma adabiyya"
+    },
+    {
+      "missingSubjectId": 618,
+      "referencedByManuscriptId": "14658",
+      "arabicTitle": "رسالة الي أحمد الكبير المدني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1865,
+      "referencedByManuscriptId": "18620",
+      "arabicTitle": "رسالة يقول فيها المرسل انه بلغني أنكم معشر الامراء لم تسمعوا ما أمرتكم به من أن أهل تنبكت لا تجب عليهم الضيافة الا ضافية جماعة للجهاد",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "71274",
+      "arabicTitle": "مكتوب في الدعاء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1898,
+      "referencedByManuscriptId": "17910",
+      "arabicTitle": "رسالة يأمر فيها المرسل بالصبر وان يتبعوا من شارا و من اركناتن أو تنكريكف و هو معهم حيث كانوا",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "43090",
+      "arabicTitle": "رحلة إلى الحرمين الشريفين",
+      "englishTitle": "Riḥla ilā al-ḥarmayn ash-sharifayn"
+    },
+    {
+      "missingSubjectId": 1601,
+      "referencedByManuscriptId": "14681",
+      "arabicTitle": "رسالة الي أحمدو بن عمر بن سعيد",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2210,
+      "referencedByManuscriptId": "21359",
+      "arabicTitle": "[قصيدة في مدح لشيخ التجاني]",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 618,
+      "referencedByManuscriptId": "3468",
+      "arabicTitle": "نصيحر عن عوا/ يا كو متاني نيكرا كتهو كج واقر دذن عثكنتا ذنمك تنبيا",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2279,
+      "referencedByManuscriptId": "21537",
+      "arabicTitle": "نبذة يسيرة في مدح غوث الزمان",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1865,
+      "referencedByManuscriptId": "17440",
+      "arabicTitle": "رسالة في النهي عن استعباد عائلة حرة في ببنب والتحذير من مخالفة هذا الأمر",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 644,
+      "referencedByManuscriptId": "10565",
+      "arabicTitle": "اختصار كتاب الاعتبار للهمذاني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "42840",
+      "arabicTitle": "رحلة إلى بيت الله الحرام",
+      "englishTitle": "Riḥla ilā bayt Allāh al-ḥarām"
+    },
+    {
+      "missingSubjectId": 1890,
+      "referencedByManuscriptId": "20964",
+      "arabicTitle": "رسالة و هي في شهادة الكثير من العمرين علي ملكية حوض ابنغ لقرية نحيج من زمن امارة افلان حتي يومهم",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2113,
+      "referencedByManuscriptId": "17722",
+      "arabicTitle": "قصيدة يرثي بها ابراهيم الكولخي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2341,
+      "referencedByManuscriptId": "21812",
+      "arabicTitle": "",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 507,
+      "referencedByManuscriptId": "21059",
+      "arabicTitle": "وصية ودعاء وتنبيه إلى أولي الفضل والعقول",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2144,
+      "referencedByManuscriptId": "21132",
+      "arabicTitle": "بحث الأحباب لزيارة قطب الأقطاب",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 644,
+      "referencedByManuscriptId": "12459",
+      "arabicTitle": "ناسخ القرآن ومنسوخه",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1669,
+      "referencedByManuscriptId": "15120",
+      "arabicTitle": "الفوائد الجميلة علي الآيات الجليلة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 507,
+      "referencedByManuscriptId": "4055",
+      "arabicTitle": "المنهل المورود في ردع النافي عن الورد",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2156,
+      "referencedByManuscriptId": "21212",
+      "arabicTitle": "الأبيس في تدريس اللغة العربية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2191,
+      "referencedByManuscriptId": "21230",
+      "arabicTitle": "جامع جوامع الدواوين",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 344,
+      "referencedByManuscriptId": "1237",
+      "arabicTitle": "مسألة الاستخلاف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1534,
+      "referencedByManuscriptId": "14337",
+      "arabicTitle": "رسالة الي شيخ أحمد أمير ماسينا وقت ذلك وآخرين",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 4646,
+      "referencedByManuscriptId": "50471",
+      "arabicTitle": "إجازة لمولاي الحفيظ بن مولانا الحسن",
+      "englishTitle": "Ijāza li-Mūlāy ʿAbd al-Ḥafīẓ b. Mawlānā al-Ḥasan"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "45722",
+      "arabicTitle": "اختصار رحلة محمد يحيى الولاتي",
+      "englishTitle": "Ikhtiṣār riḥlat Muḥammad Yaḥyā al-Walātī"
+    },
+    {
+      "missingSubjectId": 2177,
+      "referencedByManuscriptId": "21265",
+      "arabicTitle": "إلى ساداتنا ورعاة أرضنا الكرام",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1847,
+      "referencedByManuscriptId": "18772",
+      "arabicTitle": "قصيدتان في مدح ابراهيم انياس الكولكي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 507,
+      "referencedByManuscriptId": "21055",
+      "arabicTitle": "الخير الكامل ما قابله الشر الشامل",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "44400",
+      "arabicTitle": "رحلة الحج إلى بيت الله الحرام",
+      "englishTitle": "Riḥlat al-ḥajj ilā bayt Allāh al-ḥarām"
+    },
+    {
+      "missingSubjectId": 688,
+      "referencedByManuscriptId": "4834",
+      "arabicTitle": "سلاح التجانيين في الرد علي المغترين والمعترضين",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1847,
+      "referencedByManuscriptId": "18093",
+      "arabicTitle": "قصيدة في مدح ابراهيم الكولخي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1763,
+      "referencedByManuscriptId": "16187",
+      "arabicTitle": "جواب في شأن الاحتفال للمولد النبوي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1847,
+      "referencedByManuscriptId": "19784",
+      "arabicTitle": "قصيدة في مدح الشيخ الحاج ابراهيم الكولخي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1847,
+      "referencedByManuscriptId": "19787",
+      "arabicTitle": "قصيدة في مدح الشيخ ابراهيم الكولخي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1847,
+      "referencedByManuscriptId": "21051",
+      "arabicTitle": "نيل الأماني لأهل التداني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1890,
+      "referencedByManuscriptId": "18287",
+      "arabicTitle": "رسالة يطلب فيها المرسل الاستسقاء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1847,
+      "referencedByManuscriptId": "17226",
+      "arabicTitle": "قصيدة في مدح الشيخ ابراهيم الكولخي -",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1847,
+      "referencedByManuscriptId": "20970",
+      "arabicTitle": "قصيدة في مدح ابراهيم انياس",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 559,
+      "referencedByManuscriptId": "2521",
+      "arabicTitle": "سلالة المفتاح من منح الفتاح/ يقول ناصر الفقير الكبري الكنوي القادري الاشعري",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2131,
+      "referencedByManuscriptId": "21091",
+      "arabicTitle": "شوق الأحباب",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2117,
+      "referencedByManuscriptId": "21048",
+      "arabicTitle": "مرءاة الحق",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1377,
+      "referencedByManuscriptId": "12764",
+      "arabicTitle": "مجهول",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2162,
+      "referencedByManuscriptId": "21228",
+      "arabicTitle": "ديوان الكبريت الأحمر في مدائح القطب الأكبر",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1964,
+      "referencedByManuscriptId": "18671",
+      "arabicTitle": "مجموع يحتوي علي : 1 - مختصر ابن قنفذ في سير النجوم 0 2 - كتاب علم الأفلاك و ما يتعلق بها للطرابلسي 3 - كتاب في علم الرمل وبه آثار للأرضة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "45372",
+      "arabicTitle": "رحلتان إحداهما نحو السنغال والأخرى نحو شمال موريتانيا",
+      "englishTitle": "Riḥlatān iḥdāhuma naḥw as-Sinighāl waal-ukhrā naḥw shamāl Mūrītānīā"
+    },
+    {
+      "missingSubjectId": 724,
+      "referencedByManuscriptId": "5666",
+      "arabicTitle": "أرجوزة في شهور العرب والعجم/ الحمد لله الذي اهدال بفضله يزيدفي الأيمان",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 990,
+      "referencedByManuscriptId": "7011",
+      "arabicTitle": "كتاب في الإيمان\" (أو لعلى (؟): الجميل الرأي علي شهور العرب والعجمي/ الحمد لله الذي اهدان بفضله يريد في الايمان)",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "72783",
+      "arabicTitle": "مختطفات من كتاب المدخل",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2372,
+      "referencedByManuscriptId": "23150",
+      "arabicTitle": "تأليف في‏ ‬الأوفاق‏ (‬نظم وشرحه‏)",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 879,
+      "referencedByManuscriptId": "6405",
+      "arabicTitle": "وثيقة للأمير محمد بلو الي جماعة من المسلمين",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2139,
+      "referencedByManuscriptId": "21121",
+      "arabicTitle": "ترحيب صاحب الفيضة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "45464",
+      "arabicTitle": "رحلة دلاهي",
+      "englishTitle": "Riḥlat dalāhī"
+    },
+    {
+      "missingSubjectId": 1643,
+      "referencedByManuscriptId": "15054",
+      "arabicTitle": "رسالة الي أحمد الكبير المدني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2136,
+      "referencedByManuscriptId": "21112",
+      "arabicTitle": "وصلة العشاق في مدحفيضة أبي الإسحاق",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "49191",
+      "arabicTitle": "رحلة إلي الحج",
+      "englishTitle": "Riḥla ilā al-ḥajj"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "45739",
+      "arabicTitle": "الرحلة الكبرى",
+      "englishTitle": "ar-Riḥla al-kubrā"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "45740",
+      "arabicTitle": "اختصار رحلة محمد يحيى الولاتي",
+      "englishTitle": "Ikhtiṣār riḥlat Muḥammad Yaḥyā al-Walātī"
+    },
+    {
+      "missingSubjectId": 3522,
+      "referencedByManuscriptId": "41516",
+      "arabicTitle": "مقامات أدبية",
+      "englishTitle": "Maqāmāt adabiyya"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "49691",
+      "arabicTitle": "رحلة الي بانجول والسينغال",
+      "englishTitle": "Riḥla ilā Bānjūl waʾs-Sīnighāl"
+    },
+    {
+      "missingSubjectId": 507,
+      "referencedByManuscriptId": "2129",
+      "arabicTitle": "تبكية البكائي (وافحام الطغاة الأعداء)",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 507,
+      "referencedByManuscriptId": "8037",
+      "arabicTitle": "تبكية البكاء (وافحام الطغاة الأعداء)",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 507,
+      "referencedByManuscriptId": "14363",
+      "arabicTitle": "تبكية البكائي (تبكية البكاء) (وافحام الطغاة الأعداء)",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 507,
+      "referencedByManuscriptId": "15740",
+      "arabicTitle": "تبكية البكاء (وافحام الطغاة الأعداء)",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 507,
+      "referencedByManuscriptId": "16257",
+      "arabicTitle": "التأييدات الربانية للجماعة التيجانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 507,
+      "referencedByManuscriptId": "18194",
+      "arabicTitle": "تبكية البكاء (وافحام الطغاة الأعداء)",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 507,
+      "referencedByManuscriptId": "18317",
+      "arabicTitle": "تبكية البكاء وافحام الطغاة (الأعداء)",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 507,
+      "referencedByManuscriptId": "18784",
+      "arabicTitle": "تبكيت البكاء وافحام الطغاة الأعداء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1890,
+      "referencedByManuscriptId": "19418",
+      "arabicTitle": "شكوي ضد أهل قرية أمبون رعية الأمير حامد والذين أخذوا منه مزرعته",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2350,
+      "referencedByManuscriptId": "21810",
+      "arabicTitle": "",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1847,
+      "referencedByManuscriptId": "19798",
+      "arabicTitle": "قصيدة في مدح الشيخ ابراهيم انياس",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 99,
+      "referencedByManuscriptId": "10660",
+      "arabicTitle": "كشف اللبس عن المسائل الخمس",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2268,
+      "referencedByManuscriptId": "71639",
+      "arabicTitle": "القصيدة الزينيبة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1738,
+      "referencedByManuscriptId": "15922",
+      "arabicTitle": "قلائد اللجين علي نحور قرة العينين",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 704,
+      "referencedByManuscriptId": "5661",
+      "arabicTitle": "كواكب الحساب/ الحمد لله العلي الصمد رب العباد باسط حميد",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "71478",
+      "arabicTitle": "مقصورة الجوهرة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "72166",
+      "arabicTitle": "مجموع فيه 1- نظم السيفي 2- قصيدة النونية في الدعاء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "77932",
+      "arabicTitle": "دعاء التحصن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "78374",
+      "arabicTitle": "سيف الأعداء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "78417",
+      "arabicTitle": "منظومة في الدعاء والتوسل",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "78425",
+      "arabicTitle": "سيف الأعداء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "50899",
+      "arabicTitle": "رسالة ضمنها نتائج رحلة قام بها",
+      "englishTitle": "Risāla ḍimnahā natāʾij riḥla qāma bihā"
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "51541",
+      "arabicTitle": "قصيدة في ذكر الأولياء من ذريته سيد محمد الكنتي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 99,
+      "referencedByManuscriptId": "1656",
+      "arabicTitle": "فتاوي حول مسائل في التصوف والعبادات",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 224,
+      "referencedByManuscriptId": "887",
+      "arabicTitle": "جواب رسالة حول موضوعات في الفقه والتصوف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 965,
+      "referencedByManuscriptId": "6764",
+      "arabicTitle": "نبذة من الكتاب المسمي بوفاء الوفا بأخبار دار المصطفي صلعم",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2054,
+      "referencedByManuscriptId": "20325",
+      "arabicTitle": "رسالة تتعلق بدخول المستعمر جن وعزمه علي الدخول في تنبكت ويطلب الملك من أهل تنبكت ارسال وثائق تاريخية تثبت أنهم تحت حكمه 0",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "47807",
+      "arabicTitle": "رحلة من أطار الي عيون الساقية الحمراء",
+      "englishTitle": "Riḥla min Atār ilā ʿAyūn as-Sāqiyya al-Ḥamrā"
+    },
+    {
+      "missingSubjectId": 1748,
+      "referencedByManuscriptId": "16008",
+      "arabicTitle": "قصيدة في مدح الشيخ سيد أحمد بن السيد ابي بكر بن الصيد للتيجاني بن محمد الأمين",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 600,
+      "referencedByManuscriptId": "3280",
+      "arabicTitle": "فصيدة تائية/ شهدت بان الله والي الولاية وقد من بالتصريف في كل حالة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 622,
+      "referencedByManuscriptId": "3506",
+      "arabicTitle": "",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 696,
+      "referencedByManuscriptId": "5228",
+      "arabicTitle": "حبة الوهاب",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 704,
+      "referencedByManuscriptId": "5433",
+      "arabicTitle": "نبذة في علم الفلك",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1203,
+      "referencedByManuscriptId": "11340",
+      "arabicTitle": "تأملات في موضوعات مختلفة في العلوم",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1316,
+      "referencedByManuscriptId": "12154",
+      "arabicTitle": "مجهول",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1318,
+      "referencedByManuscriptId": "12156",
+      "arabicTitle": "مجهول",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1322,
+      "referencedByManuscriptId": "12168",
+      "arabicTitle": "مجهول",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1322,
+      "referencedByManuscriptId": "12851",
+      "arabicTitle": "مجهول",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1322,
+      "referencedByManuscriptId": "12856",
+      "arabicTitle": "مجهول",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1322,
+      "referencedByManuscriptId": "12858",
+      "arabicTitle": "مجهول",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1466,
+      "referencedByManuscriptId": "13729",
+      "arabicTitle": "نظم شعري في مدح أبطال الجهاد",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1473,
+      "referencedByManuscriptId": "13781",
+      "arabicTitle": "مجهول",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1519,
+      "referencedByManuscriptId": "14243",
+      "arabicTitle": "قائمة بأسماء بعض العبيد لدي أحد الحكام في عصره",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 779,
+      "referencedByManuscriptId": "14274",
+      "arabicTitle": "شرح وسيلة السعادة الي معني كلمة الشهادة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1545,
+      "referencedByManuscriptId": "14549",
+      "arabicTitle": "مجهول",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1558,
+      "referencedByManuscriptId": "14573",
+      "arabicTitle": "قوائم بأسماء جنود",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1578,
+      "referencedByManuscriptId": "14623",
+      "arabicTitle": "قوائم أسماء جنود",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1581,
+      "referencedByManuscriptId": "14626",
+      "arabicTitle": "قوائم بأسماء عتاد وذخيرة لدي أحد القادة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1624,
+      "referencedByManuscriptId": "14863",
+      "arabicTitle": "أسماء النبي محمد",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1651,
+      "referencedByManuscriptId": "15077",
+      "arabicTitle": "قوائم بأسماء سلاح ومعدات",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1663,
+      "referencedByManuscriptId": "15106",
+      "arabicTitle": "قوائم أسماء جنود أعداء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1665,
+      "referencedByManuscriptId": "15108",
+      "arabicTitle": "قوائم أسماء جنود ورماة لأحد الأعداء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1665,
+      "referencedByManuscriptId": "15109",
+      "arabicTitle": "قوائم أسماء جنود ورماة لأحد الأعداء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1666,
+      "referencedByManuscriptId": "15110",
+      "arabicTitle": "قوائم أسماء جنود ورماة لأحد الأعداء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1667,
+      "referencedByManuscriptId": "15111",
+      "arabicTitle": "قوائم أسماء فرسان وأشخاص",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1749,
+      "referencedByManuscriptId": "16010",
+      "arabicTitle": "قصيدة في مدح الشيخ أحمد حماه الله",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1890,
+      "referencedByManuscriptId": "17787",
+      "arabicTitle": "وثيقة فيها تركة عبيد زروق بن محمد وتقويمهم بالودع وأسماء الحاضرين",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1847,
+      "referencedByManuscriptId": "18849",
+      "arabicTitle": "فصيدة في مدح ابراهيم الكولخي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2004,
+      "referencedByManuscriptId": "19663",
+      "arabicTitle": "قصيدة في مدح الشيخ عبد القادر الجيلاني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2135,
+      "referencedByManuscriptId": "21110",
+      "arabicTitle": "مجموع أحزاب القادرية الخمسة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2136,
+      "referencedByManuscriptId": "21534",
+      "arabicTitle": "",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2281,
+      "referencedByManuscriptId": "21540",
+      "arabicTitle": "[شيخ برهام مي أنيا]",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2292,
+      "referencedByManuscriptId": "21569",
+      "arabicTitle": "",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2351,
+      "referencedByManuscriptId": "21813",
+      "arabicTitle": "",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2355,
+      "referencedByManuscriptId": "21826",
+      "arabicTitle": "",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2372,
+      "referencedByManuscriptId": "23149",
+      "arabicTitle": "تأليف في‏ ‬الأوفاق‏ (‬نظم وشرحه‏)",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2135,
+      "referencedByManuscriptId": "34583",
+      "arabicTitle": "مكتوب في ذكر أوراد القادرية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1511,
+      "referencedByManuscriptId": "14125",
+      "arabicTitle": "مختارات عن العلم والمعرفة به",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1377,
+      "referencedByManuscriptId": "21130",
+      "arabicTitle": "مفتاح الولاية ومنبع الدراية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2136,
+      "referencedByManuscriptId": "21133",
+      "arabicTitle": "تحفة العشاق في مدح أبي الإسحاق",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2372,
+      "referencedByManuscriptId": "22900",
+      "arabicTitle": "قبس الأنوار وجامع الأسرار",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2004,
+      "referencedByManuscriptId": "19303",
+      "arabicTitle": "قصيدتان: -1 في الشيخ سيد المختار بن أحمد -2 في مدح الشيخ عبد القادر الجيلاني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "41747",
+      "arabicTitle": "نظم رحلته إلى الحج",
+      "englishTitle": "Naẓm riḥlatihi ilā al-ḥajj"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "42649",
+      "arabicTitle": "رحلة إلى الحج",
+      "englishTitle": "Riḥla ilā al-ḥajj"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "42671",
+      "arabicTitle": "رحلة إلى الحج",
+      "englishTitle": "Riḥla ilā al-ḥājj"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "42679",
+      "arabicTitle": "نظم رحلة الشيخ حماه الله",
+      "englishTitle": "Naẓm riḥlat ash-Shaykh Ḥima Allāh [at-Tīshītī]"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "42939",
+      "arabicTitle": "رحلة إلى الحج",
+      "englishTitle": "Riḥla ilā al-ḥajj"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "43017",
+      "arabicTitle": "الحماسة السنية الكاملة المزية في الرحلة العلمية التركزية الشنقيطية",
+      "englishTitle": "al-Ḥamāsa as-sunniyya al-kāmila al-maziyya fī al-riḥla al-ʿilmiyya at-turkuziyya ash-shinqīṭiyya"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "45673",
+      "arabicTitle": "رحلة حجية إلى بيت الله الحرام",
+      "englishTitle": "Riḥla hijjiyya ilā bayt Allāh al-ḥarām"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "45951",
+      "arabicTitle": "رحلة إلى الحج",
+      "englishTitle": "Riḥla fī al-ḥajj"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "46335",
+      "arabicTitle": "نظم رحلة حجية إلى الديار المقدسة",
+      "englishTitle": "Naẓm riḥlat ḥajiyya ilā ʾd-diyār al-muqaddasa"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "47373",
+      "arabicTitle": "رحلة",
+      "englishTitle": "Riḥla"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "51082",
+      "arabicTitle": "",
+      "englishTitle": "Riḥla mudawwana"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "48794",
+      "arabicTitle": "رحلة إلى الحج",
+      "englishTitle": "Riḥla ilā al-ḥajj"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "50280",
+      "arabicTitle": "رحلة إلي الحج",
+      "englishTitle": "Riḥla ilā al-ḥajj"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "41538",
+      "arabicTitle": "الرحلة المعينية",
+      "englishTitle": "ar-Riḥla al-Muʿayyaniyya"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "45731",
+      "arabicTitle": "اختصار الرحلة",
+      "englishTitle": "Ikhtiṣār ar-riḥla"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "46963",
+      "arabicTitle": "رحلة الي الحج",
+      "englishTitle": "Riḥla ilā al-ḥājj"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "48325",
+      "arabicTitle": "الرحلة إلي فاس ووصف علماء فاس",
+      "englishTitle": "ar-Riḥla ilā Fās wa-waṣf ʿulamāʾ Fās"
+    },
+    {
+      "missingSubjectId": 4551,
+      "referencedByManuscriptId": "50871",
+      "arabicTitle": "رحلات في دول إفريقيا",
+      "englishTitle": "Riḥlāt fī duwal Ifrīqiyya"
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "72498",
+      "arabicTitle": "شرح على دعاء محي الرفات",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1729,
+      "referencedByManuscriptId": "39206",
+      "arabicTitle": "كتابٌ في الرَّدِّ على محمد بن محمد بار",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 828,
+      "referencedByManuscriptId": "39312",
+      "arabicTitle": "نُكْتةٌ مُفيدةٌ لكل مُرِيد",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1118,
+      "referencedByManuscriptId": "39224",
+      "arabicTitle": "قصيدةٌ في التَّوسُّل ومدح الشيخ المختار الكنتي (الكبير)",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "71711",
+      "arabicTitle": "شرح وخواص إنا أنزلناه",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "71561",
+      "arabicTitle": "شرح وخواص دعاء محي الرفات",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1658,
+      "referencedByManuscriptId": "66508",
+      "arabicTitle": "قصيدة في التوسل بالأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1415,
+      "referencedByManuscriptId": "53026",
+      "arabicTitle": "منظومة في دعء الاستغاثة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1550,
+      "referencedByManuscriptId": "57729",
+      "arabicTitle": "حرز الفرس",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2378,
+      "referencedByManuscriptId": "57863",
+      "arabicTitle": "رسالة إلى معشة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2281,
+      "referencedByManuscriptId": "21543",
+      "arabicTitle": "[واقر هيللة]",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 584,
+      "referencedByManuscriptId": "57980",
+      "arabicTitle": "قصيدة في مدح أحمد التجاني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1707,
+      "referencedByManuscriptId": "51248",
+      "arabicTitle": "رسالة إلى محمد غوريا",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1415,
+      "referencedByManuscriptId": "67589",
+      "arabicTitle": "قصيدة في الاستغاثة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1685,
+      "referencedByManuscriptId": "67600",
+      "arabicTitle": "إجازة في الفقه",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "71053",
+      "arabicTitle": "اعلام فيما يحتاج إليه في السلام من أدعية وصلاة وصيام",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1053,
+      "referencedByManuscriptId": "73003",
+      "arabicTitle": "رسالة إلى محمد بن الطاهر",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2099,
+      "referencedByManuscriptId": "77106",
+      "arabicTitle": "مكتوب في منافع سورة الرحمن لتسهيل الفهم",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 870,
+      "referencedByManuscriptId": "6380",
+      "arabicTitle": "معني نزول القرآن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 247,
+      "referencedByManuscriptId": "85676",
+      "arabicTitle": "رسالة إلى القاضي محمد إبراهيم",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2101,
+      "referencedByManuscriptId": "20791",
+      "arabicTitle": "رسالة يعطي فيها المرسل خبر البلاد كلما جري فيها من الأمور السياسية والكلام علي كثير من المدن واسعار العاج والريش والرقيق",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1658,
+      "referencedByManuscriptId": "51977",
+      "arabicTitle": "مكتوب في فوائد بعض الآيات مع أسماء بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2399,
+      "referencedByManuscriptId": "52692",
+      "arabicTitle": "مكتوب في خواص البسملة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "52951",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "52972",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "52975",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "52999",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 63,
+      "referencedByManuscriptId": "53171",
+      "arabicTitle": "مصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 240,
+      "referencedByManuscriptId": "53178",
+      "arabicTitle": "نصف الثاني من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 114,
+      "referencedByManuscriptId": "53181",
+      "arabicTitle": "نصف من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 264,
+      "referencedByManuscriptId": "53183",
+      "arabicTitle": "نصف الأول من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 23,
+      "referencedByManuscriptId": "54210",
+      "arabicTitle": "كتاب الزيرجية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 23,
+      "referencedByManuscriptId": "54402",
+      "arabicTitle": "كتاب في الفقه",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 23,
+      "referencedByManuscriptId": "54714",
+      "arabicTitle": "جزء من المصحف الشريف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 23,
+      "referencedByManuscriptId": "54839",
+      "arabicTitle": "القصيدة البدماصية في مدح النبي (ص)",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 114,
+      "referencedByManuscriptId": "55327",
+      "arabicTitle": "المصحف الشريف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 23,
+      "referencedByManuscriptId": "55343",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 23,
+      "referencedByManuscriptId": "55723",
+      "arabicTitle": "منظومة في عجائب مخلوقات الله",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 23,
+      "referencedByManuscriptId": "55757",
+      "arabicTitle": "كتاب في الفقه",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 66,
+      "referencedByManuscriptId": "55790",
+      "arabicTitle": "كتاب في الفقه",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2099,
+      "referencedByManuscriptId": "58463",
+      "arabicTitle": "شرح على دعوة سورة قريش",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2099,
+      "referencedByManuscriptId": "58600",
+      "arabicTitle": "دعاء سورة قريش وخواصها",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2083,
+      "referencedByManuscriptId": "58727",
+      "arabicTitle": "جزء سورة الرحمن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2099,
+      "referencedByManuscriptId": "59201",
+      "arabicTitle": "مكتوب في خواص سورة قريش",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2099,
+      "referencedByManuscriptId": "59358",
+      "arabicTitle": "مكتوب في فوائد سورة قريش",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2083,
+      "referencedByManuscriptId": "59371",
+      "arabicTitle": "سورة الرحمن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "59593",
+      "arabicTitle": "مكتوب في الدعاء وخواصها",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2083,
+      "referencedByManuscriptId": "59908",
+      "arabicTitle": "جزء من سورة الرحمن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2083,
+      "referencedByManuscriptId": "59909",
+      "arabicTitle": "سورة الرحمن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2099,
+      "referencedByManuscriptId": "61633",
+      "arabicTitle": "مكتوب في دعاء سورة قريش",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2099,
+      "referencedByManuscriptId": "62644",
+      "arabicTitle": "مكتوب في خواص سورة قريش",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2099,
+      "referencedByManuscriptId": "62782",
+      "arabicTitle": "مكتوب في منافع سورة الفلق وقريش",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "63311",
+      "arabicTitle": "دعاء الكمياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "63342",
+      "arabicTitle": "دعاء السيفي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "63428",
+      "arabicTitle": "دعاء السيفي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "63536",
+      "arabicTitle": "دعاء السيفي",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "63542",
+      "arabicTitle": "دعاء التسبيح",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "63727",
+      "arabicTitle": "شرح صلاة السابق ومنافعها",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "63741",
+      "arabicTitle": "شرح دعاء محيي الرفات ومنافعها",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "63907",
+      "arabicTitle": "صلاة الفاضلة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "63958",
+      "arabicTitle": "صلاة الكمياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "63971",
+      "arabicTitle": "دعاء الأسبوع",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "64055",
+      "arabicTitle": "دعاء النصر",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "64091",
+      "arabicTitle": "دعاء القهر",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 541,
+      "referencedByManuscriptId": "64093",
+      "arabicTitle": "دعاء الطهاطيل",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 403,
+      "referencedByManuscriptId": "64295",
+      "arabicTitle": "مكتوب في خواص آية التكوين",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 403,
+      "referencedByManuscriptId": "64297",
+      "arabicTitle": "شرح وخواص المسمى بالدافعة والقاضية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 403,
+      "referencedByManuscriptId": "64305",
+      "arabicTitle": "مكتوب في خواص جوهر الكمال والوفق المربع",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 403,
+      "referencedByManuscriptId": "64306",
+      "arabicTitle": "مكتوب في خواص خمسون قاف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2135,
+      "referencedByManuscriptId": "66725",
+      "arabicTitle": "مكتوب في أوراد القادرية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "66727",
+      "arabicTitle": "مكتوب في ذكر خواص بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 761,
+      "referencedByManuscriptId": "66922",
+      "arabicTitle": "مكتوب في السيرة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 761,
+      "referencedByManuscriptId": "66923",
+      "arabicTitle": "مكتوب في السيرة النبوية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 761,
+      "referencedByManuscriptId": "66924",
+      "arabicTitle": "مكتوب في السيرة النبوية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1341,
+      "referencedByManuscriptId": "66927",
+      "arabicTitle": "وفاة الرسول صلى الله عليه وسلم ووصيته لمعاذبن جبل",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1341,
+      "referencedByManuscriptId": "66928",
+      "arabicTitle": "وفاة الرسول صلى الله عليه وسلم ووصيته لمعاذبن جبل",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1341,
+      "referencedByManuscriptId": "66929",
+      "arabicTitle": "وفاة الرسول صلى الله عليه وسلم ووصيته لمعاذبن جبل",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1341,
+      "referencedByManuscriptId": "66930",
+      "arabicTitle": "وفاة النبي صلى الله عليه وسلم ووصيته لمعاذ بن جبل",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1341,
+      "referencedByManuscriptId": "66931",
+      "arabicTitle": "وفاة النبي صلى الله عليه وسلم ووصيته لمعاذ بن جبل",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1341,
+      "referencedByManuscriptId": "66932",
+      "arabicTitle": "وفاة النبي ووصيته لمعاذ بن جبل",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 209,
+      "referencedByManuscriptId": "67203",
+      "arabicTitle": "مكتوب في فوائد أسماء بعض الملائكة",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "67330",
+      "arabicTitle": "تخميس قصيدة في مدح عبد القادر الجيلاني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1658,
+      "referencedByManuscriptId": "67349",
+      "arabicTitle": "مكتوب في منافع بعض الأولياء والسور القرآنية مع العجمية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "68408",
+      "arabicTitle": "تجميس قصيدة الجيلانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "68409",
+      "arabicTitle": "تخميس قصيدة عبد القادر الجيلاني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1658,
+      "referencedByManuscriptId": "68426",
+      "arabicTitle": "مكتوب في التوسل بالأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1658,
+      "referencedByManuscriptId": "68427",
+      "arabicTitle": "مكتوب في ذكر أسماء الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1658,
+      "referencedByManuscriptId": "68446",
+      "arabicTitle": "مكتوب في ذكر أسماء بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2351,
+      "referencedByManuscriptId": "68612",
+      "arabicTitle": "دعاء ختم القرآن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2351,
+      "referencedByManuscriptId": "68618",
+      "arabicTitle": "مكتوب في دعاء ختم القرآن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1658,
+      "referencedByManuscriptId": "68935",
+      "arabicTitle": "مكتوب في فضائل الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69095",
+      "arabicTitle": "المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69096",
+      "arabicTitle": "مصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69097",
+      "arabicTitle": "مصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69098",
+      "arabicTitle": "مصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69099",
+      "arabicTitle": "مصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69100",
+      "arabicTitle": "مصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69101",
+      "arabicTitle": "مصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69102",
+      "arabicTitle": "مصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69103",
+      "arabicTitle": "مصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69104",
+      "arabicTitle": "مصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69105",
+      "arabicTitle": "مصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69106",
+      "arabicTitle": "مصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69107",
+      "arabicTitle": "مصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69108",
+      "arabicTitle": "مصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69109",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69110",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69111",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69112",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69113",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69114",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69115",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69116",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69117",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69118",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69119",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69120",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69121",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69122",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69125",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69126",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69127",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69128",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69129",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69130",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69131",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69133",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69134",
+      "arabicTitle": "جزء من القرآن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69136",
+      "arabicTitle": "جزء من القرآن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69137",
+      "arabicTitle": "جزء من القرآن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69142",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69143",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69144",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69145",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69146",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69147",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69150",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69151",
+      "arabicTitle": "المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69153",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69155",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69156",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69157",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69158",
+      "arabicTitle": "جزء من المضحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69159",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69160",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69161",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69162",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69163",
+      "arabicTitle": "جزء من القرآن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69166",
+      "arabicTitle": "المصحف الشريف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69167",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69169",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69170",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69171",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69172",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69173",
+      "arabicTitle": "جزء من القرآن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69174",
+      "arabicTitle": "جزء من القرآن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69176",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69177",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69178",
+      "arabicTitle": "المصحف الشريف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69179",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69180",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2083,
+      "referencedByManuscriptId": "69181",
+      "arabicTitle": "جرء سورة الرحمن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69182",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69184",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69185",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69186",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69187",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69188",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69189",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69191",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69192",
+      "arabicTitle": "مصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69193",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69194",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69195",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69196",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69197",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69198",
+      "arabicTitle": "جزء من القرآن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69202",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69203",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69204",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69205",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69206",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69207",
+      "arabicTitle": "المصحف الشريف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69208",
+      "arabicTitle": "جزء من القرآن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69209",
+      "arabicTitle": "جزء من القرآن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69215",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69217",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69218",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69219",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69220",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69221",
+      "arabicTitle": "جزء من المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1603,
+      "referencedByManuscriptId": "69222",
+      "arabicTitle": "المصحف",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2099,
+      "referencedByManuscriptId": "69308",
+      "arabicTitle": "مكتوب في منافع سورة قريش",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1513,
+      "referencedByManuscriptId": "69667",
+      "arabicTitle": "قصة اليهودي الذي أسلم بيد الرسول (ص)",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1053,
+      "referencedByManuscriptId": "69705",
+      "arabicTitle": "كتاب في ذكر أصول ابن آدم",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "69864",
+      "arabicTitle": "مكتوب في التوسل بعبد القادر الجيلاني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 1513,
+      "referencedByManuscriptId": "70279",
+      "arabicTitle": "قصة اليهودي الذي أسلم بيد الرسول (ص)",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "74306",
+      "arabicTitle": "تخميس القصيدة الجلانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "75414",
+      "arabicTitle": "قصيدة في مدح الجيلاني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "75759",
+      "arabicTitle": "شرح وخواص على قصيدة الجيلانية",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "75807",
+      "arabicTitle": "مكتوب في خواص الآيات ومناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2267,
+      "referencedByManuscriptId": "76194",
+      "arabicTitle": "تخميس قصيدة الجيلاني",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2099,
+      "referencedByManuscriptId": "76858",
+      "arabicTitle": "دعاء سورة قريش",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "79016",
+      "arabicTitle": "مكتوب في مناقب الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "79105",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "79108",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "79207",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "79247",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "79269",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "79677",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "79757",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "79795",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "79821",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2083,
+      "referencedByManuscriptId": "80366",
+      "arabicTitle": "دعاء سورة الرحمن",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2099,
+      "referencedByManuscriptId": "80486",
+      "arabicTitle": "مكتوب في منافع سورة قريش مع أسماء أصحاب النبي صلى الله عليه وسلم",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "80570",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "80616",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "80799",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "80840",
+      "arabicTitle": "مكتوب في مناقب الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "81079",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "81201",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "81354",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "81692",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 2099,
+      "referencedByManuscriptId": "81779",
+      "arabicTitle": "مكتوب في منافع سورة قريش",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "81790",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "82161",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "82438",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "82542",
+      "arabicTitle": "مكتوب في مناقب بعض الأولياء",
+      "englishTitle": ""
+    },
+    {
+      "missingSubjectId": 206,
+      "referencedByManuscriptId": "82905",
+      "arabicTitle": "قصيدة في ذكر مناقب بعض الأولياء",
+      "englishTitle": ""
+    }
+  ],
+  "missingGroupReferences": [
+    {
+      "missingGroupId": 2840,
+      "referencedByManuscriptId": "61536",
+      "arabicTitle": "كتاب في التوحيد",
+      "englishTitle": "",
+      "source": "manuscript"
+    }
+  ],
+  "missingAuthorReferences": [
+    {
+      "missingAuthorId": 603,
+      "referencedByManuscriptId": "11617",
+      "arabicTitle": "المنهج في شرح تكميل المنهج \"شرح كتاب اصول المذهب لابن ميارة",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 956,
+      "referencedByManuscriptId": "48400",
+      "arabicTitle": "شرح علي عقود الجمان في البيان",
+      "englishTitle": "Sharḥ ʿalā ʿUqūd al-jumān fī al-bayān [lʾSuyūtī]",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 217,
+      "referencedByManuscriptId": "7189",
+      "arabicTitle": "شرح علي المنهج المنتخب الي أصول عزية المذهب",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 544,
+      "referencedByManuscriptId": "46109",
+      "arabicTitle": "الثمار شرح الكوكب الساطع",
+      "englishTitle": "ath-Thimār sharḥ al-Kawkab as-sāṭiʿ",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 217,
+      "referencedByManuscriptId": "7683",
+      "arabicTitle": "شرح علي المنهج المنتخب الي أصول المذهب",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 956,
+      "referencedByManuscriptId": "84257",
+      "arabicTitle": "حلية اللب الصون بشرح الجوهر المكنون",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 15,
+      "referencedByManuscriptId": "44158",
+      "arabicTitle": "نظم في النحو علي ألفية ابن مالك وتذييل ابن بونه لها وألفية السيوطي",
+      "englishTitle": "Naẓm fī naḥw ʿalā ʾlfiyyat Ibn Mālik wa-tadhyīl Ibn Būna [aj-Jakanī] lahā wa-Alfiyyat as-Suyūṭī",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 163,
+      "referencedByManuscriptId": "4012",
+      "arabicTitle": "حاشية الصاوي علي الجلالين",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 599,
+      "referencedByManuscriptId": "4386",
+      "arabicTitle": "مقاصد الاعراب/ الحمد لله علي التعليم وافضل الصلاة والتسليم",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 599,
+      "referencedByManuscriptId": "12256",
+      "arabicTitle": "شرح تحفة الطلاب في نظم قواعد الاعراب",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 599,
+      "referencedByManuscriptId": "12282",
+      "arabicTitle": "شرح تحفة الطلاب في نظم قواعد الاعراب لابن الهائم",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 599,
+      "referencedByManuscriptId": "12956",
+      "arabicTitle": "تحفة الطلاب في نظم قواعد الاعراب",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 599,
+      "referencedByManuscriptId": "16271",
+      "arabicTitle": "شرح منظومة تحفة الطلاب في قواعد الاعراب",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 599,
+      "referencedByManuscriptId": "61304",
+      "arabicTitle": "تحفة الطلاب",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 599,
+      "referencedByManuscriptId": "66320",
+      "arabicTitle": "شرح على تحفة الطلاب",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 599,
+      "referencedByManuscriptId": "68210",
+      "arabicTitle": "مقاصيد الإعراب",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 599,
+      "referencedByManuscriptId": "83585",
+      "arabicTitle": "تحفة الطلاب",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 599,
+      "referencedByManuscriptId": "83759",
+      "arabicTitle": "تحفة الطلاب",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 599,
+      "referencedByManuscriptId": "84143",
+      "arabicTitle": "مقاصد الإعراب",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 163,
+      "referencedByManuscriptId": "46453",
+      "arabicTitle": "اللجين المذهب الجامع بين الجلالين والجمل والذهب",
+      "englishTitle": "al-Lujayn al-mudhahhab al-jāmiʿ bayna al-Jalālayn waal-jumal waʾa-dhahab",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 544,
+      "referencedByManuscriptId": "46455",
+      "arabicTitle": "طرة على الكوكب الساطع في الأصول للسيوطي",
+      "englishTitle": "Ṭurra ʿalā al-Kawkab as-sāṭiʿ fī al-usūl liʾs-Suyūṭī",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 15,
+      "referencedByManuscriptId": "50664",
+      "arabicTitle": "حاشية علي نور الاقاح لسيد عبد الله بن الحاج إبرهية العلوي",
+      "englishTitle": "Ḥāshiyya ʿalā Nūr al-aqāḥ li-Sīdī ʿAbd Allāh b. al-Ḥāj Ibrāhīm al-ʿAlawī",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 65,
+      "referencedByManuscriptId": "9827",
+      "arabicTitle": "مبارق الازهار شرح مشارق الانوار",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 65,
+      "referencedByManuscriptId": "10706",
+      "arabicTitle": "مشارق الانوار في صحاح الاخبار",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 65,
+      "referencedByManuscriptId": "11307",
+      "arabicTitle": "مشارق الأنوار النبوية في صحاح الأخبار المصطفوية",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 65,
+      "referencedByManuscriptId": "17197",
+      "arabicTitle": "مشارق الأنوار النبوية من صحاح الأخبار المصطفوية -",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 65,
+      "referencedByManuscriptId": "22354",
+      "arabicTitle": "مشارق الانوار النبوية من صحيح الاخبار المصطفوية",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 449,
+      "referencedByManuscriptId": "7524",
+      "arabicTitle": "التصريح بمضمون التوضيح",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 449,
+      "referencedByManuscriptId": "8899",
+      "arabicTitle": "التصريح بمضمون التوضيح لابن هشام",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 449,
+      "referencedByManuscriptId": "11346",
+      "arabicTitle": "التصريح بمضمون التوضيح",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 449,
+      "referencedByManuscriptId": "11404",
+      "arabicTitle": "التصريح بمضمون التوضيح",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 449,
+      "referencedByManuscriptId": "13696",
+      "arabicTitle": "التصريح بمضمون التوضيح (شرح ألفية ابن مالك)",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 449,
+      "referencedByManuscriptId": "15980",
+      "arabicTitle": "شرح التصريح لمضمون التوضيح",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 449,
+      "referencedByManuscriptId": "16715",
+      "arabicTitle": "التصريح بمضمون ما في التوضيح",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 449,
+      "referencedByManuscriptId": "22735",
+      "arabicTitle": "التصريح بمضمون التوضيح",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 449,
+      "referencedByManuscriptId": "23304",
+      "arabicTitle": "التصريح بمضمون التوضيح",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 544,
+      "referencedByManuscriptId": "46668",
+      "arabicTitle": "شرح الكوكب الساطع للسيوطي",
+      "englishTitle": "Sharḥ al-Kawkab as-sāṭiʿ liʾs-Suyūṭī",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 434,
+      "referencedByManuscriptId": "11094",
+      "arabicTitle": "طرة الطيبية",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 830,
+      "referencedByManuscriptId": "11094",
+      "arabicTitle": "طرة الطيبية",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 956,
+      "referencedByManuscriptId": "46218",
+      "arabicTitle": "تعاليق علي نظم السيوطي المسمى عقود الجمان",
+      "englishTitle": "Tāʿlīq ʿalā naẓm as-Suyūṭī al-musammā ʿUqūd al-jumān",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 544,
+      "referencedByManuscriptId": "48972",
+      "arabicTitle": "شرح الكوكب الساطع",
+      "englishTitle": "Sharḥ al-Kawkab as-sāṭiʿ",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 956,
+      "referencedByManuscriptId": "45401",
+      "arabicTitle": "تعليق على الجوهر المكنون للأخضري",
+      "englishTitle": "Taʿlīq ʿalā al-Jawhar al-maknūn lilʾ-Akhḍarī",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 544,
+      "referencedByManuscriptId": "49054",
+      "arabicTitle": "سلم المطالع لدرك الكوكب الساطع",
+      "englishTitle": "Sullam al-maṭāliʿ li-dark al-Kawkab as-sāṭiʿ",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 603,
+      "referencedByManuscriptId": "50181",
+      "arabicTitle": "شرح تكميل المنهج للزقاق (لميارة)",
+      "englishTitle": "Sharḥ Takmīl al-manhaj liʾz-Zarrūq (li-Mayyāra)",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 544,
+      "referencedByManuscriptId": "16161",
+      "arabicTitle": "الكوكب الساطع والعقد المنظوم في بيان النفيين باعتبار المنطوق والمفهوم",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 956,
+      "referencedByManuscriptId": "48665",
+      "arabicTitle": "أنواع الجنان و مفتاح اللسان علي عقود الجمان",
+      "englishTitle": "Anwāʿ al-jinān wa-miftāḥ al-lisān ʿalā ʿUqūd al-jumān (liʾs-Suyūtī)",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 956,
+      "referencedByManuscriptId": "45844",
+      "arabicTitle": "شرح مرتع الجنان على عقود الجمان في علم البيان للسيوطي",
+      "englishTitle": "Sharḥ martaʿ al-jinān ʿalā ʿUqūd al-jumān fī ʿilm al-bayān liʾs-Suyūṭī",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 42,
+      "referencedByManuscriptId": "43995",
+      "arabicTitle": "تعليق على تخميس العشرينيات لابن مهيب",
+      "englishTitle": "Taʿlīq ʿalā Takhmīs al-ʿishrīnīyāt li-Ibn Mahīb",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 956,
+      "referencedByManuscriptId": "46767",
+      "arabicTitle": "نظم عقد به نقاية السيوطي",
+      "englishTitle": "Naẓm ʿaqada bihi Nuqāyat as-Suyūṭī",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 163,
+      "referencedByManuscriptId": "17207",
+      "arabicTitle": "الصاوي علي الجلالين -",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 163,
+      "referencedByManuscriptId": "2962",
+      "arabicTitle": "حاشية الجمل علي الجلالين",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 217,
+      "referencedByManuscriptId": "7098",
+      "arabicTitle": "شرح المنهج المنتخب الي أصول المذهب",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 544,
+      "referencedByManuscriptId": "4266",
+      "arabicTitle": "سلم الطالع علي الكوكب الساطع",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 956,
+      "referencedByManuscriptId": "9563",
+      "arabicTitle": "شرح الجوهر المكنون",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 65,
+      "referencedByManuscriptId": "9744",
+      "arabicTitle": "مباحث الاسرار في شرح مشارق الانوار",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 312,
+      "referencedByManuscriptId": "16075",
+      "arabicTitle": "تلخيص شرح الأجهوري علي مختصر خليل",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 312,
+      "referencedByManuscriptId": "16100",
+      "arabicTitle": "شرح مختصر خليل و هو تلخيص من شرح أبي علي الأجهوري",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 544,
+      "referencedByManuscriptId": "16128",
+      "arabicTitle": "شرح الكوكب الساطع في نظم جمع الجوامع",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 956,
+      "referencedByManuscriptId": "23356",
+      "arabicTitle": "في‏ ‬شرح الشواهد النحوية‏ [طرة على عقود الجمان‏ [‬في‏ ‬علمي‏ ‬المعاني‏ ‬والبيان‏]",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 544,
+      "referencedByManuscriptId": "50570",
+      "arabicTitle": "شرح الكوكب الساطع",
+      "englishTitle": "Sharḥ kawkab as-sāṭiʿ",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 544,
+      "referencedByManuscriptId": "42348",
+      "arabicTitle": "تعليق على الكوكب الساطع",
+      "englishTitle": "Taʿlīq ʿalā al-Kawkab as-sāṭiʿ",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 956,
+      "referencedByManuscriptId": "43211",
+      "arabicTitle": "نظم نقاية السيوطي وطرته",
+      "englishTitle": "Naẓm nuqāyat as-Suyūṭi wa-ṭurratuhu",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 42,
+      "referencedByManuscriptId": "44301",
+      "arabicTitle": "سلم الأريب علي عشرينيات ابن مهيب",
+      "englishTitle": "Silm al-arīb ʿalā ʿIshrīnīyāt Ibn Mahīb",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 544,
+      "referencedByManuscriptId": "45117",
+      "arabicTitle": "طرة على الكوكب الساطع",
+      "englishTitle": "Ṭurra ʿalā al-Kawkab as-sāṭiʿ",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 544,
+      "referencedByManuscriptId": "48901",
+      "arabicTitle": "تعليق علي الكوكب الساطع لالسيوطي",
+      "englishTitle": "Taʿlīq ʿalā al-Kawkab as-sāṭiʿ li-Suyūṭī",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 544,
+      "referencedByManuscriptId": "48710",
+      "arabicTitle": "شرح الكوكب الساطع",
+      "englishTitle": "Sharḥ al-Kawkab as-sāṭiʿ",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 20,
+      "referencedByManuscriptId": "47592",
+      "arabicTitle": "نظم مااتفق عليه خليل و الرسالة",
+      "englishTitle": "Naẓm fīmā ittafaqa ʿalayhi Khalīl waal-Risāla",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 312,
+      "referencedByManuscriptId": "47592",
+      "arabicTitle": "نظم مااتفق عليه خليل و الرسالة",
+      "englishTitle": "Naẓm fīmā ittafaqa ʿalayhi Khalīl waal-Risāla",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 603,
+      "referencedByManuscriptId": "50167",
+      "arabicTitle": "شرح تكميل ابن عبد الله محمد ميارة الفاسي لمنهج الزقاق",
+      "englishTitle": "Sharḥ Takmīl Ibn ʿAbd Allāh Muḥammad Mayyāra al-Fāsi li-Manhaj az-Zaqqāq",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 956,
+      "referencedByManuscriptId": "48458",
+      "arabicTitle": "تعليق علي عقود الجمان للسيوطي",
+      "englishTitle": "Taʿlīq ʿalā ʿUqūd al-jumān liʾs-Suyūṭī",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 544,
+      "referencedByManuscriptId": "48865",
+      "arabicTitle": "شرح الكوكب الساطع",
+      "englishTitle": "Sharḥ al-Kawkab as-sāṭiʿ",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 544,
+      "referencedByManuscriptId": "41859",
+      "arabicTitle": "حواش على شرح محمد سالم بن ألمّا للكوكب الساطع في الأصول للسيوطي",
+      "englishTitle": "Ḥawāshī ʿalā sharḥ Muḥammad Sālim b. Alummā [al-Yadālī ] lial-Kawkab as-sāṭiʿ fī al-uṣūl, liʾs-Suyūṭī",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 956,
+      "referencedByManuscriptId": "45712",
+      "arabicTitle": "تعليق على عقود الجمان في علم البيان للسيوطي",
+      "englishTitle": "Taʿlīq ʿalā ʿUqūd al-jumān fī ʿilm al-bayān liʾs-Suyūṭī",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 20,
+      "referencedByManuscriptId": "49444",
+      "arabicTitle": "شرح علي منظومة الفقيه العارف بحمالله (لرسالة ابي محمد عبيد الله بن ابي زيد القيرواني)",
+      "englishTitle": "Sharḥ ʿalā manẓūmat al-Faqīh al-ʿārif bi-Ḥima Allāh [al-Ghallāwī ash-Shinqīṭī (li-Risālat Abī Muḥammad ʿUbayd Allāh b. Abī Zayd al-Qayrawānī)]",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 6855,
+      "referencedByManuscriptId": "71794",
+      "arabicTitle": "قرعة الفأل",
+      "englishTitle": "",
+      "type": "primary"
+    },
+    {
+      "missingAuthorId": 10,
+      "referencedByManuscriptId": "77100",
+      "arabicTitle": "شرح على تحفة المودود في معرفة المقصور والممدود",
+      "englishTitle": "",
+      "type": "secondary"
+    },
+    {
+      "missingAuthorId": 449,
+      "referencedByManuscriptId": "77100",
+      "arabicTitle": "شرح على تحفة المودود في معرفة المقصور والممدود",
+      "englishTitle": "",
+      "type": "secondary"
+    }
+  ]
+}

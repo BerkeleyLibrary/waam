@@ -15,7 +15,7 @@ module.exports = {
             where: {
                 email: req.query.email,
             },
-        }).then(user => {
+        }).then((user) => {
             if (user) {
                 return res.json({
                     status: true,
@@ -29,7 +29,7 @@ module.exports = {
     },
 
     login: (req, res) => {
-        passport.authenticate('local-login', function(err, user, params) {
+        passport.authenticate('local-login', function (err, user, params) {
             if (err) {
                 return res.json({ error: err.message });
             }
@@ -40,13 +40,13 @@ module.exports = {
             if (!user) {
                 return res.json({ error: 'Invalid Login' });
             }
-            req.login(user, {}, function(err) {
+            req.login(user, {}, function (err) {
                 if (err) {
                     return res.json({ error: err });
                 }
 
                 if (req.body.remember) {
-                    issueToken(user, function(err, token) {
+                    issueToken(user, function (err, token) {
                         if (err) {
                             console.log('error in auth contoller...', err);
                             return res.json({ error: err });
@@ -74,7 +74,7 @@ module.exports = {
     },
 
     signup: (req, res) => {
-        passport.authenticate('local-signup', function(err, user, params) {
+        passport.authenticate('local-signup', function (err, user, params) {
             if (err) {
                 return res.json({ error: err.message });
             }
@@ -83,7 +83,7 @@ module.exports = {
                 return res.json({ error: params.message });
             }
 
-            req.login(user, {}, function(err) {
+            req.login(user, {}, function (err) {
                 if (err) {
                     return res.json({ error: err });
                 }
@@ -95,7 +95,7 @@ module.exports = {
 
     logout: (req, res, next) => {
         res.clearCookie('remember_me');
-        req.logout(function(err) {
+        req.logout(function (err) {
             if (err) {
                 return next(err);
             }
@@ -123,7 +123,7 @@ module.exports = {
             fields.push('password');
         }
 
-        User.update(data, { fields, where: { id: me.id } }).then(result => {
+        User.update(data, { fields, where: { id: me.id } }).then((result) => {
             res.json(result);
         });
     },

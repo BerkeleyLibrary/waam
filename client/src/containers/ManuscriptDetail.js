@@ -314,7 +314,12 @@ class ManuscriptDetail extends React.Component {
     };
 
     componentDidMount() {
-        const { match: { params: { id } }, dispatch } = this.props;
+        const {
+            match: {
+                params: { id },
+            },
+            dispatch,
+        } = this.props;
 
         dispatch(cleanUpSingleManuscript());
 
@@ -330,7 +335,12 @@ class ManuscriptDetail extends React.Component {
     };
 
     deleteRecord = () => {
-        const { match: { params: { id } }, dispatch } = this.props;
+        const {
+            match: {
+                params: { id },
+            },
+            dispatch,
+        } = this.props;
         dispatch(deleteRecord(parseInt(id, 10)));
         this.handleClose();
     };
@@ -347,30 +357,23 @@ class ManuscriptDetail extends React.Component {
             if (isFetching) {
                 return <Loader />;
             } else if (selectedManuscript) {
-                let {
-                    id,
-                    aTitle,
-                    title,
-                    authors,
-                    collection,
-                    subject,
-                    group,
-                } = selectedManuscript;
+                let { id, aTitle, title, authors, collection, subject, group } =
+                    selectedManuscript;
 
                 const primaryAuthor = getAuthorFlatJson(
                     authors.find(
-                        _author =>
+                        (_author) =>
                             _author.manuscriptAuthor &&
                             _author.manuscriptAuthor.status === 'primary'
                     )
                 );
                 const secondaryAuthors = authors
                     .filter(
-                        _author =>
+                        (_author) =>
                             _author.manuscriptAuthor &&
                             _author.manuscriptAuthor.status !== 'primary'
                     )
-                    .map(_author => getAuthorFlatJson(_author));
+                    .map((_author) => getAuthorFlatJson(_author));
 
                 subject = subject || {};
 
@@ -447,26 +450,23 @@ class ManuscriptDetail extends React.Component {
                                 </Link>
                             </div>
                             <div className="col">
-                                {!deleted &&
-                                    user &&
-                                    user.admin && (
-                                        <div className="text-right">
-                                            <button
-                                                className="btn btn-outline-danger btn-sm"
-                                                onClick={this.handleOpen}
-                                            >
-                                                <i className="fas fa-times" />{' '}
-                                                Delete
-                                            </button>{' '}
-                                            <Link
-                                                to={`/titles/edit/${id}`}
-                                                className="btn btn-outline-info btn-sm"
-                                            >
-                                                <i className="fas fa-pen" />{' '}
-                                                Edit
-                                            </Link>
-                                        </div>
-                                    )}
+                                {!deleted && user && user.admin && (
+                                    <div className="text-right">
+                                        <button
+                                            className="btn btn-outline-danger btn-sm"
+                                            onClick={this.handleOpen}
+                                        >
+                                            <i className="fas fa-times" />{' '}
+                                            Delete
+                                        </button>{' '}
+                                        <Link
+                                            to={`/titles/edit/${id}`}
+                                            className="btn btn-outline-info btn-sm"
+                                        >
+                                            <i className="fas fa-pen" /> Edit
+                                        </Link>
+                                    </div>
+                                )}
                             </div>
                         </div>
 
@@ -541,117 +541,108 @@ class ManuscriptDetail extends React.Component {
                                             );
                                         })}
                                     </CustomPaper>
-                                    {primaryAuthor &&
-                                        primaryAuthor.id && (
-                                            <CustomPaper>
-                                                <div className="row">
-                                                    <div
-                                                        className="col mixed-text"
-                                                        dir="ltr"
-                                                    >
-                                                        <h3 className="ltr">
-                                                            Author
-                                                        </h3>
-                                                    </div>
-                                                    <div
-                                                        className="col mixed-text"
-                                                        dir="rtl"
-                                                    >
-                                                        <h3>المؤلف</h3>
-                                                    </div>
+                                    {primaryAuthor && primaryAuthor.id && (
+                                        <CustomPaper>
+                                            <div className="row">
+                                                <div
+                                                    className="col mixed-text"
+                                                    dir="ltr"
+                                                >
+                                                    <h3 className="ltr">
+                                                        Author
+                                                    </h3>
                                                 </div>
-                                                <hr />
-                                                {authorFields.map(
-                                                    (row, index) => {
-                                                        const enLabel = Object.values(
+                                                <div
+                                                    className="col mixed-text"
+                                                    dir="rtl"
+                                                >
+                                                    <h3>المؤلف</h3>
+                                                </div>
+                                            </div>
+                                            <hr />
+                                            {authorFields.map((row, index) => {
+                                                const enLabel = Object.values(
+                                                    row.english
+                                                )[0];
+                                                const arLabel = Object.values(
+                                                    row.arabic
+                                                )[0];
+                                                const enValue =
+                                                    primaryAuthor[
+                                                        Object.keys(
                                                             row.english
-                                                        )[0];
-                                                        const arLabel = Object.values(
+                                                        )[0]
+                                                    ];
+                                                const arValue =
+                                                    primaryAuthor[
+                                                        Object.keys(
                                                             row.arabic
-                                                        )[0];
-                                                        const enValue =
-                                                            primaryAuthor[
-                                                                Object.keys(
-                                                                    row.english
-                                                                )[0]
-                                                            ];
-                                                        const arValue =
-                                                            primaryAuthor[
-                                                                Object.keys(
-                                                                    row.arabic
-                                                                )[0]
-                                                            ];
-                                                        const isName =
+                                                        )[0]
+                                                    ];
+                                                const isName =
+                                                    Object.keys(
+                                                        row.english
+                                                    )[0] === 'name';
+                                                return (
+                                                    <React.Fragment
+                                                        key={
                                                             Object.keys(
                                                                 row.english
-                                                            )[0] === 'name';
-                                                        return (
-                                                            <React.Fragment
-                                                                key={
-                                                                    Object.keys(
-                                                                        row.english
-                                                                    )[0]
-                                                                }
-                                                            >
-                                                                <div className="row">
-                                                                    <div className="ltr col mixed-text">
-                                                                        <div className="field-name ">
-                                                                            {
-                                                                                enLabel
-                                                                            }
-                                                                        </div>
-                                                                    </div>
-                                                                    <div className="rtl col mixed-text">
-                                                                        <div className="field-name">
-                                                                            {
-                                                                                arLabel
-                                                                            }
-                                                                        </div>
-                                                                    </div>
+                                                            )[0]
+                                                        }
+                                                    >
+                                                        <div className="row">
+                                                            <div className="ltr col mixed-text">
+                                                                <div className="field-name ">
+                                                                    {enLabel}
                                                                 </div>
-                                                                <div className="row">
-                                                                    <div className="ltr col mixed-text">
-                                                                        {isName && (
-                                                                            <Link
-                                                                                to={`/authors/${
-                                                                                    primaryAuthor.id
-                                                                                }`}
-                                                                            >
-                                                                                {
-                                                                                    enValue
-                                                                                }
-                                                                            </Link>
-                                                                        )}
-                                                                        {!isName &&
-                                                                            enValue}
-                                                                    </div>
-                                                                    <div className="rtl col mixed-text">
-                                                                        {isName && (
-                                                                            <Link
-                                                                                to={`/authors/${
-                                                                                    primaryAuthor.id
-                                                                                }`}
-                                                                            >
-                                                                                {
-                                                                                    arValue
-                                                                                }
-                                                                            </Link>
-                                                                        )}
-                                                                        {!isName &&
-                                                                            arValue}
-                                                                    </div>
+                                                            </div>
+                                                            <div className="rtl col mixed-text">
+                                                                <div className="field-name">
+                                                                    {arLabel}
                                                                 </div>
-                                                                {index !==
-                                                                    authorFields.length -
-                                                                        1 && (
-                                                                    <hr />
+                                                            </div>
+                                                        </div>
+                                                        <div className="row">
+                                                            <div className="ltr col mixed-text">
+                                                                {isName && (
+                                                                    <Link
+                                                                        to={`/authors/${
+                                                                            primaryAuthor.id
+                                                                        }`}
+                                                                    >
+                                                                        {
+                                                                            enValue
+                                                                        }
+                                                                    </Link>
                                                                 )}
-                                                            </React.Fragment>
-                                                        );
-                                                    }
-                                                )}
-                                            </CustomPaper>
-                                        )}
+                                                                {!isName &&
+                                                                    enValue}
+                                                            </div>
+                                                            <div className="rtl col mixed-text">
+                                                                {isName && (
+                                                                    <Link
+                                                                        to={`/authors/${
+                                                                            primaryAuthor.id
+                                                                        }`}
+                                                                    >
+                                                                        {
+                                                                            arValue
+                                                                        }
+                                                                    </Link>
+                                                                )}
+                                                                {!isName &&
+                                                                    arValue}
+                                                            </div>
+                                                        </div>
+                                                        {index !==
+                                                            authorFields.length -
+                                                                1 && <hr />}
+                                                    </React.Fragment>
+                                                );
+                                            })}
+                                        </CustomPaper>
+                                    )}
 
                                     {secondaryAuthors.length > 0 && (
                                         <CustomPaper>

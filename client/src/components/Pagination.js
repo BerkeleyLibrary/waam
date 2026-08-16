@@ -17,7 +17,7 @@ const messages = defineMessages({
     },
 });
 
-const Pagination = props => {
+const Pagination = (props) => {
     const {
         pagination: { previous, next },
         query,
