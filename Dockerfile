@@ -26,12 +26,6 @@ FROM base AS build
 # Use the repository's pinned Yarn version and node-modules linker.
 COPY --chown=waam .yarnrc.yml ./
 COPY --chown=waam .yarn/releases/ ./.yarn/releases/
-COPY --chown=waam .yarn/plugins/ ./.yarn/plugins/
-
-# Install server dependencies.
-COPY --chown=waam package.json ./
-COPY --chown=waam yarn.lock ./
-RUN node .yarn/releases/yarn-3.6.1.cjs install --immutable
 
 # Install client dependencies.
 COPY --chown=waam ./client/package.json ./client/
@@ -43,11 +37,26 @@ RUN cd /usr/src/app/client && node ../.yarn/releases/yarn-3.6.1.cjs install --im
 COPY --chown=waam ./client/ ./client/
 RUN cd /usr/src/app/client && node ../.yarn/releases/yarn-3.6.1.cjs run build
 
-# Keep build tooling and development dependencies out of the runtime image.
-RUN node .yarn/releases/yarn-3.6.1.cjs workspaces focus --all --production
+# =============================================================================
+# Target: "deps"
+#
+# Server production dependencies only. Yarn 3 has no built-in production-only
+# install, so verify the lockfile, then drop devDependencies from the manifest
+# and let Yarn prune; every remaining package keeps its yarn.lock version.
+FROM base AS deps
 
+COPY --chown=waam .yarnrc.yml ./
+COPY --chown=waam .yarn/releases/ ./.yarn/releases/
+COPY --chown=waam package.json yarn.lock ./
+RUN node .yarn/releases/yarn-3.6.1.cjs install --immutable --mode=skip-build \
+    && npm pkg delete devDependencies \
+    && node .yarn/releases/yarn-3.6.1.cjs install \
+    && rm -rf .yarn/cache .yarn/install-state.gz
+
+# =============================================================================
+# Target: "runtime"
 FROM base AS runtime
-COPY --from=build --chown=waam /usr/src/app/node_modules ./node_modules
+COPY --from=deps --chown=waam /usr/src/app/node_modules ./node_modules
 COPY --from=build --chown=waam /usr/src/app/client/build ./client/build
 COPY --chown=waam package.json server.js initDockerSecrets.js ./
 COPY --chown=waam server/ ./server/

@@ -32,3 +32,9 @@ npm-debug.log
 /.settings
 /eclipse-classes
 /.idea
+
+# Nested dependencies, build output, and Yarn caches are rebuilt in the image.
+**/node_modules
+client/build
+**/.yarn/cache
+**/.yarn/install-state.gz
