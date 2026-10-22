@@ -23,7 +23,7 @@
     font-family: Tahoma, Verdana, Arial, 'Times New Roman', sans-serif;
     font-size: 14px;
     line-height: 1.6;
-    background: url(/img/bg-1.jpg) 50% 0 no-repeat, url(/img/bg-1-2.jpg) 50% 0 #965517;
+    background: url(../public/img/bg-1.jpg) 50% 0 no-repeat, url(../public/img/bg-1-2.jpg) 50% 0 #965517;
     padding-bottom: 50px;
   }
   body a, body a.page-link {
@@ -157,7 +157,7 @@
   }
   body .content-container .main-content.home:after {
     content: '';
-    background: url(/img/bg-5.jpg) 50% 0;
+    background: url(../public/img/bg-5.jpg) 50% 0;
     opacity: 0.2;
     top: 0;
     left: 0;
